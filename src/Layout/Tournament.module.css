@@ -32,3 +32,28 @@
     margin-left: 3px;
     margin-bottom: 82px;
 }
+
+.prizePool {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    width: 307px;
+    border: 1px solid #535353;
+    border-radius: 37px;
+    padding: 1px 17px 1px 17px;
+}
+
+.prizePool p {
+    font-size: 18px;
+    line-height: 1px;
+}
+
+.prizePool img {
+    margin-left: 7px;
+}
+
+.tournament_info {
+    margin-top: 100px;
+    width: 400px;
+    height: 50px;
+}
