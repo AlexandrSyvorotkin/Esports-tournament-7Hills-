@@ -1,10 +1,8 @@
-
 import './App.css';
+import Information from "./Layout/Information";
 
-function App() {
-  return (
-    <h1>Tournament Project</h1>
-  );
-}
+const App = () => (
+    <Information/>
+);
 
 export default App;
