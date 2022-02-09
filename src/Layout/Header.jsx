@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Information.module.css";
-import Logo from "../Assets/Rectangle 7.png";
+import Logo from "../Assets/Tournament-logo.png";
 
 const Header = () => {
     return (
