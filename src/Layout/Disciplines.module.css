@@ -1,0 +1,57 @@
+.disciplines {
+    color: white;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+}
+
+.disciplines p {
+    margin: 0px;
+}
+
+.dota {
+    border: 1px solid #616161;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.csgo {
+    border: 1px solid #616161;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.valorant {
+    border: 1px solid #616161;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.fifa {
+    border: 1px solid #616161;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.arrow {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}

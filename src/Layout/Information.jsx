@@ -5,10 +5,10 @@ import Tournament from "./Tournament";
 
 const Information = () => {
     return (
-        <>
+        <div>
             <Header/>
             <Tournament/>
-        </>
+        </div>
     );
 };
 
