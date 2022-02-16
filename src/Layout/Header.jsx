@@ -1,18 +1,20 @@
 import React from 'react';
-import styles from "./Information.module.css";
-import Logo from "../Assets/Tournament-logo.png";
+import styles from "./Header.module.css";
+import Logo from "../Assets/MainLogo.png";
 
 const Header = () => {
     return (
         <header className={styles.header}>
-            <div>
+            <div className={styles.header_logo}>
                 <img src={Logo} alt="logo"/>
+                <p>7</p>
             </div>
-            <div className={styles.organizer}>
-                <p>мфп</p>
-                <div className={styles.border}></div>
-                <p>ОРГАНИЗАТОР</p>
-            </div>
+            {/*<div className={styles.organizer}>*/}
+            {/*    <div className={styles.organization_logo}>*/}
+            {/*    </div>*/}
+            {/*    <div className={styles.border}></div>*/}
+            {/*    <p>ОРГАНИЗАТОР</p>*/}
+            {/*</div>*/}
         </header>
     );
 };

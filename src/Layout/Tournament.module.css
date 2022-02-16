@@ -4,43 +4,44 @@
     margin-left: 53px;
 }
 
-.esport {
+.esports {
     width: 180px;
     height: 17px;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 17px;
     margin: 0px;
     font-family: "Neue Machina";
 }
 
-.esport_tournament {
+.esports_name {
+    display: flex;
+    align-items: center;
     width: 418px;
     height: 100px;
     font-style: normal;
     font-weight: normal;
-    font-size: 104px;
+    font-size: 140px;
     line-height: 100px;
     margin: 0px;
-}
-
-.esport_name {
-    display: flex;
-    align-items: center;
+    margin-top: 15px;
+    font-family: "Neue Machina";
 }
 
 .tournament_logo {
-    margin-left: 3px;
-    margin-bottom: 82px;
+    margin-left: 10px;
+    margin-bottom: 120px;
 }
 
 .prizePool {
     display: flex;
     align-items: center;
-    margin-top: 17px;
-    width: 307px;
+    margin-top: 30px;
+    width: 420px;
     border: 1px solid #535353;
     border-radius: 37px;
     padding: 1px 17px 1px 17px;
+    font-size: 25px;
+    font-family: "Neue Machina";
 }
 
 .prizePool p {
@@ -56,4 +57,5 @@
     margin-top: 100px;
     width: 400px;
     height: 50px;
+    font-family: "Neue Machina";
 }

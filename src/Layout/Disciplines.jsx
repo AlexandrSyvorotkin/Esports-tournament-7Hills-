@@ -1,20 +1,17 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './Disciplines.module.css'
-import bara from '../Assets/disciplines/barathrum.png'
+import Arrow from '../Assets/whiteArrow.svg'
 
 const Disciplines = () => {
 
-    const [moreInformantion, setMoreInformation] = useState(false)
-
-    const getPicture = () => {
-        console.log('keka')
-    }
 
     return (
         <div className={styles.disciplines}>
-            <div className={styles.dota} onMouseEnter={getPicture}>
+            <div className={styles.dota} >
                 <p>Dota 2</p>
-                <div className={styles.arrow}></div>
+                <div className={styles.arrow}>
+                    <img src={Arrow} alt=""/>
+                </div>
             </div>
             <div className={styles.csgo}>
                 <p>CS:GO</p>

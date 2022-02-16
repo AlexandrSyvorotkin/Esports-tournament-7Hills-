@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 42px;
+}
+
+.header_logo {
+    position: relative;
+}
+
+.header_logo p {
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    left: 15px;
+    top: -25px;
+    font-family: "Neue Machina";
+}
+
+
+
+.organizer {
+    border: 0.3px solid #868686;
+    width: 200px;
+    height: 40px;
+    border-radius: 2px;
+    margin-left: 30px;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.border {
+    width: 20px;
+    height: 0px;
+    border: 0.2px solid #515151;
+    transform: rotate(90deg);
+}

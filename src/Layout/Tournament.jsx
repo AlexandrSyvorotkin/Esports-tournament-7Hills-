@@ -8,9 +8,9 @@ import greenLogo from '../Assets/GreenLogo.png'
 const Tournament = () => {
     return (
         <div className={styles.tournament}>
-                <p className={styles.esport}>КИБЕРСПОРТИВНЫЙ</p>
-            <div className={styles.esport_name}>
-                <p className={styles.esport_tournament}>ТУРНИР</p>
+                <div className={styles.esports}>КИБЕРСПОРТИВНЫЙ</div>
+            <div className={styles.esports_name}>
+                ТУРНИР
                 <img className={styles.tournament_logo} src={whiteLogo} alt=""/>
             </div>
             <div className={styles.prizePool}>
@@ -23,7 +23,7 @@ const Tournament = () => {
                 {/*    iteration="5"*/}
                 {/*    fillMode="none">*/}
                 {/*</MovingComponent>*/}
-                <p> ПРИЗОВОЙ ФОНД 100 000 РУБЛЕЙ</p>
+                ПРИЗОВОЙ ФОНД 100 000 РУБЛЕЙ
                 <img src={greenLogo} alt=""/>
             </div>
             <div className={styles.tournament_info}>
