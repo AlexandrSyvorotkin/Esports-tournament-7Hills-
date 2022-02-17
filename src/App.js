@@ -5,7 +5,7 @@ import Disciplines from "./Layout/Disciplines";
 const App = () => (
     <div className='app'>
         <Information/>
-        <Disciplines/>
+        {/*<Disciplines/>*/}
     </div>
 );
 

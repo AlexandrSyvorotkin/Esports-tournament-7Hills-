@@ -8,15 +8,36 @@
 
 .header_logo {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
-.header_logo p {
+.seven {
     position: absolute;
     color: var(--main-color);
-    font-size: 32px;
-    left: 15px;
-    top: -25px;
+    font-size: 35px;
+    line-height: 34px;
+    left: 14px;
     font-family: var(--family)
+}
+
+.small_logo {
+    position: absolute;
+    top: 34px;
+    left: 74px;
+    color: var(--main-color);
+    font-size: 5px;
+    line-height: 5px;
+    font-family: var(--family);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.hills  {
+    font-family: var(--family);
+    color: var(--main-color);
+    font-size: 35px;
+    line-height: 34px;
 }
 
 
@@ -26,13 +47,21 @@
     width: 200px;
     height: 40px;
     border-radius: 2px;
-    margin-left: 30px;
+    margin-left: 50px;
     color: var(--main-color);
     font-size: 13px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
+}
+
+.organizer p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    font-family: var(--family);
 }
 
 .border {

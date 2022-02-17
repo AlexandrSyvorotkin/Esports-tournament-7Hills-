@@ -1,5 +1,9 @@
 @import url("fonts/neue machina/stylesheet.css");
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --family: 'Neue Machina';
     --main-color: #FFFFFF;
