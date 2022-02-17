@@ -1,5 +1,5 @@
 .tournament {
-    color: white;
+    color: var(--main-color);
     margin-top: 83px;
     margin-left: 53px;
 }
@@ -10,7 +10,7 @@
     font-size: 30px;
     line-height: 17px;
     margin: 0px;
-    font-family: "Neue Machina";
+    font-family: var(--family);
 }
 
 .esports_name {
@@ -24,7 +24,7 @@
     line-height: 100px;
     margin: 0px;
     margin-top: 15px;
-    font-family: "Neue Machina";
+    font-family: var(--family);
 }
 
 .tournament_logo {
@@ -41,7 +41,7 @@
     border-radius: 37px;
     padding: 1px 17px 1px 17px;
     font-size: 25px;
-    font-family: "Neue Machina";
+    font-family: var(--family);
 }
 
 .prizePool p {
@@ -57,5 +57,5 @@
     margin-top: 100px;
     width: 400px;
     height: 50px;
-    font-family: "Neue Machina";
+    font-family: var(--family);
 }

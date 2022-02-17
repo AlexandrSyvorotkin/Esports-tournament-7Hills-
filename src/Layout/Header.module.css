@@ -12,11 +12,11 @@
 
 .header_logo p {
     position: absolute;
-    color: white;
+    color: var(--main-color);
     font-size: 32px;
     left: 15px;
     top: -25px;
-    font-family: "Neue Machina";
+    font-family: var(--family)
 }
 
 
@@ -27,7 +27,7 @@
     height: 40px;
     border-radius: 2px;
     margin-left: 30px;
-    color: white;
+    color: var(--main-color);
     font-size: 13px;
     display: flex;
     justify-content: space-between;

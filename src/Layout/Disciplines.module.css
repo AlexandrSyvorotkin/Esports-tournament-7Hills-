@@ -1,6 +1,6 @@
 .disciplines {
     width: 50%;
-    color: white;
+    : var(--main-color);
     display: grid;
     grid-template-columns: 450px 450px;
     grid-template-rows: 467px 467px;
