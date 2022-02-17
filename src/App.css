@@ -1,11 +1,13 @@
 @import url("fonts/neue machina/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --family: 'Neue Machina';
+    --font-family-main: 'Neue Machina';
+    --font-family-secondary: 'Open Sans', sans-serif;
     --main-color: #FFFFFF;
     --bg-color: #0c0c0c
 }
