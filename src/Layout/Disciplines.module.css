@@ -1,13 +1,13 @@
 .disciplines {
     width: 50%;
-    : var(--main-color);
     display: grid;
-    grid-template-columns: 450px 450px;
-    grid-template-rows: 467px 467px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 77% 77%;
 }
 
 .disciplines p {
     margin: 0px;
+    color: var(--main-color);
 }
 
 .dota {
@@ -23,18 +23,18 @@
 .dota:hover {
     background-image: url("../Assets/disciplines/barathrum.png");
     background-size: cover;
-    animation-name: Appearance;
-    animation-duration: 3s;
-    animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+    /*animation-name: Appearance;*/
+    /*animation-duration: 3s;*/
+    /*animation-timing-function: cubic-bezier(.1,-.6,.2,0);*/
 }
 
 
 /*Допилить плавное появление картинки */
 
-@keyframes Appearance {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
+/*@keyframes Appearance {*/
+/*    0% {opacity: 0;}*/
+/*    100% {opacity: 1;}*/
+/*}*/
 
 .csgo {
     border: 1px solid #616161;
