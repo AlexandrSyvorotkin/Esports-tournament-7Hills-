@@ -1,0 +1,17 @@
+.hamburgerMenu {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.hamburgerPart {
+    width: 26px;
+    height: 0px;
+    margin-top:9px;
+    border: 1px solid #FFFFFF;
+    background-color: white;
+}
