@@ -10,8 +10,18 @@
 
 .hamburgerPart {
     width: 26px;
-    height: 0px;
+    height: 3px;
     margin-top:9px;
-    border: 1px solid #FFFFFF;
     background-color: white;
+}
+
+@media (max-width: 768px) {
+    .hamburgerMenu {
+        right: 20px;
+        top: 20px;
+    }
+
+    .hamburgerPart {
+        height: 2px;
+    }
 }

@@ -5,8 +5,6 @@ import HamburgerMenu from "../Components/HamburgerMenu";
 
 const Disciplines = () => {
 
-
-
     return (
         <div className={styles.disciplines}>
             <div className={styles.dota} >
