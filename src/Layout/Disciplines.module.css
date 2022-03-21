@@ -5,9 +5,10 @@
     grid-template-rows: 77% 77%;
 }
 
-.disciplines p {
+.disciplines a {
     margin: 0px;
     color: var(--main-color);
+    text-decoration: none;
 }
 
 .dota {

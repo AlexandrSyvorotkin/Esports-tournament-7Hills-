@@ -2,31 +2,32 @@ import React from 'react';
 import styles from './Disciplines.module.css'
 import Arrow from '../Assets/whiteArrow.svg'
 import HamburgerMenu from "../Components/HamburgerMenu";
+import {Link} from "react-router-dom";
 
 const Disciplines = () => {
 
     return (
         <div className={styles.disciplines}>
             <div className={styles.dota} >
-                <p>Dota 2</p>
+                <Link to='/dota'>Dota2</Link>
                 <div className={styles.arrow}>
                     <img src={Arrow} alt=""/>
                 </div>
             </div>
             <div className={styles.csgo}>
-                <p>CS:GO</p>
+                <Link to='/csgo'>CSGO</Link>
                 <div className={styles.arrow}>
                     <img src={Arrow} alt=""/>
                 </div>
             </div>
             <div className={styles.valorant}>
-                <p>VALORANT</p>
+                <Link to='/valorant'>Valorant</Link>
                 <div className={styles.arrow}>
                     <img src={Arrow} alt=""/>
                 </div>
             </div>
             <div className={styles.fifa}>
-                <p>FIFA 22</p>
+                <Link to='/fifa'>Fifa</Link>
                 <div className={styles.arrow}>
                     <img src={Arrow} alt=""/>
                 </div>
