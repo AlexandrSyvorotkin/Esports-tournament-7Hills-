@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './HamburgerMenu.module.css'
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({setActive}) => {
 
     return (
-        <div className={styles.hamburgerMenu}>
+        <div className={styles.hamburgerMenu} onClick={()=> setActive(true)}>
             <div className={styles.hamburgerPart}/>
             <div className={styles.hamburgerPart}/>
             <div className={styles.hamburgerPart}/>
