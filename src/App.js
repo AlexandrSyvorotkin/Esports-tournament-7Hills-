@@ -1,7 +1,7 @@
 import './App.css';
-import Disciplines from "./Layout/Disciplines";
 import HamburgerMenu from "./Components/HamburgerMenu";
 import Information from "./Components/Information";
+import Disciplines from "./Layout/DisciplinesSection/Disciplines";
 
 const App = () => (
     <div className='app'>
