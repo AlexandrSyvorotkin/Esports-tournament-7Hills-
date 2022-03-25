@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './Information.module.css'
 
-import Header from "./Header";
+
 import Tournament from "./Tournament";
+import Header from "../Layout/Header";
 
 const Information = () => {
     return (

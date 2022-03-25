@@ -18,11 +18,14 @@
     padding-right: 30px;
     padding-left: 30px;
     padding-bottom: 30px;
+    opacity: 1;
 
 }
 .dota:hover {
-    background-image: url("../Assets/disciplines/barathrum.png");
+    background-image: url("../Assets/img-for-disciplines/barathrum.png");
     background-size: cover;
+    transform: scaleX(-1);
+    /*transition: opacity 0.5s ease ;*/
     /*animation-name: Appearance;*/
     /*animation-duration: 3s;*/
     /*animation-timing-function: cubic-bezier(.1,-.6,.2,0);*/
@@ -47,7 +50,7 @@
 }
 
 /*.csgo:hover {*/
-/*    background-image: url("../Assets/disciplines/csgo.png");*/
+/*    background-image: url("../Assets/img-for-disciplines/csgo.png");*/
 /*    background-size: cover;*/
 /*}*/
 
@@ -61,10 +64,10 @@
     padding-bottom: 30px;
 }
 
-/*.valorant:hover {*/
-/*    background-image: url("../Assets/disciplines/valorant.png");*/
-/*    background-size: cover;*/
-/*}*/
+.valorant:hover {
+    background-image: url("../Assets/img-for-disciplines/valorant.png");
+    background-size: cover;
+}
 
 .fifa {
     border: 1px solid #616161;
@@ -76,10 +79,10 @@
     padding-bottom: 30px;
 }
 
-/*.fifa:hover {*/
-/*    background-image: url("../Assets/disciplines/fifa.png");*/
-/*    background-size: cover;*/
-/*}*/
+.fifa:hover {
+    background-image: url("../Assets/img-for-disciplines/fifa.png");
+    background-size: cover;
+}
 
 
 .arrow {

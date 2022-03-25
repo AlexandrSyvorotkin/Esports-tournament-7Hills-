@@ -6,9 +6,10 @@ import MFP from '../Assets/MFP.svg'
 const Header = () => {
 
 
-    const ChangeWebSiteToMfpHandler = () => {
-        window.location.href='https://mtuf.ru/' // Костыль, можно\нужно убрать
-    }
+    // const ChangeWebSiteToMfpHandler = () => {
+    //     window.location.href='https://mtuf.ru/'
+    //     // Костыль, можно\нужно убрать
+    // } onClick={ChangeWebSiteToMfpHandler}
 
     return (
         <header className={styles.header} >
@@ -19,7 +20,7 @@ const Header = () => {
                 <p className={styles.hills}>Холмов</p>
             </div>
             <div className={styles.organizer}>
-                <div className={styles.organization_logo} onClick={ChangeWebSiteToMfpHandler}>
+                <div>
                     <img src={MFP} alt=""/>
                 </div>
                 <div className={styles.border}/>

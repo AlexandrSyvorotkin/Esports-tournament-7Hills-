@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Disciplines.module.css'
 import Arrow from '../Assets/whiteArrow.svg'
-import HamburgerMenu from "../Components/HamburgerMenu";
 
 const Disciplines = () => {
 
@@ -31,7 +30,6 @@ const Disciplines = () => {
                     <img src={Arrow} alt=""/>
                 </div>
             </div>
-            <HamburgerMenu/>
         </div>
     );
 };

@@ -3,9 +3,19 @@
     right: 50px;
     top: 50px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
     z-index: 2;
+}
+
+.hamburgerMenu:hover {
+    transform: rotate(90deg);
+    transition: 1s
+}
+
+.hamburgerMenu .active {
+    transform: rotate(90deg);
+    transition: 1s
 }
 
 .hamburgerPart {
@@ -14,6 +24,7 @@
     margin-top:9px;
     background-color: white;
 }
+
 
 @media (max-width: 768px) {
     .hamburgerMenu {
