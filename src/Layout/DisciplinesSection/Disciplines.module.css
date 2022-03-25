@@ -1,8 +1,15 @@
+/*.disciplines {*/
+/*    width: 45%;*/
+/*    display: grid;*/
+/*    grid-template-columns: 50% 50%;*/
+/*    grid-template-rows: 77% 77%;*/
+/*}*/
+
 .disciplines {
-    width: 45%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 77% 77%;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
