@@ -4,4 +4,4 @@
 
 ## Макет: https://www.figma.com/file/xgjjR2cMOK1DQfbZKDWb4P/7-hills-tournament-web-site
 
-## Ссылка на демо: 
+## Ссылка на демо: https://alexandrsyvorotkin.github.io/Esports-tournament-7Hills-/
