@@ -7,13 +7,13 @@ import greenLogo from '../Assets/Green.svg'
 
 const Tournament = () => {
     return (
-        <>
+        <section>
             <div className={styles.tournament}>
-                <div className={styles.esports}>КИБЕРСПОРТИВНЫЙ</div>
-                <div className={styles.esports_name}>
+                <h1 className={styles.esports}>КИБЕРСПОРТИВНЫЙ</h1>
+                <h2 className={styles.esports_name}>
                     ТУРНИР
                     <img className={styles.tournament_logo} src={whiteLogo} alt=""/>
-                </div>
+                </h2>
                 <div className={styles.prizePool}>
                     {/*<MovingComponent*/}
                     {/*    type="slideOutToLeft"*/}
@@ -34,7 +34,7 @@ const Tournament = () => {
                     ОРГАНИЗАЦИЙ
                     МФП!</p>
             </div>
-        </>
+        </section>
     )
         ;
 };

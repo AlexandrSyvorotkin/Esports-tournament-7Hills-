@@ -4,8 +4,10 @@ import Arrow from '../Assets/whiteArrow.svg'
 
 const Disciplines = () => {
 
+
+
     return (
-        <div className={styles.disciplines}>
+        <section className={styles.disciplines}>
             <div className={styles.dota} >
                 <p>Dota 2</p>
                 <div className={styles.arrow}>
@@ -30,7 +32,7 @@ const Disciplines = () => {
                     <img src={Arrow} alt=""/>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

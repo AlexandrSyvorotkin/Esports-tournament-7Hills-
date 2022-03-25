@@ -16,8 +16,8 @@ const Header = () => {
             <div className={styles.header_logo}>
                 <img src={Logo} alt="logo"/>
                 <p className={styles.seven}>7</p>
-                <p className={styles.small_logo}>киберспортивный турнир</p>
-                <p className={styles.hills}>Холмов</p>
+                <h2 className={styles.small_logo}>киберспортивный турнир</h2>
+                <h2 className={styles.hills}>Холмов</h2>
             </div>
             <div className={styles.organizer}>
                 <div>

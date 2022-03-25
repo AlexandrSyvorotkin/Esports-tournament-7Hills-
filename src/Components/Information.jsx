@@ -7,10 +7,10 @@ import Header from "../Layout/Header";
 
 const Information = () => {
     return (
-        <div className={styles.information}>
+        <main className={styles.information}>
             <Header/>
             <Tournament/>
-        </div>
+        </main>
     );
 };
 

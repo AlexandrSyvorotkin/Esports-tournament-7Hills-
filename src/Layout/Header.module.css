@@ -22,8 +22,9 @@
 }
 
 .small_logo {
+    margin: 0;
     position: absolute;
-    top: 34px;
+    top: 10px;
     left: 74px;
     color: var(--main-color);
     font-size: 5px;
@@ -34,6 +35,7 @@
 }
 
 .hills  {
+    margin: 0;
     font-family: var(--font-family-main);
     color: var(--main-color);
     font-size: 35px;

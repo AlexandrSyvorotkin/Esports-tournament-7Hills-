@@ -1,5 +1,5 @@
 .disciplines {
-    width: 50%;
+    width: 45%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 77% 77%;
@@ -94,6 +94,9 @@
     align-items: center;
     justify-content: center;
 }
+
+
+ /*Поправить гриды в адаптиве */
 
 @media (max-width: 992px) {
     .disciplines {
