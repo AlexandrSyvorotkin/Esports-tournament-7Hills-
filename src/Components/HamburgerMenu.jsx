@@ -3,13 +3,11 @@ import styles from './HamburgerMenu.module.css'
 
 const HamburgerMenu = ({setSecondScreenActive}) => {
 
-
     return (
-        <div className={styles.hamburgerMenu} onClick={()=>setSecondScreenActive(true)}>
-            <div className={styles.hamburgerPart}/>
-            <div className={styles.hamburgerPart}/>
-            <div className={styles.hamburgerPart}/>
+        <div className={styles.menu} onClick={() => setSecondScreenActive(true)}>
+            <span className={styles.menu_span}/>
         </div>
+
     );
 }
 

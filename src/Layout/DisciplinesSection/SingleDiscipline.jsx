@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './SingleDiscipline.module.css'
 import Arrow from '../../Assets/whiteArrow.svg'
 
-const SingleDiscipline = ({DisciplineName}) => {
+const SingleDiscipline = ({DisciplineName, img}) => {
     return (
-        <div className={styles.single_discipline} >
+        <div className={styles.single_discipline} onMouseOver={()=> console.log('mouse Over')}>
             <p>{DisciplineName}</p>
             <div className={styles.arrow}>
                 <img src={Arrow} alt=""/>
