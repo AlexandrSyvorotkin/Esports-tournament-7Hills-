@@ -1,15 +1,11 @@
 import React from 'react';
 import styles from './HamburgerMenu.module.css'
 
-const HamburgerMenu = () => {
-
-    const click = () => {
-        console.log('click')
-    }
+const HamburgerMenu = ({setSecondScreenActive}) => {
 
 
     return (
-        <div className={styles.hamburgerMenu} onClick={click}>
+        <div className={styles.hamburgerMenu} onClick={()=>setSecondScreenActive(true)}>
             <div className={styles.hamburgerPart}/>
             <div className={styles.hamburgerPart}/>
             <div className={styles.hamburgerPart}/>

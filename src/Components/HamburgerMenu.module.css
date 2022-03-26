@@ -8,10 +8,10 @@
     z-index: 2;
 }
 
-.hamburgerMenu:hover {
-    transform: rotate(90deg);
-    transition: 1s
-}
+/*.hamburgerMenu:hover {*/
+/*    transform: rotate(90deg);*/
+/*    transition: 1s*/
+/*}*/
 
 .hamburgerMenu .active {
     transform: rotate(90deg);
