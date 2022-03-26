@@ -24,15 +24,18 @@ const Tournament = () => {
                     {/*    iteration="5"*/}
                     {/*    fillMode="none">*/}
                     {/*</MovingComponent>*/}
+
+                    {/*// Сделать больше и сделать анимацию*/}
+
                     ПРИЗОВОЙ ФОНД <p>100 000</p> РУБЛЕЙ
-                    <img src={greenLogo} alt=""/>
+                    <img src={greenLogo} alt="greenLogo"/>
                 </div>
-            </div>
-            <div className={styles.tournament_info}>
-                <p className={styles.p}>МОСКОВСКАЯ ФЕДЕРАЦИЯ ПРОФСОЮЗОВ ПРОВОДИТ</p>
-                <p> УЖЕ ТРЕТИЙ ОНЛАЙН-ТУРНИР ПО КИБЕРСПОРТУ СРЕДИ ТРУДОВЫХ И СТУДЕНЧЕСКИХ <br/> КОЛЛЕКТИВОВ ЧЛЕНСКИХ
-                    ОРГАНИЗАЦИЙ
-                    МФП!</p>
+                <div className={styles.tournament_info}>
+                    <p className={styles.p}>МОСКОВСКАЯ ФЕДЕРАЦИЯ ПРОФСОЮЗОВ ПРОВОДИТ</p>
+                    <p> УЖЕ ТРЕТИЙ ОНЛАЙН-ТУРНИР ПО КИБЕРСПОРТУ СРЕДИ ТРУДОВЫХ И СТУДЕНЧЕСКИХ <br/> КОЛЛЕКТИВОВ ЧЛЕНСКИХ
+                        ОРГАНИЗАЦИЙ
+                        МФП!</p>
+                </div>
             </div>
         </section>
     )
