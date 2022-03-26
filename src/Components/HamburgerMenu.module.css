@@ -27,22 +27,22 @@
 }
 
 .menu_span::before {
-    transition: 0.5s;
+    transition: 0.3s;
     transform: translateY(-15px);
 }
 
 .menu_span::after {
-    transition: 0.5s;
+    transition: 0.3s;
     transform: translateY(10px);
 }
 
 .menu:hover .menu_span::before {
-    transition: 1s;
+    transition: 0.5s;
     transform: translateY(-7px);
 }
 
 .menu:hover .menu_span::after {
-    transition: 1s;
+    transition: 0.5s;
     transform: translateY(3px);
 }
 
