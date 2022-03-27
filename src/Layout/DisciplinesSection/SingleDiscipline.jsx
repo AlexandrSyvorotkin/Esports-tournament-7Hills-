@@ -4,7 +4,7 @@ import Arrow from '../../Assets/whiteArrow.svg'
 
 const SingleDiscipline = ({DisciplineName, img}) => {
     return (
-        <div className={styles.single_discipline} onMouseOver={()=> console.log('mouse Over')}>
+        <div className={styles.single_discipline} onMouseEnter={()=> console.log('mouse Over')}>
             <p>{DisciplineName}</p>
             <div className={styles.arrow}>
                 <img src={Arrow} alt=""/>

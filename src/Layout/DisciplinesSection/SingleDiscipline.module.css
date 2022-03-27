@@ -9,7 +9,10 @@
     padding-bottom: 30px;
 }
 
+
+
 .single_discipline p {
+    font-size: 25px;
     margin: 0px;
     color: var(--main-color);
 }
