@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Information.module.css'
+import styles from './Information.module.scss'
 
 
 import Tournament from "./Tournament";

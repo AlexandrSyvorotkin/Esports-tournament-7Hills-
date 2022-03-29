@@ -1,6 +1,5 @@
 import React from 'react';
-import styles from './Tournament.module.css'
-import whiteLogo from '../Assets/White.svg'
+import styles from './Tournament.module.scss'
 import greenLogo from '../Assets/Green.svg'
 import {motion} from 'framer-motion'
 
@@ -10,7 +9,7 @@ const Tournament = () => {
 
     const marqueeVariants = {
         animate: {
-            x: [0, -500],
+            x: [0, 0],
             transition: {
                 x: {
                     repeat: Infinity,
@@ -26,24 +25,24 @@ const Tournament = () => {
 
     return (
         <section>
-            <div className={styles.tournament}>
-                <h1 className={styles.esports}>КИБЕРСПОРТИВНЫЙ</h1>
-                <h2 className={styles.esports_name}>
-                    ТУРНИР
-                    <img className={styles.tournament_logo} src={whiteLogo} alt=""/>
-                </h2>
-                <div className={styles.prizePool}>
+            <div className={styles.tournament_section}>
+                <div className={styles.tournament_description}>КИБЕРСПОРТИВНЫЙ</div>
+                <div className={styles.tournament}>
+                    <h1>ТУРНИР</h1>
+                    <div className={styles.tournament_diamond}/>
+                </div>
+                <div className={styles.prize_pool}>
                     <motion.div
                         variants={marqueeVariants}
                         animate="animate"
-                        className={styles.ticker}>
-                        ПРИЗОВОЙ ФОНД <p>100 000</p> РУБЛЕЙ
-                        <img src={greenLogo} alt="greenLogo"/>
+                        className={styles.prize_pool_ticker}>
+                            ПРИЗОВОЙ ФОНД <p>100 000</p> РУБЛЕЙ
+                        <div className={styles.green_logo}><img src={greenLogo} alt="greenLogo"/></div>
                     </motion.div>
                 </div>
-                <div className={styles.tournament_info}>
-                    <p className={styles.p}>МОСКОВСКАЯ ФЕДЕРАЦИЯ ПРОФСОЮЗОВ ПРОВОДИТ</p>
-                    <p> УЖЕ ТРЕТИЙ ОНЛАЙН-ТУРНИР ПО КИБЕРСПОРТУ СРЕДИ ТРУДОВЫХ И СТУДЕНЧЕСКИХ <br/> КОЛЛЕКТИВОВ ЧЛЕНСКИХ
+                <div className={styles.tournament_information}>
+                    <p>МОСКОВСКАЯ ФЕДЕРАЦИЯ ПРОФСОЮЗОВ ПРОВОДИТ</p>
+                    <p> УЖЕ ТРЕТИЙ ОНЛАЙН-ТУРНИР ПО КИБЕРСПОРТУ СРЕДИ ТРУДОВЫХ И <br/> СТУДЕНЧЕСКИХ  КОЛЛЕКТИВОВ ЧЛЕНСКИХ
                         ОРГАНИЗАЦИЙ
                         МФП!</p>
                 </div>

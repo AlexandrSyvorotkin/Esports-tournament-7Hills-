@@ -3,10 +3,12 @@
 
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
-    --font-family-main: 'Neue Machina';
+    --font-family-main: 'NeueMachina-Regular', sans-serif;
     --font-family-secondary: 'Open Sans', sans-serif;
     --main-color: #FFFFFF;
     --bg-color: #0c0c0c
@@ -15,8 +17,9 @@
 
 body {
     background-color: var(--bg-color);
-    margin: 0px;
-    padding: 0px;
+    width: 1920px;
+    height: 1080px;
+
 }
 
 h1 {

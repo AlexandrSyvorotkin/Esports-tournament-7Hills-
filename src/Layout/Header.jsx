@@ -1,10 +1,9 @@
 import React from 'react';
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 import Logo from "../Assets/mainLogo.svg";
 import MFP from '../Assets/MFP.svg'
 
 const Header = () => {
-
 
     // const ChangeWebSiteToMfpHandler = () => {
     //     window.location.href='https://mtuf.ru/'
@@ -15,16 +14,16 @@ const Header = () => {
         <header className={styles.header} >
             <div className={styles.header_logo}>
                 <img src={Logo} alt="logo"/>
-                <p className={styles.seven}>7</p>
-                <h2 className={styles.small_logo}>киберспортивный турнир</h2>
-                <h2 className={styles.hills}>Холмов</h2>
+                <p className={styles.header_logo_content}>7</p>
+                <p className={styles.header_logo_name}>киберспортивный турнир</p>
+                <p className={styles.header_logo_name_description}>Холмов</p>
             </div>
-            <div className={styles.organizer}>
+            <div className={styles.organization}>
                 <div>
                     <img src={MFP} alt=""/>
                 </div>
-                <div className={styles.border}/>
-                <a className={styles.org} href='https://mtuf.ru/'>ОРГАНИЗАТОР</a>
+                <div className={styles.organization_content}/>
+                <a className={styles.organization_link} href='https://mtuf.ru/'>ОРГАНИЗАТОР</a>
             </div>
         </header>
     );
