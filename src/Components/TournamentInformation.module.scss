@@ -1,0 +1,44 @@
+.tournament_information {
+  margin-top: 100px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: var(--font-family-secondary);
+  color: var(--main-color);
+  @media (max-width: 1800px) {
+    font-size: 15px;
+  }
+  @media (max-width: 1600px) {
+    font-size: 12px;
+  }
+  @media (max-width: 1400px) {
+    margin-bottom: 40px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+  @media (max-width: 768px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 13px;
+    margin-top: 50px;
+  }
+
+  & > p:not(:last-child) {
+    padding-left: 160px;
+    @media (max-width: 1600px) {
+      padding-left: 120px;
+    }
+    @media (max-width: 1400px) {
+      padding-left: 90px;
+    }
+    @media (max-width: 768px) {
+      padding-left: 50px;
+    }
+  }
+
+}

@@ -1,10 +1,10 @@
 import './App.module.scss';
 import HamburgerMenu from "./Components/HamburgerMenu";
-import Information from "./Components/Information";
 import Disciplines from "./Layout/DisciplinesSection/Disciplines";
 import {useState} from 'react'
 import SecondScreen from "./Layout/SecondScreen/SecondScreen";
 import styles from './App.module.scss'
+import Information from "./Layout/Information";
 
 
 const App = () => {
