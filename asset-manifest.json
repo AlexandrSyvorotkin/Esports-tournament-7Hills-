@@ -1,7 +1,10 @@
 {
   "files": {
-    "main.css": "/Esports-tournament-7Hills-/static/css/main.0df3562c.css",
-    "main.js": "/Esports-tournament-7Hills-/static/js/main.c788bf4a.js",
+    "main.css": "/Esports-tournament-7Hills-/static/css/main.c0f62b76.css",
+    "main.js": "/Esports-tournament-7Hills-/static/js/main.ab747b52.js",
+    "static/media/fifa.png": "/Esports-tournament-7Hills-/static/media/fifa.44c92726644b36160e80.png",
+    "static/media/csgo.png": "/Esports-tournament-7Hills-/static/media/csgo.089425d3116e8b1aba86.png",
+    "static/media/valorant.png": "/Esports-tournament-7Hills-/static/media/valorant.a2e6982b933c5f5eeb17.png",
     "static/media/barathrum.png": "/Esports-tournament-7Hills-/static/media/barathrum.e6c48d0aa76acf018c05.png",
     "static/media/NeueMachina-Black.eot": "/Esports-tournament-7Hills-/static/media/NeueMachina-Black.e80dfe8ab92b9140abf5.eot",
     "static/media/NeueMachina-Black.ttf": "/Esports-tournament-7Hills-/static/media/NeueMachina-Black.014654455cfb26c46c76.ttf",
@@ -36,12 +39,11 @@
     "static/media/mainLogo.svg": "/Esports-tournament-7Hills-/static/media/mainLogo.7af3035c41b7687251496f0a4bbf6427.svg",
     "static/media/Green.svg": "/Esports-tournament-7Hills-/static/media/Green.407e19228a44384070f187c4e910c3df.svg",
     "static/media/whiteArrow.svg": "/Esports-tournament-7Hills-/static/media/whiteArrow.369c7dcc65940dec79392da18e26eca4.svg",
-    "static/media/White.svg": "/Esports-tournament-7Hills-/static/media/White.747ef512f4ef19f59a36ee08d184aab4.svg",
-    "main.0df3562c.css.map": "/Esports-tournament-7Hills-/static/css/main.0df3562c.css.map",
-    "main.c788bf4a.js.map": "/Esports-tournament-7Hills-/static/js/main.c788bf4a.js.map"
+    "main.c0f62b76.css.map": "/Esports-tournament-7Hills-/static/css/main.c0f62b76.css.map",
+    "main.ab747b52.js.map": "/Esports-tournament-7Hills-/static/js/main.ab747b52.js.map"
   },
   "entrypoints": [
-    "static/css/main.0df3562c.css",
-    "static/js/main.c788bf4a.js"
+    "static/css/main.c0f62b76.css",
+    "static/js/main.ab747b52.js"
   ]
 }
