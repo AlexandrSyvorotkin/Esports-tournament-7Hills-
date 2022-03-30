@@ -6,6 +6,17 @@
     z-index: 2;
     width: 40px;
     height: 40px;
+    @media (max-width: 1400px) {
+        right: 30px;
+        top: 30px;
+    }
+    @media (max-width: 768px) {
+        right: 25px;
+        top: 45px;
+    }
+    @media (max-width: 576px) {
+
+    }
     & > span {
         display: block;
         top: 50%;
@@ -14,6 +25,7 @@
         height: 4px;
         background-color: #ffffff;
     }
+
     & > span:before {
         content: '';
         display: block;

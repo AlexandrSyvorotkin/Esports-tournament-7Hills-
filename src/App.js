@@ -1,9 +1,10 @@
-import './App.css';
+import './App.module.scss';
 import HamburgerMenu from "./Components/HamburgerMenu";
 import Information from "./Components/Information";
 import Disciplines from "./Layout/DisciplinesSection/Disciplines";
 import {useState} from 'react'
 import SecondScreen from "./Layout/SecondScreen/SecondScreen";
+import styles from './App.module.scss'
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
     const [secondScreenActive, setSecondScreenActive] = useState(false)
 
     return (
-        <div className='app'>
+        <div className={styles.app}>
 
             {secondScreenActive ?
                 <SecondScreen setSecondScreenActive={setSecondScreenActive}/> :

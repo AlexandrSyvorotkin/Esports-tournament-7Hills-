@@ -4,12 +4,15 @@
     align-items: center;
     margin-left: 50px;
     margin-top: 42px;
-    .header_logo {
+    @media (max-width: 768px) {
+        margin-left: 25px;
+    }
+    &_logo {
         position: relative;
         display: flex;
         align-items: center;
     }
-    .header_logo_content {
+    &_logo_content {
         position: absolute;
         color: var(--main-color);
         left: 13px;
@@ -18,7 +21,7 @@
         line-height: 34px;
         font-family: var(--font-family-main)
     }
-    .header_logo_name {
+    &_logo_name {
         margin: 0;
         position: absolute;
         top: 12px;
@@ -30,7 +33,7 @@
         font-style: normal;
         font-weight: normal;
     }
-    .header_logo_name_description  {
+    &_logo_name_description  {
         margin: 0;
         font-family: var(--font-family-main);
         font-style: normal;
@@ -52,20 +55,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    .organizer p {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 10px;
-        line-height: 14px;
-        font-family: var(--font-family-main);
+    @media (max-width: 768px) {
+        margin-left: 25px;
     }
-    .organization_content {
+    &_content {
         width: 20px;
         height: 0px;
         border: 0.2px solid #515151;
         transform: rotate(90deg);
     }
-    .organization_link {
+    &_link {
         font-family: 'Open Sans', serif;
         font-style: normal;
         font-weight: 400;
@@ -73,12 +72,5 @@
         line-height: 14px;
         color: white;
         text-decoration: none;
-    }
-}
-
-
-@media (max-width: 992px) {
-    .header {
-        justify-content: center;
     }
 }
