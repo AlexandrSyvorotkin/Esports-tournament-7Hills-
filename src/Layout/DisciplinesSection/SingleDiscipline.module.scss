@@ -15,10 +15,13 @@
     @media (max-width: 576px) {
         height: 500px;
     }
-    & > p {
+    & > a {
         font-size: 25px;
-
         color: var(--main-color);
+        text-decoration: none;
+        &:hover {
+            color: #7EAF16;
+        }
     }
     &:hover .single_discipline_image{
         opacity: 1;

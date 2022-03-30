@@ -1,0 +1,96 @@
+.dota {
+  color: var(--main-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+  &> h2 {
+    font-size: 50px;
+    font-family: var(--font-family-main);
+  }
+  p {
+    color: #0c0c0c;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .tournament_roadmap {
+    font-family: var(--font-family-main);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .qualification {
+    background-color: var(--main-color);
+    width: 200px;
+    height: 50px;
+  }
+  .group_stage {
+    background-color: var(--main-color);
+    width: 200px;
+    height: 50px;
+  }
+  .playoffs {
+    background-color: var(--main-color);
+    width: 200px;
+    height: 50px;
+  }
+  .final {
+    background-color: var(--main-color);
+    width: 200px;
+    height: 50px;
+  }
+  .arrow_icon {
+    position: relative;
+    width: 100px;
+    border-radius: 4px;
+    height: 4px;
+    background-color: var(--main-color);
+    margin-right: 10px;
+    margin-left: 10px;
+    &:after {
+      display: inline-block;
+      content: '';
+      width: 30px;
+      border-radius: 4px;
+      height: 4px;
+      background-color: var(--main-color);
+      transform: rotate(45deg);
+      position: absolute;
+      right: -6px;
+      bottom: 10px;
+    }
+    &:before {
+      display: inline-block;
+      content: '';
+      width: 30px;
+      border-radius: 4px;
+      height: 4px;
+      background-color: var(--main-color);
+      transform: rotate(-45deg);
+      position: absolute;
+      right: -6px;
+      bottom: -10px;
+    }
+  }
+  .tournament_dates {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 55%;
+    font-family: var(--font-family-main);
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+  }
+  .buttons_sections {
+    display: flex;
+    margin-top: 40px;
+  }
+
+}
