@@ -1,0 +1,27 @@
+.disciplines {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 992px) {
+    .disciplines {
+        width: 100%;
+        margin-top: 30px;
+        grid-template-rows: 500% 500%;
+    }
+}
+
+@media (max-width: 576px) {
+    .disciplines {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dota, .csgo, .valorant, .fifa {
+        height: 500px;
+    }
+}

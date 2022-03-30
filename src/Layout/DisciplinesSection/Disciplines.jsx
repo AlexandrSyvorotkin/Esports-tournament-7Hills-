@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Disciplines.module.css'
+import styles from './Disciplines.module.scss'
 import SingleDiscipline from "./SingleDiscipline";
 import Dota2 from '../../Assets/img-for-disciplines/barathrum.png'
 import CSGO from '../../Assets/img-for-disciplines/csgo.png'

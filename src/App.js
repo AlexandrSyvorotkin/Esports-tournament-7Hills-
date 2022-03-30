@@ -18,7 +18,7 @@ const App = () => {
                 <>
                     <Information/>
                     <Disciplines/>
-                    {/*<HamburgerMenu setSecondScreenActive={setSecondScreenActive}/>*/}
+                    <HamburgerMenu setSecondScreenActive={setSecondScreenActive}/>
                 </>
             }
         </div>

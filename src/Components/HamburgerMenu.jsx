@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './HamburgerMenu.module.css'
+import styles from './HamburgerMenu.module.scss'
 
 const HamburgerMenu = ({setSecondScreenActive}) => {
 
     return (
-        <div className={styles.menu} onClick={() => setSecondScreenActive(true)}>
-            <span className={styles.menu_span}/>
+        <div className={styles.hamburger_menu} onClick={() => setSecondScreenActive(true)}>
+            <span/>
         </div>
 
     );

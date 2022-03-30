@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './SecondScreen.module.css'
+import styles from './SecondScreen.module.scss'
 import Button from "../../UI/Button";
 
 const SecondScreen = ({setSecondScreenActive}) => {
