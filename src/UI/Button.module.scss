@@ -3,4 +3,8 @@
     height: 40px;
     border-radius: 15px;
     background-color: var(--main-color);
+    cursor: pointer;
+    &:hover {
+        background-color: #7EAF16;
+    }
 }

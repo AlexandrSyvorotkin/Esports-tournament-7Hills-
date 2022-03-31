@@ -1,16 +1,13 @@
-import React, {useState} from 'react';
-import styles from './DotaDiscipline.module.scss'
-import Button from "../UI/Button";
+import React from 'react';
 import {Link} from "react-router-dom";
+import Button from "../UI/Button";
 import Modal from "../UI/Modal";
+import styles from './TournamentRoadMap.module.scss'
 
-const DotaDiscipline = () => {
-
-    const [modalActive, setModalActive] = useState(false)
-
+const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, TournamentImage}) => {
     return (
         <div className={styles.dota}>
-            <h2>Dota Tournament RoadMap</h2>
+                <h2>{discipline} Tournament RoadMap</h2>
             <div className={styles.tournament_roadmap}>
                 <div className={styles.qualification}>
                     <p>Квалификации</p>
@@ -35,10 +32,10 @@ const DotaDiscipline = () => {
                 </div>
             </div>
             <div className={styles.tournament_dates}>
-                <div>2 мая</div>
-                <div>3-6 мая</div>
-                <div>8-10 мая</div>
-                <div>11-13 июня</div>
+                <div>{dates.qualification}</div>
+                <div>{dates.groupStage}</div>
+                <div>{dates.playoffs}</div>
+                <div>{dates.final}</div>
             </div>
             <div className={styles.buttons_sections}>
                 <Link to='/'><Button>Назад</Button></Link>
@@ -54,4 +51,4 @@ const DotaDiscipline = () => {
     );
 };
 
-export default DotaDiscipline;
+export default TournamentRoadMap;
