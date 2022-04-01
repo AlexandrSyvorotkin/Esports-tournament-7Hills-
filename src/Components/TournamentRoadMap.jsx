@@ -1,13 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link} from "react-router-dom";
 import Button from "../UI/Button";
 import Modal from "../UI/Modal";
 import styles from './TournamentRoadMap.module.scss'
+import ModalContext from "../context/modal-context";
 
-const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, TournamentImage}) => {
+const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates}) => {
+
+    const context = useContext(ModalContext)
+
     return (
         <div className={styles.dota}>
-                <h2>{discipline} Tournament RoadMap</h2>
+            <h2>{discipline} Tournament RoadMap</h2>
             <div className={styles.tournament_roadmap}>
                 <div className={styles.qualification}>
                     <p>Квалификации</p>
@@ -39,13 +43,13 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, Tour
             </div>
             <div className={styles.buttons_sections}>
                 <Link to='/'><Button>Назад</Button></Link>
-                <Button onClick={() => setModalActive(true)}>Положение</Button>
+                <Button onClick={context.OpenModal}>Положение</Button>
                 <Button>Что то еще</Button>
                 <Button>И еще что то еще</Button>
             </div>
-            {modalActive &&
-            <Modal active={modalActive} setActive={setModalActive}>Открыть
-                <Button onClick={()=> setModalActive(false)}>Закрыть</Button>
+            {context.isModalOpened &&
+            <Modal active={context.isModalOpened} setActive={setModalActive}>Открыть
+                <Button onClick={context.CloseModal}>Закрыть</Button>
             </Modal>}
         </div>
     );

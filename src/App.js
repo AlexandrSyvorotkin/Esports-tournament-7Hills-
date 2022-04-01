@@ -7,21 +7,33 @@ import MainPage from "./pages/MainPage";
 import NotFound from "./pages/NotFound";
 import DotaRoadmap from "./pages/DotaRoadmap";
 import {useState} from "react";
+import ModalContext from "./context/modal-context";
 
 
 const App = () => {
 
     const [modalActive, setModalActive] = useState(false)
 
+    const CloseModalHandler = () => setModalActive(false)
+    const OpenModalHandler = () => setModalActive(true)
+
     return (
-            <Routes>
-                <Route path='/' element={<MainPage/>}/>
-                <Route path='/dota' element={<DotaRoadmap modalActive={modalActive} setModalActive={setModalActive}/>}/>
-                <Route path='/csgo' element={<CsgoRoadmap modalActive={modalActive} setModalActive={setModalActive}/>}/>
-                <Route path='/fifa' element={<FifaRoadmap modalActive={modalActive} setModalActive={setModalActive}/>}/>/>
-                <Route path='/valorant' element={<ValorantRoadmap modalActive={modalActive} setModalActive={setModalActive}/>}/>
-                <Route path='*' element={<NotFound/>}/>
-            </Routes>
+            <>
+                <ModalContext.Provider value={{
+                    isModalOpened: modalActive,
+                    OpenModal: OpenModalHandler,
+                    CloseModal: CloseModalHandler
+                }}>
+                <Routes>
+                    <Route path='/' element={<MainPage/>}/>
+                    <Route path='/dota' element={<DotaRoadmap/>}/>
+                    <Route path='/csgo' element={<CsgoRoadmap />}/>
+                    <Route path='/fifa' element={<FifaRoadmap />}/>
+                    <Route path='/valorant' element={<ValorantRoadmap />}/>
+                    <Route path='*' element={<NotFound/>}/>
+                </Routes>
+                </ModalContext.Provider>
+            </>
     )
 }
 
