@@ -7,7 +7,6 @@ import MainPage from "./pages/MainPage";
 import NotFound from "./pages/NotFound";
 import DotaRoadmap from "./pages/DotaRoadmap";
 import {useState} from "react";
-import Menu from "./Components/Menu";
 
 
 const App = () => {

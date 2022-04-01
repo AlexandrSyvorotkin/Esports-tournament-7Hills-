@@ -5,7 +5,6 @@ import Dota2 from '../../Assets/img-for-disciplines/barathrum.png'
 import CSGO from '../../Assets/img-for-disciplines/csgo.png'
 import Valorant from '../../Assets/img-for-disciplines/valorant.png'
 import FIFA from '../../Assets/img-for-disciplines/fifa.png'
-import Menu from "../../Components/Menu";
 
 const Disciplines = () => {
 
