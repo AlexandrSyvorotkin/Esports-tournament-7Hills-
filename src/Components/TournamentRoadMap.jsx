@@ -42,7 +42,7 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates}) => 
                 <div>{dates.final}</div>
             </div>
             <div className={styles.buttons_sections}>
-                <Link to='/'><Button>Назад</Button></Link>
+                <Link to='/Esports-tournament-7Hills-/'><Button>Назад</Button></Link>
                 <Button onClick={context.OpenModal}>Положение</Button>
                 <Button>Что то еще</Button>
                 <Button>И еще что то еще</Button>

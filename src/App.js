@@ -25,11 +25,11 @@ const App = () => {
                     CloseModal: CloseModalHandler
                 }}>
                 <Routes>
-                    <Route path='/' element={<MainPage/>}/>
-                    <Route path='/dota' element={<DotaRoadmap/>}/>
-                    <Route path='/csgo' element={<CsgoRoadmap />}/>
-                    <Route path='/fifa' element={<FifaRoadmap />}/>
-                    <Route path='/valorant' element={<ValorantRoadmap />}/>
+                    <Route path='/Esports-tournament-7Hills-' element={<MainPage/>}/>
+                    <Route path='/Esports-tournament-7Hills-/dota' element={<DotaRoadmap/>}/>
+                    <Route path='/Esports-tournament-7Hills-/csgo' element={<CsgoRoadmap />}/>
+                    <Route path='/Esports-tournament-7Hills-/fifa' element={<FifaRoadmap />}/>
+                    <Route path='/Esports-tournament-7Hills-/valorant' element={<ValorantRoadmap />}/>
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>
                 </ModalContext.Provider>
