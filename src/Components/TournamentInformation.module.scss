@@ -27,6 +27,10 @@
     font-size: 13px;
     margin-top: 50px;
   }
+  @media (min-width: 0) and (max-width: 576px)  {
+    margin-top: 30px;
+    font-size: 10px;
+  }
 
   & > p:not(:last-child) {
     padding-left: 160px;
@@ -38,6 +42,9 @@
     }
     @media (max-width: 768px) {
       padding-left: 50px;
+    }
+    @media (min-width: 0) and (max-width: 576px)  {
+      padding-left: 35px;
     }
   }
 

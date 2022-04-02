@@ -7,6 +7,10 @@
     @media (max-width: 768px) {
         margin-left: 25px;
     }
+    @media (min-width: 0) and (max-width: 576px)  {
+        margin-top: 30px;
+        margin-left: 10px;
+    }
     &_logo {
         position: relative;
         display: flex;
@@ -32,6 +36,10 @@
         font-family: var(--font-family-main);
         font-style: normal;
         font-weight: normal;
+        @media (min-width: 0) and (max-width: 576px)  {
+            font-size: 5px;
+            left: 65px;
+        }
     }
     &_logo_name_description  {
         margin: 0;
@@ -41,6 +49,9 @@
         font-weight: 400;
         font-size: 35px;
         line-height: 34px;
+        @media (min-width: 0) and (max-width: 576px)  {
+            font-size: 25px;
+        }
     }
 }
 
@@ -58,11 +69,16 @@
     @media (max-width: 768px) {
         margin-left: 25px;
     }
+    @media (min-width: 0) and (max-width: 576px)  {
+        margin-left: 10px;
+        height: 30px;
+    }
     &_content {
         width: 20px;
         height: 0px;
         border: 0.2px solid #515151;
         transform: rotate(90deg);
+
     }
     &_link {
         font-family: 'Open Sans', serif;
@@ -72,5 +88,8 @@
         line-height: 14px;
         color: white;
         text-decoration: none;
+        @media (min-width: 0) and (max-width: 576px)  {
+            font-size: 8px;
+        }
     }
 }

@@ -26,6 +26,12 @@
     height: 60px;
     margin-top: 50px;
   }
+  @media (min-width: 0) and (max-width: 576px)  {
+    width: 350px;
+    height: 40px;
+    margin-top: 30px;
+  }
+
 
   .prize_pool_ticker {
     width: 100%;
@@ -52,6 +58,9 @@
     @media (max-width: 756px) {
       font-size: 15px;
     }
+    @media (min-width: 0) and (max-width: 576px)  {
+      font-size: 13px;
+    }
     & p {
       font-size: 27px;
       line-height: 1px;
@@ -70,6 +79,9 @@
       }
       @media (max-width: 756px) {
         font-size: 15px;
+      }
+      @media (min-width: 0) and (max-width: 576px)  {
+        font-size: 13px;
       }
     }
     .green_logo {
@@ -92,6 +104,10 @@
       @media (max-width: 768px) {
         width: 15px;
         height: 15px;
+      }
+      @media (min-width: 0) and (max-width: 576px)  {
+        width: 13px;
+        height: 13px;
       }
 
       & img {
