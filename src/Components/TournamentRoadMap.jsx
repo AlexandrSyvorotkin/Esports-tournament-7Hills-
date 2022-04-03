@@ -11,7 +11,7 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates}) => 
 
     return (
         <div className={styles.dota}>
-            <h2>{discipline} Tournament RoadMap</h2>
+            <h2>{discipline} Турнир Расписание</h2>
             <div className={styles.tournament_roadmap}>
                 <div className={styles.qualification}>
                     <p>Квалификации</p>
@@ -44,7 +44,7 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates}) => 
             <div className={styles.buttons_sections}>
                 <Link to='/Esports-tournament-7Hills-/'><Button>Назад</Button></Link>
                 <Button onClick={context.OpenModal}>Положение</Button>
-                <Button>Что то еще</Button>
+                <Button>Регистрация</Button>
                 <Button>И еще что то еще</Button>
             </div>
             {context.isModalOpened &&
