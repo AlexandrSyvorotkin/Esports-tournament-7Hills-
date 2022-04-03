@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './HamburgerMenu.module.scss'
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({setMenuActive}) => {
 
     return (
-        <div className={styles.hamburger_menu}>
+        <div className={styles.hamburger_menu} onClick={() => setMenuActive(true)}>
             <span/>
         </div>
 

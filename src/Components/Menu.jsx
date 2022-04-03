@@ -1,16 +1,21 @@
 import React from 'react';
 import styles from './Menu.module.scss'
 
-const Menu = () => {
+const Menu = ({setMenuActive, menuActive}) => {
+
+
     return (
-        <div className={styles.menu}>
-            <div className={styles.blur}/>
+        <div className={`${menuActive ? styles.menu_active : styles.menu}`}>
+            <div className={styles.blur} onClick={() => setMenuActive(false)}/>
             <div className={styles.menu_content}>
-                <a href="">Контакты</a>
-                <a href="">Галерея</a>
-                <a href="">FAQ</a>
-                <a href="">О проекте</a>
-                <a href="">Партнеры</a>
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Галерея</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">О проекте</a></li>
+                    <li><a href="">Партнеры</a></li>
+                </ul>
             </div>
         </div>
     );

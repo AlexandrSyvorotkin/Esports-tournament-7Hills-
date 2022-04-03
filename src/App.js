@@ -17,6 +17,8 @@ const App = () => {
     const CloseModalHandler = () => setModalActive(false)
     const OpenModalHandler = () => setModalActive(true)
 
+
+
     return (
             <>
                 <ModalContext.Provider value={{
