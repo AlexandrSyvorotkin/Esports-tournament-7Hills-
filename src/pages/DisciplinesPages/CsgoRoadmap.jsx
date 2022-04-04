@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './CsgoRoadmap.module.scss'
-import TournamentRoadMap from "../Components/TournamentRoadMap";
+import TournamentRoadMap from "../../Components/TournamentRoadMap";
 
 const CsgoRoadmap = ({modalActive, setModalActive}) => {
 

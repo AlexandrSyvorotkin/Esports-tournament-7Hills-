@@ -1,6 +1,6 @@
 import React from 'react';
 
-import TournamentRoadMap from "../Components/TournamentRoadMap";
+import TournamentRoadMap from "../../Components/TournamentRoadMap";
 
 const DotaRoadmap = ({modalActive, setModalActive}) => {
 

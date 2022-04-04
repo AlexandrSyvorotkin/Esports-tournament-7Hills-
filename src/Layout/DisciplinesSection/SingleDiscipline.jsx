@@ -22,9 +22,9 @@ const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
                     transition={{ ease: "easeOut", duration: 0.5 }}
                 >ПОДРОБНЕЕ
                 </motion.p>}
-            <div className={styles.arrow}>
-                <img src={Arrow} alt=""/>
-            </div>
+            {/*<div className={styles.arrow}>*/}
+            {/*    <img src={Arrow} alt=""/>*/}
+            {/*</div>*/}
         </div>
     );
 };

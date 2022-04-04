@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Menu.module.scss'
+import {Link} from "react-router-dom";
 
 const Menu = ({setMenuActive, menuActive}) => {
 
@@ -9,12 +10,12 @@ const Menu = ({setMenuActive, menuActive}) => {
             <div className={styles.blur} onClick={() => setMenuActive(false)}/>
             <div className={styles.menu_content}>
                 <ul>
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Контакты</a></li>
-                    <li><a href="">Галерея</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">О проекте</a></li>
-                    <li><a href="">Партнеры</a></li>
+                    <li><Link to='/Esports-tournament-7Hills-'>Главная</Link></li>
+                    <li><Link to='/Esports-tournament-7Hills-/contacts'>Контакты</Link></li>
+                    <li><Link to='/Esports-tournament-7Hills-/photosgalary'>Галерея</Link></li>
+                    <li><Link to='/Esports-tournament-7Hills-/faq'>FAQ</Link></li>
+                    <li><Link to='/Esports-tournament-7Hills-/aboutus'>О проекте</Link></li>
+                    <li><Link to=''>Партнеры</Link></li>
                 </ul>
             </div>
         </div>

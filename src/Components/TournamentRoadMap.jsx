@@ -45,7 +45,6 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates}) => 
                 <Link to='/Esports-tournament-7Hills-/'><Button>Назад</Button></Link>
                 <Button onClick={context.OpenModal}>Положение</Button>
                 <Button>Регистрация</Button>
-                <Button>И еще что то еще</Button>
             </div>
             {context.isModalOpened &&
             <Modal active={context.isModalOpened} setActive={setModalActive}>Открыть
