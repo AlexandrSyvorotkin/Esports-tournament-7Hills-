@@ -19,11 +19,39 @@
         height: 400px;
     }
     & > a {
-        font-size: 25px;
+        font-size: 30px;
+        font-family: var(--font-family-main);
         color: var(--main-color);
         text-decoration: none;
+        background-image: linear-gradient(
+                        to right,
+                        #00ff7f 50%,
+                        #ffff 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 5px 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+        &:before {
+            content: '';
+            background: #00ff7f;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+        }
         &:hover {
-            color: #7EAF16;
+            background-position: 0;
+            &:before {
+                width: 100%;
+            }
         }
     }
     &:hover .single_discipline_image{
