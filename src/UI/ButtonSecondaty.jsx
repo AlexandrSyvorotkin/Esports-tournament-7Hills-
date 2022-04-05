@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ButtonTest.module.css'
 
-const Buttonsecond = ({children, onClick}) => {
+const ButtonSecondaty = ({children, onClick}) => {
     return (
             <a className={styles.button_2} onClick={onClick}>
                 {children}
@@ -11,4 +11,4 @@ const Buttonsecond = ({children, onClick}) => {
     );
 };
 
-export default Buttonsecond;
+export default ButtonSecondaty;

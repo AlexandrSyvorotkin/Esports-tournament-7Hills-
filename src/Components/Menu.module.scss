@@ -6,7 +6,6 @@
   height: 100vh;
   display: flex;
   overflow: hidden;
-  //transform: translateX(-100%);
   transition: all 0.2s;
 }
 
@@ -23,16 +22,19 @@
 
 .blur {
   height: 100%;
-  width: 85%;
+  width: 87%;
   backdrop-filter: blur(2px);
 }
 
 .menu_content {
-  background-color: #FFFFFF;
-  width: 15%;
+  background-color: #f0f8ff;
+  width: 13%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: all 0.4s;
+  & > ul {
+    list-style: none;
+  }
 }

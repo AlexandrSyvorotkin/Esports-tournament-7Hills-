@@ -3,7 +3,7 @@ import styles from './SingleDiscipline.module.scss'
 import Arrow from '../../Assets/whiteArrow.svg'
 import {motion} from 'framer-motion'
 import {Link} from "react-router-dom";
-import Buttonsecond from "../../UI/Buttonsecond";
+import ButtonSecondaty from "../../UI/ButtonSecondaty";
 
 const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
 

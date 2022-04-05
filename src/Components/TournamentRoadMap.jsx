@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 import Modal from "../UI/Modal";
 import styles from './TournamentRoadMap.module.scss'
 import ModalContext from "../context/modal-context";
-import Buttonsecond from "../UI/Buttonsecond";
+import ButtonSecondaty from "../UI/ButtonSecondaty";
 
 const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates}) => {
 
@@ -43,9 +43,9 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates}) => 
                 <div>{dates.final}</div>
             </div>
             <div className={styles.buttons_sections}>
-                <Link className={styles.a} to='/Esports-tournament-7Hills-/'><Buttonsecond>Назад</Buttonsecond></Link>
-                <Buttonsecond onClick={context.OpenModal}>Положение</Buttonsecond>
-                <Buttonsecond>Регистрация</Buttonsecond>
+                <Link className={styles.a} to='/Esports-tournament-7Hills-/'><ButtonSecondaty>Назад</ButtonSecondaty></Link>
+                <ButtonSecondaty onClick={context.OpenModal}>Положение</ButtonSecondaty>
+                <ButtonSecondaty>Регистрация</ButtonSecondaty>
             </div>
             {context.isModalOpened &&
             <Modal active={context.isModalOpened} setActive={setModalActive}>Открыть
