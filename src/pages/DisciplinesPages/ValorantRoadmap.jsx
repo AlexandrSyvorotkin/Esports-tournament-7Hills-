@@ -13,15 +13,20 @@ const ValorantRoadmap = ({modalActive, setModalActive}) => {
     }
 
     return (
-        <div className={styles.valorant}>
+        <>
+            <div className={styles.roadmap_header}>
+                <div className={styles.roadmap_logo}>
+                    <img src={valorant} alt=""/>
+                </div>
+                <h2>VALORANT Турнир Расписание</h2>
+            </div>
             <TournamentRoadMap
                 modalActive={modalActive}
                 setModalActive={setModalActive}
                 discipline={'VALORANT'}
                 dates={dates}
-                img={valorant}
                 />
-        </div>
+        </>
     );
 };
 

@@ -6,19 +6,12 @@ import styles from './TournamentRoadMap.module.scss'
 import ModalContext from "../context/modal-context";
 import ButtonSecondary from "../UI/ButtonSecondary";
 
-const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, img, dota, cs,go,fifa}) => {
+const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, img}) => {
 
     const context = useContext(ModalContext)
 
-
     return (
         <div className={styles.tournament_roadmaps}>
-            <div className={styles.roadmap_header}>
-                <div className={styles.roadmap_logo}>
-                    <img src={img} alt=""/>
-                </div>
-                <h2>{discipline} Турнир Расписание</h2>
-            </div>
             <div className={styles.tournament_roadmap}>
                 <div className={styles.qualification}>
                     <p>Квалификации</p>

@@ -13,15 +13,20 @@ const FifaRoadmap = ({setModalActive, modalActive}) => {
     }
 
     return (
-        <div className={styles.fifa}>
+        <>
+            <div className={styles.roadmap_header}>
+                <div className={styles.roadmap_logo}>
+                    <img src={fifa} alt=""/>
+                </div>
+                <h2>FIFA Турнир Расписание</h2>
+            </div>
             <TournamentRoadMap
                 modalActive={modalActive}
                 setModalActive={setModalActive}
                 dates={dates}
                 discipline={'FIFA'}
-                img={fifa}
             />
-        </div>
+        </>
     );
 };
 

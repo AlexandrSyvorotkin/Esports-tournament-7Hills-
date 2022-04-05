@@ -1,3 +1,21 @@
-.csgo {
-  color: var(--main-color);
+.roadmap_header {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 150px;
+  & > h2 {
+    font-size: 50px;
+    font-family: var(--font-family-main);
+    color: var(--main-color)
+  }
+  .roadmap_logo {
+    width: 300px;
+    height: 150px;
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }

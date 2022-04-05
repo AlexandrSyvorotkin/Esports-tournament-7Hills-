@@ -12,15 +12,20 @@ const CsgoRoadmap = ({modalActive, setModalActive}) => {
         final: '2 июня'
     }
     return (
-        <div className={styles.csgo}>
+        <>
+            <div className={styles.roadmap_header}>
+                <div className={styles.roadmap_logo}>
+                    <img src={csgo} alt=""/>
+                </div>
+                <h2>CS-GO Турнир Расписание</h2>
+            </div>
             <TournamentRoadMap
                 discipline={'CS-GO'}
                 dates={dates}
                 modalActive={modalActive}
                 setModalActive={setModalActive}
-                img={csgo}
             />
-        </div>
+        </>
     );
 };
 
