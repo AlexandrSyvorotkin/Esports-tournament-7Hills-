@@ -5,10 +5,19 @@
   align-items: center;
   margin-top: 50px;
   padding: 5px;
+  .contacts_header {
+    font-size: 40px;
+    font-family: var(--font-family-main);
+  }
+  .a {
+    text-decoration: none;
+    color: var(--main-color)
+  }
   .contacts_information {
     margin-top: 40px;
     display: flex;
-    flex-wrap: 2px;
     padding: 10px;
+    margin-bottom: 40px;
+
   }
 }

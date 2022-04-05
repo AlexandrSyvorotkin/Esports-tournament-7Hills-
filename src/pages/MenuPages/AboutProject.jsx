@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './AboutProject.module.scss'
 import {Link} from "react-router-dom";
-import ButtonSecondaty from "../../UI/ButtonSecondaty";
-import PhantomAssasin from '../../Assets/vk.png'
+import ButtonSecondary from "../../UI/ButtonSecondary";
+import VK from '../../Assets/vk.png'
 
 const AboutProject = () => {
     return (
@@ -39,10 +39,10 @@ const AboutProject = () => {
 
 
                 <div>
-                    <img src={PhantomAssasin} alt=""/>
+                    <img src={VK} alt=""/>
                 </div>
             </div>
-            <Link to='/Esports-tournament-7Hills-/'><ButtonSecondaty>Назад</ButtonSecondaty></Link>
+            <Link to='/Esports-tournament-7Hills-/'><ButtonSecondary>Назад</ButtonSecondary></Link>
         </div>
     );
 };

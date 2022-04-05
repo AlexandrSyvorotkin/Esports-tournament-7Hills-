@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Contacts.module.scss'
-import AboutUsCard from "../../Components/AboutUsCard";
 
 // Photo imports
 import Zaf from '../../Assets/Photoes/Boss.jpg'
@@ -8,6 +7,8 @@ import Ya from '../../Assets/Photoes/Я.jpg'
 import Padalko from '../../Assets/Photoes/Падалко.jpg'
 import Button from "../../UI/Button";
 import {Link} from "react-router-dom";
+import ContactCard from "../../Components/ContactCard";
+import ButtonSecondary from "../../UI/ButtonSecondary";
 
 const Contacts = () => {
 
@@ -22,22 +23,20 @@ const Contacts = () => {
 
     return (
         <div className={styles.contacts}>
-            <h2>Наша команда</h2>
+            <h2 className={styles.contacts_header}>Наша команда</h2>
             <div className={styles.contacts_information}>
                 {Contacts.map(contact => {
                     return (
-                        <AboutUsCard
+                        <ContactCard
                             name={contact.name}
                             number={contact.number}
                             position={contact.position}
-                            vkontakte={contact.vkontakte}
-                            telegram={contact.telegram}
                             photo={contact.photo}
                         />
                     )
                 })}
             </div>
-            <Link to='/Esports-tournament-7Hills-/'><Button>Назад</Button></Link>
+            <Link to='/Esports-tournament-7Hills-/' className={styles.a}><ButtonSecondary>Назад</ButtonSecondary></Link>
         </div>
     );
 };
