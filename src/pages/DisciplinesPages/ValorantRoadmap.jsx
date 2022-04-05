@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './ValorantRoadmap.module.scss'
 import TournamentRoadMap from "../../Components/TournamentRoadMap";
+import valorant from '../../Assets/img-for-roadmap/valorant.png'
 
 const ValorantRoadmap = ({modalActive, setModalActive}) => {
 
@@ -18,6 +19,7 @@ const ValorantRoadmap = ({modalActive, setModalActive}) => {
                 setModalActive={setModalActive}
                 discipline={'VALORANT'}
                 dates={dates}
+                img={valorant}
                 />
         </div>
     );

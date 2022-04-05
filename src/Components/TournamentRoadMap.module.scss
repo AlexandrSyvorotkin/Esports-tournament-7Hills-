@@ -1,4 +1,4 @@
-.dota {
+.tournament_roadmaps {
   color: var(--main-color);
   width: 100%;
   height: 100%;
@@ -6,11 +6,26 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 300px;
-  &> h2 {
-    font-size: 50px;
-    font-family: var(--font-family-main);
+  margin-top: 150px;
+  .roadmap_header {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &> h2 {
+      font-size: 50px;
+      font-family: var(--font-family-main);
+    }
+    .roadmap_logo {
+      width: 100px;
+      height: 100px;
+      & > img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
+
   p {
     color: #0c0c0c;
     font-size: 20px;
@@ -24,27 +39,43 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 100px;
   }
   .qualification {
     background-color: var(--main-color);
     width: 200px;
     height: 50px;
+    .dates {
+      margin-top: 40px;
+      color: var(--main-color);
+    }
   }
   .group_stage {
     background-color: var(--main-color);
     width: 200px;
     height: 50px;
+    .dates {
+      margin-top: 40px;
+      color: var(--main-color);
+    }
   }
   .playoffs {
     background-color: var(--main-color);
     width: 200px;
     height: 50px;
+    .dates {
+      margin-top: 40px;
+      color: var(--main-color);
+    }
   }
   .final {
     background-color: var(--main-color);
     width: 200px;
     height: 50px;
+    .dates {
+      margin-top: 40px;
+      color: var(--main-color);
+    }
   }
   .arrow_icon {
     position: relative;
@@ -93,7 +124,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 100px;
   }
   .a {
     text-decoration: none;

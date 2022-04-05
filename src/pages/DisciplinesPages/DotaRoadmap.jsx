@@ -1,6 +1,7 @@
 import React from 'react';
 
 import TournamentRoadMap from "../../Components/TournamentRoadMap";
+import dota from '../../Assets/img-for-roadmap/dota2.png'
 
 const DotaRoadmap = ({modalActive, setModalActive}) => {
 
@@ -18,6 +19,7 @@ const DotaRoadmap = ({modalActive, setModalActive}) => {
                 setModalActive={setModalActive}
                 discipline={'Dota'}
                 dates={dates}
+                img={dota}
             />
         </>
     );

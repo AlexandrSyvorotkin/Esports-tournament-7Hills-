@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FifaRoadmap.module.scss'
 import TournamentRoadMap from "../../Components/TournamentRoadMap";
+import fifa from '../../Assets/img-for-roadmap/fifa.png'
 
 const FifaRoadmap = ({setModalActive, modalActive}) => {
 
@@ -18,6 +19,7 @@ const FifaRoadmap = ({setModalActive, modalActive}) => {
                 setModalActive={setModalActive}
                 dates={dates}
                 discipline={'FIFA'}
+                img={fifa}
             />
         </div>
     );
