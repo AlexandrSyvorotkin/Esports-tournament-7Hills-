@@ -1,0 +1,28 @@
+.button_2 {
+  position: relative;
+  background-color: #0c0c0c;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-family: var(--font-family-main);
+  margin-left: 40px;
+}
+
+.button_2::before, .button_2::after {
+  border: 3px solid #FFFFFF;
+  content: '';
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  transition: transform 0.3s ease;
+}
+
+.button_2:hover::after {
+  transform: translate(-5px, -5px);
+}
+
+.button_2:hover::before {
+  transform: translate(5px, 5px);
+}
+

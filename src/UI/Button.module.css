@@ -2,7 +2,7 @@
     width: 100px;
     height: 40px;
     border-radius: 15px;
-    background-color: var(--main-color);
+    background-color: #FFFFFF;
     cursor: pointer;
     &:hover {
         background-color: #7EAF16;

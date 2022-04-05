@@ -89,8 +89,14 @@
     justify-content: space-between;
   }
   .buttons_sections {
+    width: 600px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 40px;
   }
-
+  .a {
+    text-decoration: none;
+    color: var(--main-color)
+  }
 }
