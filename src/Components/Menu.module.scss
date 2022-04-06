@@ -7,6 +7,10 @@
   display: flex;
   overflow: hidden;
   transition: all 0.2s;
+  @media (min-width: 0) and (max-width: 576px) {
+    transform: translateY(-100%);
+    width: 100vw;
+  }
 }
 
 .menu_active {
@@ -18,12 +22,32 @@
   display: flex;
   transition: all 0.2s;
   z-index: 5;
+  @media (min-width: 0) and (max-width: 576px) {
+    flex-direction: column-reverse;
+    transform: translateY(0);
+    transition: all 0.5s;
+  }
 }
 
 .blur {
   height: 100%;
   width: 87%;
   backdrop-filter: blur(2px);
+  @media (max-width: 1400px) {
+    width: 85%;
+  }
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+  @media (max-width: 900px) {
+    width: 75%;
+  }
+  @media (max-width: 768px) {
+    width: 67%;
+  }
+  @media (min-width: 0) and (max-width: 576px) {
+    width: 100%;
+  }
 }
 
 .menu_content {
@@ -34,7 +58,27 @@
   flex-direction: column;
   align-items: center;
   transition: all 0.4s;
+  @media (max-width: 1400px) {
+    width: 15%;
+  }
+  @media (max-width: 1200px) {
+    width: 20%;
+  }
+  @media (max-width: 900px) {
+    width: 25%;
+  }
+  @media (max-width: 768px) {
+    width: 33%;
+  }
+  @media (min-width: 0px) and (max-width: 576px) {
+    width: 100%;
+    height: 300px;
+  }
+
   & > ul {
     list-style: none;
+    @media (min-width: 0px) and (max-width: 576px) {
+      margin-bottom: 20px;
+    }
   }
 }
