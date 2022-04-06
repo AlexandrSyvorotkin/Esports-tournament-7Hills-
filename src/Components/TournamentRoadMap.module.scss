@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
 
-  p {
+  p, span {
     color: #0c0c0c;
     font-size: 20px;
     text-align: center;
@@ -22,42 +22,30 @@
     align-items: center;
     margin-top: 100px;
   }
-  .qualification {
+  .stage {
     background-color: var(--main-color);
+    font-family: var(--font-family-secondary);
     width: 200px;
     height: 50px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    cursor: pointer;
+    & > span {
+      display: block;
+    }
+    &:hover {
+      box-shadow: inset 200px 0 0 0 #00ff7f;
+    }
+    &:hover span{
+      color: #fff;
+    }
     .dates {
       margin-top: 40px;
       color: var(--main-color);
     }
   }
-  .group_stage {
-    background-color: var(--main-color);
-    width: 200px;
-    height: 50px;
-    .dates {
-      margin-top: 40px;
-      color: var(--main-color);
-    }
-  }
-  .playoffs {
-    background-color: var(--main-color);
-    width: 200px;
-    height: 50px;
-    .dates {
-      margin-top: 40px;
-      color: var(--main-color);
-    }
-  }
-  .final {
-    background-color: var(--main-color);
-    width: 200px;
-    height: 50px;
-    .dates {
-      margin-top: 40px;
-      color: var(--main-color);
-    }
-  }
+
   .arrow_icon {
     position: relative;
     width: 100px;
