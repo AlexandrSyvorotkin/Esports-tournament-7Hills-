@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Esports-tournament-7Hills-/static/css/main.f80d3352.css",
-    "main.js": "/Esports-tournament-7Hills-/static/js/main.b3bce6d8.js",
+    "main.css": "/Esports-tournament-7Hills-/static/css/main.059f82d4.css",
+    "main.js": "/Esports-tournament-7Hills-/static/js/main.e5df2be3.js",
     "static/media/fifa.png": "/Esports-tournament-7Hills-/static/media/fifa.095964e285631285f35c.png",
     "static/media/csgo.png": "/Esports-tournament-7Hills-/static/media/csgo.43e49dbf6d182d8ad2d4.png",
     "static/media/valorant.png": "/Esports-tournament-7Hills-/static/media/valorant.08095b101b9ae35e97e8.png",
@@ -44,11 +44,11 @@
     "static/media/mainLogo.svg": "/Esports-tournament-7Hills-/static/media/mainLogo.7af3035c41b7687251496f0a4bbf6427.svg",
     "static/media/Green.svg": "/Esports-tournament-7Hills-/static/media/Green.407e19228a44384070f187c4e910c3df.svg",
     "static/media/whiteArrow.svg": "/Esports-tournament-7Hills-/static/media/whiteArrow.369c7dcc65940dec79392da18e26eca4.svg",
-    "main.f80d3352.css.map": "/Esports-tournament-7Hills-/static/css/main.f80d3352.css.map",
-    "main.b3bce6d8.js.map": "/Esports-tournament-7Hills-/static/js/main.b3bce6d8.js.map"
+    "main.059f82d4.css.map": "/Esports-tournament-7Hills-/static/css/main.059f82d4.css.map",
+    "main.e5df2be3.js.map": "/Esports-tournament-7Hills-/static/js/main.e5df2be3.js.map"
   },
   "entrypoints": [
-    "static/css/main.f80d3352.css",
-    "static/js/main.b3bce6d8.js"
+    "static/css/main.059f82d4.css",
+    "static/js/main.e5df2be3.js"
   ]
 }
