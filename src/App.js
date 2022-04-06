@@ -18,6 +18,7 @@ import AboutProject from "./pages/MenuPages/AboutProject";
 import Contacts from "./pages/MenuPages/Contacts";
 import PhotoGalary from "./pages/MenuPages/PhotoGalary";
 import Faq from "./pages/MenuPages/FAQ";
+import DotaFormRegistation from "./Components/DIsciplinesForms/DotaFormRegistation";
 
 
 
@@ -45,6 +46,7 @@ const App = () => {
                     <Route path='/Esports-tournament-7Hills-/photosgalary' element={<PhotoGalary />}/>
                     <Route path='/Esports-tournament-7Hills-/faq' element={<Faq />}/>
                     <Route path='/Esports-tournament-7Hills-/aboutus' element={<AboutProject />}/>
+                    <Route path='/Esports-tournament-7Hills-/dota-registration' element={<DotaFormRegistation />}/>
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>
                 </ModalContext.Provider>

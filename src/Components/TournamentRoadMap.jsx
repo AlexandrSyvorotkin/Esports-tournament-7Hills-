@@ -42,7 +42,8 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, img}
             <div className={styles.buttons_sections}>
                 <Link className={styles.a} to='/Esports-tournament-7Hills-/'><ButtonSecondary>Назад</ButtonSecondary></Link>
                 <ButtonSecondary onClick={context.OpenModal}>Положение</ButtonSecondary>
-                <ButtonSecondary>Регистрация</ButtonSecondary>
+                <Link to='/Esports-tournament-7Hills-/dota-registration'><ButtonSecondary>Регистрация</ButtonSecondary></Link>
+
             </div>
             {context.isModalOpened &&
             <Modal active={context.isModalOpened} setActive={setModalActive}>Открыть

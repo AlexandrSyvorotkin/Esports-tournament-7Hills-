@@ -1,0 +1,21 @@
+.dotaFormRegistration {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  .form {
+    margin-top: 20px;
+    width: 300px;
+    border: 2px solid wheat;
+    padding: 20px;
+  }
+  .form_section {
+    display: flex;
+    flex-direction: column;
+    & > label {
+      margin-bottom: 10px;
+    }
+  }
+}
