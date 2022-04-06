@@ -1,6 +1,5 @@
 import React from "react";
 import styles from './ContactCard.module.scss'
-import zaf from '../Assets/Photoes/Boss.jpg'
 
 const ContactCard = ({photo, position, number}) => {
         return (

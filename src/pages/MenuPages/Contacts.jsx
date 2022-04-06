@@ -36,7 +36,9 @@ const Contacts = () => {
                     )
                 })}
             </div>
-            <Link to='/Esports-tournament-7Hills-/' className={styles.a}><ButtonSecondary>Назад</ButtonSecondary></Link>
+            <div className={styles.concats_footer}>
+                <Link to='/Esports-tournament-7Hills-/' className={styles.a}><ButtonSecondary>Назад</ButtonSecondary></Link>
+            </div>
         </div>
     );
 };
