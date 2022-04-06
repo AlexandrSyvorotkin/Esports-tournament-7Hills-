@@ -5,10 +5,38 @@
   align-items: center;
   margin: 0 auto;
   margin-top: 150px;
+  @media (max-width: 1800px){
+    width: 70%;
+  }
+  @media (max-width: 1600px){
+    width: 78%;
+  }
+  @media (max-width: 1200px){
+    width: 90%;
+  }
+  @media (max-width: 768px) {
+    margin-top: 60px;
+  }
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: 576px){
+    width: 100%;
+  }
   & > h2 {
     font-size: 50px;
     font-family: var(--font-family-main);
-    color: var(--main-color)
+    color: var(--main-color);
+    @media (max-width: 1400px) {
+      font-size: 45px;
+    }
+    @media (max-width: 1200px){
+      font-size: 35px;
+    }
+    @media (max-width: 576px) {
+      font-size: 20px;
+    }
   }
   .roadmap_logo {
     width: 300px;

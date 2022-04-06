@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import {Link} from "react-router-dom";
-import Button from "../UI/Button";
 import Modal from "../UI/Modal";
 import styles from './TournamentRoadMap.module.scss'
 import ModalContext from "../context/modal-context";

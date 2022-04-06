@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ButtonTest.module.css'
+import styles from './ButtonSecondary.module.scss'
 
 const ButtonSecondary = ({children, onClick}) => {
     return (

@@ -5,6 +5,15 @@
   padding: 10px 20px;
   font-family: var(--font-family-main);
   margin-left: 40px;
+  @media (max-width: 768px) {
+    margin-left: 20px;
+  }
+  @media (max-width: 675px) {
+    margin-left: 10px;
+  }
+  @media (min-width: 0) and (max-width: 576px) {
+    font-size: 10px;
+  }
 }
 
 .button_2::before, .button_2::after {
