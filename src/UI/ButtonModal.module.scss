@@ -1,16 +1,18 @@
 .button_modal {
   width: 100px;
   height: 50px;
+  background-color: #515151;
   color: #FFFFFF;
   border-radius: 4px;
   transition: ease-out 0.3s;
   outline: none;
-  border: 3px solid #42FBF2;
+  border: 3px solid #00ff7f;
   position: relative;
   z-index: 1;
   &:hover {
     color: #fff;
     cursor: pointer;
+    color: #0c0c0c;
   }
   &:before {
     transition: 0.5s all ease;
@@ -21,7 +23,7 @@
     bottom: 0;
     opacity: 0;
     content: '';
-    background-color: #42FBF2;
+    background-color: #00ff7f;
   }
   &:hover:before {
     transition: 0.5s all ease;

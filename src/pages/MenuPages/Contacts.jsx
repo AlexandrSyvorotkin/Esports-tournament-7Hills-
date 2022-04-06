@@ -9,6 +9,7 @@ import Button from "../../UI/Button";
 import {Link} from "react-router-dom";
 import ContactCard from "../../Components/ContactCard";
 import ButtonSecondary from "../../UI/ButtonSecondary";
+import ButtonModal from "../../UI/ButtonModal";
 
 const Contacts = () => {
 
@@ -37,7 +38,7 @@ const Contacts = () => {
                 })}
             </div>
             <div className={styles.concats_footer}>
-                <Link to='/Esports-tournament-7Hills-/' className={styles.a}><ButtonSecondary>Назад</ButtonSecondary></Link>
+                <Link to='/Esports-tournament-7Hills-/' className={styles.a}><ButtonModal>Назад</ButtonModal></Link>
             </div>
         </div>
     );

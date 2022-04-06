@@ -3,6 +3,7 @@ import styles from './AboutProject.module.scss'
 import {Link} from "react-router-dom";
 import ButtonSecondary from "../../UI/ButtonSecondary";
 import VK from '../../Assets/vk.png'
+import ButtonModal from "../../UI/ButtonModal";
 
 const AboutProject = () => {
     return (
@@ -39,7 +40,7 @@ const AboutProject = () => {
                     <img src={VK} alt=""/>
                 </div>
             </div>
-            <Link to='/Esports-tournament-7Hills-/'><ButtonSecondary>Назад</ButtonSecondary></Link>
+            <Link to='/Esports-tournament-7Hills-/'><ButtonModal>Назад</ButtonModal></Link>
         </div>
     );
 };
