@@ -26,9 +26,9 @@ const Menu = ({setMenuActive, menuActive}) => {
                     <li>
                         <Link to='/aboutus'><MenuButton>О проекте</MenuButton></Link>
                     </li>
-                    <li>
-                        <Link to=''><MenuButton>Партнеры</MenuButton></Link>
-                    </li>
+                    {/*<li>*/}
+                    {/*    <Link to=''><MenuButton>Партнеры</MenuButton></Link>*/}
+                    {/*</li>*/}
                 </ul>
             </div>
         </div>

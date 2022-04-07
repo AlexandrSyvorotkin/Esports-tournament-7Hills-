@@ -3,8 +3,10 @@ import React from 'react';
 import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import dota from '../../Assets/img-for-roadmap/dota2.png'
 import styles from './DotaRoadmap.module.scss'
+import Menu from "../../Components/Menu";
+import HamburgerMenu from "../../Components/HamburgerMenu";
 
-const DotaRoadmap = ({modalActive, setModalActive}) => {
+const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) => {
 
     const dates = {
         qualification: '2 мая',
