@@ -1,5 +1,7 @@
 import React from "react";
 import styles from './ContactCard.module.scss'
+import vk from '../Assets/contactIcons/vk.png'
+import telegram from '../Assets/contactIcons/telegram.png'
 
 const ContactCard = ({photo, position, number}) => {
         return (
@@ -15,8 +17,11 @@ const ContactCard = ({photo, position, number}) => {
                             {position}
                         </h5>
                         <p className={styles.card_text}>
-                            Имена
                             <span className={styles.phone}>{number}</span>
+                            <div className={styles.contact_icons}>
+                                <img src={vk} alt=""/>
+                                <img src={telegram} alt=""/>
+                            </div>
                         </p>
                 </div>
         );
