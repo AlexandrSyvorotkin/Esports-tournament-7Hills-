@@ -15,10 +15,10 @@ import ButtonModal from "../../UI/ButtonModal";
 const Contacts = () => {
 
     const Contacts = [
-        {photo: Zaf, name: 'Сафаров Зафар', position: 'Организатор', number: '8914563912', telegram: '#', vkontakte:'#'},
-        {photo: Ya, name: 'Сывороткин Александр', position: 'Администратор dota и fifa дисциплины', number: '8914563912', telegram: '#', vkontakte:'#'},
-        {photo: Valera, name: 'Валерий Ситкин', position: 'Администратор cs-go дисциплины', number: '8914563912', telegram: '#', vkontakte:'#'},
-        {photo: Padalko, name: 'Падалко Александр', position: 'Администратор valorant дисциплины', number: '8914563912', telegram: '#', vkontakte:'#'},
+        {photo: Zaf, name: 'Сафаров Зафар', position: 'Организатор', telegram: '#', vkontakte:'https://vk.com/safarovzafar'},
+        {photo: Ya, name: 'Сывороткин Александр', position: 'Администратор dota и fifa дисциплины', number: '+79164419605', telegram: 'https://t.me/AlexSyvorotkin', vkontakte:'https://vk.com/suvorotkinalex'},
+        {photo: Valera, name: 'Ситкин Валерий ', position: 'Администратор cs-go дисциплины', number: '+79309469544', telegram: 'https://t.me/encose', vkontakte:'https://vk.com/grimmjowq'},
+        {photo: Padalko, name: 'Падалко Александр', position: 'Администратор valorant дисциплины', number: '+7914563912', telegram: 'https://t.me/DarcDent', vkontakte:'https://vk.com/darcdent'},
 
 
     ]
@@ -35,6 +35,8 @@ const Contacts = () => {
                             number={contact.number}
                             position={contact.position}
                             photo={contact.photo}
+                            vkLink={contact.vkontakte}
+                            telegramLink={contact.telegram}
                         />
                     )
                 })}

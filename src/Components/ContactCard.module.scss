@@ -3,42 +3,62 @@
     background-color: #FFFFFF;
     margin-left: 20px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .card:hover {
     box-shadow: 0 0 12px 1px #00ff7f;
 }
+.card_name {
+    font-size: 20px;
+    font-family: var(--font-family-main);
+    color:#0c0c0c;
+}
 .card_title {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #515151;
+    font-size: 13px;
+    font-family: var(--font-family-secondary);
 }
 .card_text {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
-    .contact_icons {
-        display: flex;
-        justify-content: center;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.contact_icons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 10px;
+    .contact_links {
         width: 40px;
         height: 40px;
-        & > img {
+        cursor: pointer;
+        & > a > img {
             width: 100%;
             height: 100%;
         }
     }
+
 }
 
 .avatar {
     width: 250px;
     height: 250px;
-    margin: auto;
+    margin-top:0;
 }
 .avatar img {
     border: solid 6px transparent;
     border-radius: 50%;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .card:hover .avatar img {
-    border-color: rgb(99, 204, 131);
+    //border-color: rgb(99, 204, 131);
 }
 
 
