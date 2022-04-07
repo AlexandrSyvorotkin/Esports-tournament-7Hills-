@@ -1,9 +1,10 @@
 import React from 'react';
+import DotaFormRegistration from "../../Components/DIsciplinesForms/DotaFormRegistration";
 
 const DotaRegistration = () => {
     return (
         <div>
-            <DotaRegistration/>
+           <DotaFormRegistration/>
         </div>
     );
 };

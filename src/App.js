@@ -18,7 +18,9 @@ import AboutProject from "./pages/MenuPages/AboutProject";
 import Contacts from "./pages/MenuPages/Contacts";
 import PhotoGalary from "./pages/MenuPages/PhotoGalary";
 import Faq from "./pages/MenuPages/FAQ";
-import DotaFormRegistation from "./Components/DIsciplinesForms/DotaFormRegistation";
+import DotaFormRegistration from "./Components/DIsciplinesForms/DotaFormRegistration";
+import DotaRegistration from "./pages/RegistrationPages/DotaRegistration";
+import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
 
 
 
@@ -46,7 +48,8 @@ const App = () => {
                     <Route path='/Esports-tournament-7Hills-/photosgalary' element={<PhotoGalary />}/>
                     <Route path='/Esports-tournament-7Hills-/faq' element={<Faq />}/>
                     <Route path='/Esports-tournament-7Hills-/aboutus' element={<AboutProject />}/>
-                    <Route path='/Esports-tournament-7Hills-/dota-registration' element={<DotaFormRegistation />}/>
+                    <Route path='/Esports-tournament-7Hills-/dota-registration' element={<DotaRegistration />}/>
+                    <Route path='/Esports-tournament-7Hills-/cs-go-registration' element={<CsgoRegistration />}/>
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>
                 </ModalContext.Provider>

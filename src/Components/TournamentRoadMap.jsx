@@ -6,7 +6,7 @@ import ModalContext from "../context/modal-context";
 import ButtonSecondary from "../UI/ButtonSecondary";
 import ButtonModal from "../UI/ButtonModal";
 
-const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, img}) => {
+const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, img, registrationPath}) => {
 
     const context = useContext(ModalContext)
 
@@ -42,7 +42,7 @@ const TournamentRoadMap = ({modalActive, setModalActive, discipline, dates, img}
             <div className={styles.buttons_sections}>
                 <Link className={styles.a} to='/Esports-tournament-7Hills-/'><ButtonSecondary>Назад</ButtonSecondary></Link>
                 <ButtonSecondary onClick={context.OpenModal}>Положение</ButtonSecondary>
-                <Link to='/Esports-tournament-7Hills-/dota-registration'><ButtonSecondary>Регистрация</ButtonSecondary></Link>
+                <Link to={registrationPath}><ButtonSecondary>Регистрация</ButtonSecondary></Link>
 
             </div>
             {context.isModalOpened &&
