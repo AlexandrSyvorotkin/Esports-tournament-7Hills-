@@ -18,9 +18,12 @@ import AboutProject from "./pages/MenuPages/AboutProject";
 import Contacts from "./pages/MenuPages/Contacts";
 import PhotoGalary from "./pages/MenuPages/PhotoGalary";
 import Faq from "./pages/MenuPages/FAQ";
+
+//Registration Routes
 import DotaRegistration from "./pages/RegistrationPages/DotaRegistration";
 import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
-import ValorantFormRegistration from "./Components/DIsciplinesForms/ValorantFormRegistration";
+import ValorantRegistration from "./pages/RegistrationPages/ValorantRegistration";
+import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
 
 
 
@@ -53,8 +56,8 @@ const App = () => {
 
                     <Route path='/dota-registration' element={<DotaRegistration />}/>
                     <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
-                    <Route path='/valorant-registration' element={<ValorantFormRegistration />}/>
-                    <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
+                    <Route path='/valorant-registration' element={<ValorantRegistration />}/>
+                    <Route path='/fifa-registration' element={<FifaRegistration />}/>
 
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>

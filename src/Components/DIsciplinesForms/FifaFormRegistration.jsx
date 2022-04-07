@@ -22,7 +22,7 @@ const DotaFormRegistation = () => {
 
     const submitHandler = (data) => {
         console.log(data)
-        axios.post('https://sheet.best/api/sheets/c97ec2b2-4696-4399-85dd-fbb715ebb79d', data)
+        axios.post('https://sheet.best/api/sheets/a6db5f73-4434-454b-bd22-52d2ccc1025f', data)
             .then((response)=> {
                 reset()
                 setSuccessRegistration(true)
@@ -32,7 +32,7 @@ const DotaFormRegistation = () => {
 
     return (
         <div className={styles.dotaFormRegistration}>
-            <h2>Регистрация CSGO</h2>
+            <h2>Регистрация Fifa</h2>
             {!successRegistration ?<form className={styles.form} onSubmit={handleSubmit(submitHandler)}>
                     <div className={styles.form_section}>
                         <label>Email</label>
@@ -101,7 +101,7 @@ const DotaFormRegistation = () => {
                                 }
                             })}
                             type='number'
-                            placeholder='введите номер телефоне через 8'
+                            placeholder='введите номер телефона через 8'
                         />
                         <div className={styles.form_error}>
                             {errors?.number && <p>{errors?.number?.message || 'Error'}</p>}
@@ -134,43 +134,20 @@ const DotaFormRegistation = () => {
                         </div>
                     </div>
                     <div className={styles.form_section}>
-                        <label>Никнейм капитана</label>
+                        <label>Ваш никнейм</label>
                         <input
                             {...register('nickname', {
                                 required: 'Поле обязательно к заполнению',
                             })}
                             type='text'
-                            placeholder='Введите никнейм'
+                            placeholder='Введите ваш игровой никнейм'
                         />
                         <div className={styles.form_error}>
                             {errors?.nickname && <p>{errors?.nickname?.message || 'Error'}</p>}
                         </div>
                     </div>
-                    <div className={styles.form_section}>
-                        <label>Название вашей команды</label>
-                        <input
-                            {...register('teamName', {
-                                required: 'Поле обязательно к заполнению',
-                            })}
-                            type='text'
-                            placeholder='Введите никнейм'
-                        />
-                        <div className={styles.form_error}>
-                            {errors?.teamName && <p>{errors?.teamName?.message || 'Error'}</p>}
-                        </div>
-                    </div>
-                    <div className={styles.steam_form_section}>
-                        <label>Steam профили всей команды</label>
-                        <textarea
-                            {...register('steamProfile', {
-                                required: 'Поле обязательно к заполнению',
-                            })}
-                            placeholder='ссылки на профили steam вас, и всех участников команды'
-                        />
-                        <div className={styles.form_error}>
-                            {errors?.steamProfile && <p>{errors?.steamProfile?.message || 'Error'}</p>}
-                        </div>
-                    </div>
+
+
 
 
                     <div className={styles.form_ckeckboxes}>
