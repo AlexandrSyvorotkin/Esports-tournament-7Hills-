@@ -18,7 +18,6 @@ import AboutProject from "./pages/MenuPages/AboutProject";
 import Contacts from "./pages/MenuPages/Contacts";
 import PhotoGalary from "./pages/MenuPages/PhotoGalary";
 import Faq from "./pages/MenuPages/FAQ";
-import DotaFormRegistration from "./Components/DIsciplinesForms/DotaFormRegistration";
 import DotaRegistration from "./pages/RegistrationPages/DotaRegistration";
 import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
 
@@ -39,17 +38,23 @@ const App = () => {
                 }}>
                 <Routes>
                     <Route path='/' element={<MainPage/>}/>
+
                     <Route path='/dota' element={<DotaRoadmap/>}/>
-                    <Route path='/csgo' element={<CsgoRoadmap />}/>
-                    <Route path='/fifa' element={<FifaRoadmap />}/>
+                    <Route path='/csgo' element={<CsgoRoadmap/>}/>
                     <Route path='/valorant' element={<ValorantRoadmap/>}/>
+                    <Route path='/fifa' element={<FifaRoadmap/>}/>
+
                     <Route path='/aboutus' element={<AboutProject />}/>
                     <Route path='/contacts' element={<Contacts />}/>
                     <Route path='/photosgalary' element={<PhotoGalary />}/>
                     <Route path='/faq' element={<Faq />}/>
                     <Route path='/aboutus' element={<AboutProject />}/>
+
                     <Route path='/dota-registration' element={<DotaRegistration />}/>
                     <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
+                    <Route path='/valorant-registration' element={<CsgoRegistration />}/>
+                    <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
+
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>
                 </ModalContext.Provider>

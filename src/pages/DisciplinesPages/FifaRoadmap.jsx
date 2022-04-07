@@ -25,6 +25,7 @@ const FifaRoadmap = ({setModalActive, modalActive}) => {
                 setModalActive={setModalActive}
                 dates={dates}
                 discipline={'FIFA'}
+                registrationPath={'/fifa-registration'}
             />
         </>
     );

@@ -185,14 +185,14 @@ const DotaFormRegistation = () => {
 
 
                     <div className={styles.registation_footer}>
-                        <Link to='/Esports-tournament-7Hills-'><ButtonModal>Главная</ButtonModal></Link>
+                        <Link to='/'><ButtonModal>Главная</ButtonModal></Link>
                         <ButtonModal type='submit' >Отравить</ButtonModal>
                     </div>
 
                 </form>
                 : <div className={styles.success_registration}>
                     <p>Регистрация прошла успешно!</p>
-                    <Link to='/Esports-tournament-7Hills-'><ButtonModal>Главная</ButtonModal></Link>
+                    <Link to='/'><ButtonModal>Главная</ButtonModal></Link>
                 </div>}
         </div>
     );

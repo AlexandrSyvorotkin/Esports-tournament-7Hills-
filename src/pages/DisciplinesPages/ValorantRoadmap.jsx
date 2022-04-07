@@ -25,6 +25,7 @@ const ValorantRoadmap = ({modalActive, setModalActive}) => {
                 setModalActive={setModalActive}
                 discipline={'VALORANT'}
                 dates={dates}
+                registrationPath={'/valorant-registration'}
                 />
         </>
     );
