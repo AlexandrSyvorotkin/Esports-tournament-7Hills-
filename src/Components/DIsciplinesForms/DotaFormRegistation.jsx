@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from './DotaFormRegistation.module.scss'
 import axios from "axios";
 import {Link} from "react-router-dom";
+import ButtonModal from "../../UI/ButtonModal";
 
 const DotaFormRegistation = () => {
 
@@ -33,7 +34,6 @@ const DotaFormRegistation = () => {
             SteamProfile: steamProfile
         }
         axios.post('https://sheet.best/api/sheets/6ab6ec50-2f81-4d80-b5a2-c874a0bab646', data).then((response)=> {
-            console.log(response)
             setEmail('')
             setName('')
             setSurname('')
@@ -57,7 +57,7 @@ const DotaFormRegistation = () => {
                     <input type="text" placeholder='Введите почту' required
                            onChange={(e) => setEmail(e.target.value)} value={email}
                     />
-                    <br/>
+                    <span className={styles.registration_border}/>
                 </div>
                 <div className={styles.form_section}>
                     <label>Имя</label>
@@ -115,18 +115,26 @@ const DotaFormRegistation = () => {
                     />
                     <br/>
                 </div>
-                <div className={styles.form_section}>
+                <div className={styles.steam_form_section}>
                     <label>Steam профиль капитана</label>
-                    <input type="text" placeholder='Важно указать никнейм капитана который будет на протяжении всего турнира' required
+                    <textarea placeholder='Важно указать никнейм капитана который будет на протяжении всего турнира' required
                            onChange={(e) => setSteamProfile(e.target.value)} value={steamProfile}
                     />
                     <br/>
                 </div>
-                <div>
-                    <button type='submit'>Отравить</button>
-                    <Link to='/Esports-tournament-7Hills-'><button>Главная</button></Link>
+                <div className={styles.form_ckeckboxes}>
+                    <div className={styles.agreement}>
+                        <input type="checkbox" id='age'/>
+                        <label htmlFor='age' >Мне исполнилось 18 лет</label></div>
+                    <div className={styles.agreement}>
+                        <input id='agreement' type="checkbox" />
+                        <label htmlFor='agreement'>Я согласен на обработку персональных данных</label>
+                    </div>
                 </div>
-
+                <div className={styles.registation_footer}>
+                    <ButtonModal type='submit'>Отравить</ButtonModal>
+                    <Link to='/Esports-tournament-7Hills-'><ButtonModal>Главная</ButtonModal></Link>
+                </div>
             </form>
         </div>
     );

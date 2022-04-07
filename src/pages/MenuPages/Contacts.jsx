@@ -26,9 +26,10 @@ const Contacts = () => {
         <div className={styles.contacts}>
             <h2 className={styles.contacts_header}>Наша команда</h2>
             <div className={styles.contacts_information}>
-                {Contacts.map(contact => {
+                {Contacts.map((contact, i) => {
                     return (
                         <ContactCard
+                            key={i}
                             name={contact.name}
                             number={contact.number}
                             position={contact.position}
