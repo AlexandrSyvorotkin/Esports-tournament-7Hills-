@@ -102,7 +102,7 @@ const DotaFormRegistration = () => {
                             }
                         })}
                         type='number'
-                        placeholder='введите номер телефоне через 8'
+                        placeholder='введите номер телефона через 8'
                     />
                     <div className={styles.form_error}>
                         {errors?.number && <p>{errors?.number?.message || 'Error'}</p>}
@@ -160,13 +160,13 @@ const DotaFormRegistration = () => {
                         {errors?.teamName && <p>{errors?.teamName?.message || 'Error'}</p>}
                     </div>
                 </div>
-                    <div className={styles.steam_form_section}>
-                        <label>Steam профили всей команды</label>
-                        <textarea
+                    <div className={styles.form_section}>
+                        <label>Steam профиль капитана</label>
+                        <input
                             {...register('steamProfile', {
                                 required: 'Поле обязательно к заполнению',
                             })}
-                            placeholder='ссылки на профили steam вас, и всех участников команды'
+                            placeholder='steam профиль'
                         />
                         <div className={styles.form_error}>
                             {errors?.steamProfile && <p>{errors?.steamProfile?.message || 'Error'}</p>}

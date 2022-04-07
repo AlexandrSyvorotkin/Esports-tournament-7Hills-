@@ -159,9 +159,9 @@ const CsGoFormRegistation = () => {
                             {errors?.teamName && <p>{errors?.teamName?.message || 'Error'}</p>}
                         </div>
                     </div>
-                    <div className={styles.steam_form_section}>
+                    <div className={styles.form_section}>
                         <label>Steam профили всей команды</label>
-                        <textarea
+                        <input
                             {...register('steamProfile', {
                                 required: 'Поле обязательно к заполнению',
                             })}
