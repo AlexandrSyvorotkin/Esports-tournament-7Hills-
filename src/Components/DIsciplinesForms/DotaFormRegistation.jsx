@@ -18,9 +18,12 @@ const DotaFormRegistation = () => {
     const [teamName, setTeamName] = useState('')
     const [steamProfile, setSteamProfile] = useState('')
 
+    // checkbox state
+    // const [ageCheckBox, setAgeCheckBox] = useState(false)
+    // const [agreement, setAgreement] = useState(false)
+
     const submitHandler = (e) => {
         e.preventDefault()
-        console.log(email, name, surname, patronymic)
         const data = {
             Name: email,
             Age: name,
