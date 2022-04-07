@@ -23,7 +23,7 @@ const ValorantFormRegistration = () => {
 
     const submitHandler = (data) => {
         console.log(data)
-        axios.post('https://sheet.best/api/sheets/6ab6ec50-2f81-4d80-b5a2-c874a0bab646', data)
+        axios.post('https://sheet.best/api/sheets/9db726be-e586-4965-aeb6-55f5a35426ea', data)
             .then((response)=> {
                 reset()
                 setSuccessRegistration(true)
@@ -102,7 +102,7 @@ const ValorantFormRegistration = () => {
                                 }
                             })}
                             type='number'
-                            placeholder='введите номер телефоне через 8'
+                            placeholder='введите номер телефона через 8'
                         />
                         <div className={styles.form_error}>
                             {errors?.number && <p>{errors?.number?.message || 'Error'}</p>}
@@ -148,6 +148,18 @@ const ValorantFormRegistration = () => {
                         </div>
                     </div>
                     <div className={styles.form_section}>
+                        <label>Riot ID#Метка</label>
+                        <input
+                            {...register('riotId', {
+                                required: 'Поле обязательно к заполнению',
+                            })}
+                            placeholder='ссылки на профили steam вас, и всех участников команды'
+                        />
+                        <div className={styles.form_error}>
+                            {errors?.riotId && <p>{errors?.riotId?.message || 'Error'}</p>}
+                        </div>
+                    </div>
+                    <div className={styles.form_section}>
                         <label>Название вашей команды</label>
                         <input
                             {...register('teamName', {
@@ -160,19 +172,6 @@ const ValorantFormRegistration = () => {
                             {errors?.teamName && <p>{errors?.teamName?.message || 'Error'}</p>}
                         </div>
                     </div>
-                    <div className={styles.steam_form_section}>
-                        <label>Steam профили всей команды</label>
-                        <textarea
-                            {...register('steamProfile', {
-                                required: 'Поле обязательно к заполнению',
-                            })}
-                            placeholder='ссылки на профили steam вас, и всех участников команды'
-                        />
-                        <div className={styles.form_error}>
-                            {errors?.steamProfile && <p>{errors?.steamProfile?.message || 'Error'}</p>}
-                        </div>
-                    </div>
-
 
                     <div className={styles.form_ckeckboxes}>
                         <div className={styles.agreement}>

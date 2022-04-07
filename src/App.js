@@ -20,6 +20,7 @@ import PhotoGalary from "./pages/MenuPages/PhotoGalary";
 import Faq from "./pages/MenuPages/FAQ";
 import DotaRegistration from "./pages/RegistrationPages/DotaRegistration";
 import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
+import ValorantFormRegistration from "./Components/DIsciplinesForms/ValorantFormRegistration";
 
 
 
@@ -52,7 +53,7 @@ const App = () => {
 
                     <Route path='/dota-registration' element={<DotaRegistration />}/>
                     <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
-                    <Route path='/valorant-registration' element={<CsgoRegistration />}/>
+                    <Route path='/valorant-registration' element={<ValorantFormRegistration />}/>
                     <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
 
                     <Route path='*' element={<NotFound/>}/>
