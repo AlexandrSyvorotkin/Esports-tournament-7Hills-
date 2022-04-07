@@ -39,7 +39,7 @@ const Contacts = () => {
                 })}
             </div>
             <div className={styles.concats_footer}>
-                <Link to='/Esports-tournament-7Hills-/' className={styles.a}><ButtonModal>Назад</ButtonModal></Link>
+                <Link to='/' className={styles.a}><ButtonModal>Назад</ButtonModal></Link>
             </div>
         </div>
     );

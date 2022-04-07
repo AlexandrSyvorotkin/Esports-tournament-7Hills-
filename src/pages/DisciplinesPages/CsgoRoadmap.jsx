@@ -24,7 +24,7 @@ const CsgoRoadmap = ({modalActive, setModalActive}) => {
                 dates={dates}
                 modalActive={modalActive}
                 setModalActive={setModalActive}
-                registrationPath={'/Esports-tournament-7Hills-/cs-go-registration'}
+                registrationPath={'/cs-go-registration'}
             />
         </>
     );

@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 import ButtonModal from "../../UI/ButtonModal";
 import {useForm} from "react-hook-form";
 
-const CsGoFormRegistation = () => {
+const DotaFormRegistation = () => {
 
     const [successRegistration, setSuccessRegistration] = useState(false)
 
@@ -185,19 +185,20 @@ const CsGoFormRegistation = () => {
 
 
                     <div className={styles.registation_footer}>
-                        <Link to='/'><ButtonModal>Главная</ButtonModal></Link>
+                        <Link to='/Esports-tournament-7Hills-'><ButtonModal>Главная</ButtonModal></Link>
                         <ButtonModal type='submit' >Отравить</ButtonModal>
                     </div>
 
                 </form>
                 : <div className={styles.success_registration}>
                     <p>Регистрация прошла успешно!</p>
-                    <Link to='/'><ButtonModal>Главная</ButtonModal></Link>
+                    <Link to='/Esports-tournament-7Hills-'><ButtonModal>Главная</ButtonModal></Link>
                 </div>}
         </div>
     );
 };
 
-export default CsGoFormRegistation;
+export default DotaFormRegistation;
+
 
 

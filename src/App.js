@@ -38,18 +38,18 @@ const App = () => {
                     CloseModal: CloseModalHandler
                 }}>
                 <Routes>
-                    <Route path='/Esports-tournament-7Hills-' element={<MainPage/>}/>
-                    <Route path='/Esports-tournament-7Hills-/dota' element={<DotaRoadmap/>}/>
-                    <Route path='/Esports-tournament-7Hills-/csgo' element={<CsgoRoadmap />}/>
-                    <Route path='/Esports-tournament-7Hills-/fifa' element={<FifaRoadmap />}/>
-                    <Route path='/Esports-tournament-7Hills-/valorant' element={<ValorantRoadmap />}/>
-                    <Route path='/Esports-tournament-7Hills-/aboutus' element={<AboutProject />}/>
-                    <Route path='/Esports-tournament-7Hills-/contacts' element={<Contacts />}/>
-                    <Route path='/Esports-tournament-7Hills-/photosgalary' element={<PhotoGalary />}/>
-                    <Route path='/Esports-tournament-7Hills-/faq' element={<Faq />}/>
-                    <Route path='/Esports-tournament-7Hills-/aboutus' element={<AboutProject />}/>
-                    <Route path='/Esports-tournament-7Hills-/dota-registration' element={<DotaRegistration />}/>
-                    <Route path='/Esports-tournament-7Hills-/cs-go-registration' element={<CsgoRegistration />}/>
+                    <Route path='/' element={<MainPage/>}/>
+                    <Route path='/dota' element={<DotaRoadmap/>}/>
+                    <Route path='/csgo' element={<CsgoRoadmap />}/>
+                    <Route path='/fifa' element={<FifaRoadmap />}/>
+                    <Route path='/valorant' element={<ValorantRoadmap/>}/>
+                    <Route path='/aboutus' element={<AboutProject />}/>
+                    <Route path='/contacts' element={<Contacts />}/>
+                    <Route path='/photosgalary' element={<PhotoGalary />}/>
+                    <Route path='/faq' element={<Faq />}/>
+                    <Route path='/aboutus' element={<AboutProject />}/>
+                    <Route path='/dota-registration' element={<DotaRegistration />}/>
+                    <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>
                 </ModalContext.Provider>

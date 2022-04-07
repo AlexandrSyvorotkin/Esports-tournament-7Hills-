@@ -10,10 +10,10 @@ const Disciplines = () => {
 
     return (
         <section className={styles.disciplines}>
-            <SingleDiscipline DisciplineName={'Dota 2'} img={Dota2} RoutingPath={'/Esports-tournament-7Hills-/dota'}/>
-            <SingleDiscipline DisciplineName={'CS:GO'} img={CSGO} RoutingPath={'/Esports-tournament-7Hills-/csgo'}/>
-            <SingleDiscipline DisciplineName={'VALORANT'} img={Valorant} RoutingPath={'/Esports-tournament-7Hills-/valorant'}/>
-            <SingleDiscipline DisciplineName={'FIFA 22'} img={FIFA} RoutingPath={'/Esports-tournament-7Hills-/fifa'}/>
+            <SingleDiscipline DisciplineName={'Dota 2'} img={Dota2} RoutingPath={'/dota'}/>
+            <SingleDiscipline DisciplineName={'CS:GO'} img={CSGO} RoutingPath={'/csgo'}/>
+            <SingleDiscipline DisciplineName={'VALORANT'} img={Valorant} RoutingPath={'/valorant'}/>
+            <SingleDiscipline DisciplineName={'FIFA 22'} img={FIFA} RoutingPath={'/fifa'}/>
         </section>
     );
 };

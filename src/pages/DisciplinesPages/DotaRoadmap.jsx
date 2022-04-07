@@ -26,7 +26,7 @@ const DotaRoadmap = ({modalActive, setModalActive}) => {
                 setModalActive={setModalActive}
                 discipline={'Dota'}
                 dates={dates}
-                registrationPath={'/Esports-tournament-7Hills-/dota-registration'}
+                registrationPath={'/dota-registration'}
             />
         </>
     );

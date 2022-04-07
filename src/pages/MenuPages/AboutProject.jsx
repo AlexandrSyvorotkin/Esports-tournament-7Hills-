@@ -40,7 +40,7 @@ const AboutProject = () => {
                     <img src={VK} alt=""/>
                 </div>
             </div>
-            <Link to='/Esports-tournament-7Hills-/'><ButtonModal>Назад</ButtonModal></Link>
+            <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
         </div>
     );
 };

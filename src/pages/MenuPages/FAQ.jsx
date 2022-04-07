@@ -59,7 +59,7 @@ const Faq = () => {
                 })}
             </div>
             <div className={styles.faq_footer}>
-                <Link to='/Esports-tournament-7Hills-/'><ButtonModal>Назад</ButtonModal></Link>
+                <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>
         </div>
     );
