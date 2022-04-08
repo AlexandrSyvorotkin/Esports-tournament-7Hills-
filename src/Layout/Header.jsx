@@ -7,11 +7,6 @@ import sevenHills from '../Assets/7hills.jpg'
 
 const Header = () => {
 
-    // const ChangeWebSiteToMfpHandler = () => {
-    //     window.location.href='https://mtuf.ru/'
-    //     // Костыль, можно\нужно убрать
-    // } onClick={ChangeWebSiteToMfpHandler}
-
     return (
         <header className={styles.header} >
             <div className={styles.header_logo}>
@@ -22,7 +17,7 @@ const Header = () => {
             </div>
             <div className={styles.organization}>
                 <div className={styles.mfp}>
-                    <img src={MFP} alt=""/>
+                    <a href="https://mtuf.ru/"><img src={MFP} alt=""/></a>
                 </div>
                 <div className={styles.moscow}>
                     <div className={styles.moscow_img}>

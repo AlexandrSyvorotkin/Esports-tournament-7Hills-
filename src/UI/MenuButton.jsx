@@ -5,13 +5,13 @@ import styles from './MenuButton.module.scss'
 
 const MenuButton = ({onClick, children}) => {
     return (
-        <a className={styles.menu_button} onClick={onClick} href='#'>
+        <div className={styles.menu_button} onClick={onClick}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             {children}
-        </a>
+        </div>
     );
 };
 
