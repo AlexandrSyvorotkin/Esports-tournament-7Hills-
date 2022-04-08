@@ -24,6 +24,7 @@ import DotaRegistration from "./pages/RegistrationPages/DotaRegistration";
 import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
 import ValorantRegistration from "./pages/RegistrationPages/ValorantRegistration";
 import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
+import AllRegistration from "./pages/MenuPages/AllRegistration";
 
 
 
@@ -53,6 +54,7 @@ const App = () => {
                     <Route path='/aboutus' element={<AboutProject />}/>
                     <Route path='/contacts' element={<Contacts />}/>
                     <Route path='/photosgalary' element={<PhotoGalary />}/>
+                    <Route path='/registration' element={<AllRegistration />}/>
                     <Route path='/faq' element={<Faq />}/>
                     <Route path='/aboutus' element={<AboutProject />}/>
 

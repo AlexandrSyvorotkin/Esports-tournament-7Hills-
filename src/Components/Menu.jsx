@@ -12,23 +12,24 @@ const Menu = ({setMenuActive, menuActive}) => {
             <div className={styles.menu_content}>
                 <ul>
                     <li>
-                        <Link to='/'><MenuButton>Главная</MenuButton></Link>
+                        <MenuButton onClick={() => setMenuActive(false)}>Главная</MenuButton>
                     </li>
                     <li>
                         <Link to='/contacts'><MenuButton>Контакты</MenuButton></Link>
                     </li>
+                    {/*<li>*/}
+                    {/*    <Link to='/photosgalary'><MenuButton>Галерея</MenuButton></Link>*/}
+                    {/*</li>*/}
                     <li>
-                        <Link to='/photosgalary'><MenuButton>Галерея</MenuButton></Link>
+                        <Link to='/aboutus'><MenuButton>О проекте</MenuButton></Link>
+                    </li>
+                    <li>
+                        <Link to='/registration'><MenuButton>Регистрация</MenuButton></Link>
                     </li>
                     <li>
                         <Link to='/faq'><MenuButton>FAQ</MenuButton></Link>
                     </li>
-                    <li>
-                        <Link to='/aboutus'><MenuButton>О проекте</MenuButton></Link>
-                    </li>
-                    {/*<li>*/}
-                    {/*    <Link to=''><MenuButton>Партнеры</MenuButton></Link>*/}
-                    {/*</li>*/}
+
                 </ul>
             </div>
         </div>
