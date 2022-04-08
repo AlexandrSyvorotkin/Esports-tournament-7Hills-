@@ -3,8 +3,8 @@ import React from 'react';
 import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import dota from '../../Assets/img-for-roadmap/dota2.png'
 import styles from './DotaRoadmap.module.scss'
-import Menu from "../../Components/Menu";
-import HamburgerMenu from "../../Components/HamburgerMenu";
+
+import dotaPosition from '../../positions/Dota.doc'
 
 const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) => {
 
@@ -29,6 +29,8 @@ const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) =
                 discipline={'Dota'}
                 dates={dates}
                 registrationPath={'/dota-registration'}
+                positionPath={dotaPosition}
+                positionDoc={"dota.doc"}
             />
         </>
     );

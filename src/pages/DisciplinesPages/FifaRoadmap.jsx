@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './FifaRoadmap.module.scss'
 import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import fifa from '../../Assets/img-for-roadmap/fifa.png'
+import fifaPosition from '../../positions/Fifa.doc'
 
 const FifaRoadmap = ({setModalActive, modalActive}) => {
 
@@ -26,6 +27,8 @@ const FifaRoadmap = ({setModalActive, modalActive}) => {
                 dates={dates}
                 discipline={'FIFA'}
                 registrationPath={'/fifa-registration'}
+                positionDoc={fifaPosition}
+                positionPath={"Fifa.doc"}
             />
         </>
     );

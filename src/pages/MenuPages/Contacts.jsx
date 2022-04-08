@@ -3,7 +3,7 @@ import styles from './Contacts.module.scss'
 
 // Photo imports
 import Zaf from '../../Assets/Photoes/Boss.jpg'
-import Ya from '../../Assets/Photoes/Я.jpg'
+import Ya from '../../Assets/Photoes/me.jpg'
 import Padalko from '../../Assets/Photoes/Падалко.jpg'
 import Valera from '../../Assets/Photoes/Валера.jpg'
 
