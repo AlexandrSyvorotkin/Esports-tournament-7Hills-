@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './CsgoRoadmap.module.scss'
 import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import csgo from '../../Assets/img-for-roadmap/csgo.png'
+import csgoPosition from '../../positions/csgo.doc'
 
 const CsgoRoadmap = ({modalActive, setModalActive}) => {
 
@@ -25,6 +26,8 @@ const CsgoRoadmap = ({modalActive, setModalActive}) => {
                 modalActive={modalActive}
                 setModalActive={setModalActive}
                 registrationPath={'/cs-go-registration'}
+                positionPath={csgoPosition}
+                positionDoc={'csgo.doc'}
             />
         </>
     );
