@@ -9,10 +9,10 @@ import dotaPosition from '../../positions/Dota.doc'
 const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) => {
 
     const dates = {
-        qualification: '2 мая',
-        groupStage: '2-3 мая',
-        playoffs: '8-10 мая',
-        final: '11-13 июня'
+        qualification: '11 мая',
+        groupStage: '12-15 мая',
+        playoffs: '16-18 мая',
+        final: ''
     }
 
     return (

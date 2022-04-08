@@ -8,10 +8,10 @@ import valorantPosition from '../../positions/Valorant.doc'
 const ValorantRoadmap = ({modalActive, setModalActive}) => {
 
     const dates = {
-        qualification: '2 мая',
-        groupStage: '2-3 мая',
-        playoffs: '8-10 мая',
-        final: '11-13 июня'
+        qualification: '11 мая',
+        groupStage: '12-15 мая',
+        playoffs: '16-18 мая',
+        final: ''
     }
 
     return (
