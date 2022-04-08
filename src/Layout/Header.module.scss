@@ -9,28 +9,23 @@
         margin-left: 10px;
     }
     @media (min-width: 0) and (max-width: 576px)  {
+        justify-content: center;
         margin-top: 30px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
     &_logo {
         position: relative;
         display: flex;
         align-items: center;
-        & > img {
-            @media (min-width: 0) and (max-width: 576px) {
-                display: none;
-            }
-        }
     }
     &_logo_content {
         position: absolute;
         color: var(--main-color);
-        left: -9px;
+        left: 13px;
         font-weight: 400;
-        font-size: 26px;
+        font-size: 35px;
         line-height: 34px;
         font-family: var(--font-family-main)
-
     }
     &_logo_name {
         margin: 0;
@@ -48,9 +43,8 @@
             top: 14px;
         }
         @media (min-width: 0) and (max-width: 576px)  {
-            top: 7px;
-            font-size: 4px;
-            left: 19px;
+            font-size: 5px;
+            left: 65px;
         }
     }
     &_logo_name_description  {
@@ -82,11 +76,8 @@
         margin-left: 10px;
     }
     @media (min-width: 0) and (max-width: 576px)  {
-        margin-left: 10px;
+        margin-left: 0px;
         height: 30px;
-    }
-    @media (min-width: 0) and (max-width: 576px) {
-        margin-left: 5px;
     }
     .mfp {
         width: 130px;
@@ -94,10 +85,6 @@
         @media (max-width: 768px) {
             width: 100px;
             height: 40px;
-        }
-        @media (min-width: 0) and (max-width: 576px) {
-            width: 80px;
-            height: 30px;
         }
         & > a > img {
             width: 100%;
@@ -114,9 +101,15 @@
             width: 200px;
             height: 70px;
         }
-        @media (min-width: 0px) and (max-width: 576px) {
+        @media (max-width: 576px) {
             width: 130px;
             height: 60px;
+            margin-left: 2px;
+        }
+        @media (min-width: 0) and (max-width: 390px) {
+            width: 118px;
+            height: 50px;
+        ;
         }
         & > img {
             width: 100%;

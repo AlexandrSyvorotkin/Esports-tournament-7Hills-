@@ -17,7 +17,7 @@
     }
     @media (min-width: 0) and (max-width: 576px)  {
         right: 6px;
-        top: 66px;
+        top: 15px;
     }
     & > span {
         display: block;
@@ -27,7 +27,7 @@
         height: 4px;
         background-color: #ffffff;
         @media (min-width: 0) and (max-width: 576px)  {
-            width: 20px;
+            width: 30px;
         }
     }
 
@@ -41,7 +41,7 @@
         transition: 0.3s;
         transform: translateY(-15px);
         @media (min-width: 0) and (max-width: 576px)  {
-            width: 20px;
+            width: 30px;
             transform: translateY(-10px);
         }
     }
@@ -54,7 +54,7 @@
         transition: 0.3s;
         transform: translateY(10px);
         @media (min-width: 0) and (max-width: 576px)  {
-            width: 20px;
+            width: 30px;
             transform: translateY(6px);
         }
     }
