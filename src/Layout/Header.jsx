@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import Logo from "../Assets/mainLogo.svg";
 import MFP from '../Assets/MFP.svg'
 import moscow from '../Assets/MoscowKomitet.png'
-import sevenHills from '../Assets/7hills.jpg'
+import kom from '../Assets/komitetbelii.png'
 
 const Header = () => {
 
@@ -19,15 +19,10 @@ const Header = () => {
                 <div className={styles.mfp}>
                     <a href="https://mtuf.ru/"><img src={MFP} alt=""/></a>
                 </div>
-                <div className={styles.moscow}>
-                    <div className={styles.moscow_img}>
-                        <img src={moscow} alt=""/>
-                    </div>
-                    <div className={styles.moscow_text}>
-                        <p className={styles.moscow_commitette}>Комитет <br/> общественных связей</p>
-                        <p>и молодежной политики города москвы</p>
-                    </div>
+                <div className={styles.moscow_text}>
+                    <img src={kom} alt=""/>
                 </div>
+
             </div>
         </header>
     );
