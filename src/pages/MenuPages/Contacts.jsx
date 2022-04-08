@@ -18,7 +18,7 @@ const Contacts = () => {
         {photo: Zaf, name: 'Сафаров Зафар', position: 'Организатор', telegram: '#', vkontakte:'https://vk.com/safarovzafar'},
         {photo: Ya, name: 'Сывороткин Александр', position: 'Администратор dota и fifa дисциплины', number: '+79164419605', telegram: 'https://t.me/AlexSyvorotkin', vkontakte:'https://vk.com/suvorotkinalex'},
         {photo: Valera, name: 'Ситкин Валерий ', position: 'Администратор cs-go дисциплины', number: '+79309469544', telegram: 'https://t.me/encose', vkontakte:'https://vk.com/grimmjowq'},
-        {photo: Padalko, name: 'Падалко Александр', position: 'Администратор valorant дисциплины', number: '+7914563912', telegram: 'https://t.me/DarcDent', vkontakte:'https://vk.com/darcdent'},
+        {photo: Padalko, name: 'Падалко Александр', position: 'Администратор valorant дисциплины', number: '+79779715065', telegram: 'https://t.me/DarcDent', vkontakte:'https://vk.com/darcdent'},
 
 
     ]

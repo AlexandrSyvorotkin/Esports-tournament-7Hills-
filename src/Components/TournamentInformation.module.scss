@@ -1,5 +1,5 @@
 .tournament_information {
-  margin-top: 100px;
+  margin-top: 80px;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -32,6 +32,7 @@
     font-size: 10px;
   }
 
+
   & > p:not(:last-child) {
     padding-left: 160px;
     @media (max-width: 1600px) {
@@ -45,6 +46,50 @@
     }
     @media (min-width: 0) and (max-width: 576px)  {
       padding-left: 35px;
+    }
+  }
+}
+
+
+.vkLink {
+  text-align: center;
+  cursor: pointer;
+  & > a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--font-family-main);
+    color: white;
+    background-image: linear-gradient(
+                    to right,
+                    #00ff7f 50%,
+                    #ffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    &:before {
+      content: '';
+      background: #00ff7f;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      background-position: 0;
+      &:before {
+        width: 100%;
+      }
     }
   }
 
