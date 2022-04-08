@@ -34,6 +34,9 @@ const ValorantFormRegistration = () => {
     return (
         <div className={styles.dotaFormRegistration}>
             <h2>Регистрация Valorant</h2>
+            <div className={styles.access}>
+                <p>Турнир проводится исключительно для молодёжи города Москвы. Участие других регионов не допускается.</p>
+            </div>
             {!successRegistration ?<form className={styles.form} onSubmit={handleSubmit(submitHandler)}>
                     <div className={styles.form_section}>
                         <label>Email</label>
