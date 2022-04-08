@@ -1,28 +1,21 @@
 import React from 'react';
 import styles from "./Header.module.scss";
-import Logo from "../Assets/mainLogo.svg";
 import MFP from '../Assets/MFP.svg'
-import moscow from '../Assets/MoscowKomitet.png'
 import kom from '../Assets/komitetbelii.png'
+import SevenHills from '../Assets/Screenshot_8.png'
 
 const Header = () => {
 
     return (
-        <header className={styles.header} >
-            <div className={styles.header_logo}>
-                <img src={Logo} alt="logo"/>
-                <p className={styles.header_logo_content}>7</p>
-                <p className={styles.header_logo_name}>киберспортивный турнир</p>
-                <p className={styles.header_logo_name_description}>Холмов</p>
+        <header className={styles.header}>
+            <div className={styles.Sevenhills_logo}>
+                <img src={SevenHills} alt="logo"/>
             </div>
-            <div className={styles.organization}>
-                <div className={styles.mfp}>
-                    <a href="https://mtuf.ru/"><img src={MFP} alt=""/></a>
-                </div>
-                <div className={styles.moscow_text}>
-                    <img src={kom} alt=""/>
-                </div>
-
+            <div className={styles.mfp}>
+                <a href="https://mtuf.ru/"><img src={MFP} alt=""/></a>
+            </div>
+            <div className={styles.moscow_text}>
+                <a href="https://www.mos.ru/kos/"><img src={kom} alt=""/></a>
             </div>
         </header>
     );
