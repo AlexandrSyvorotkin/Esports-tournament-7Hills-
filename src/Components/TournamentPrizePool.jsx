@@ -25,7 +25,7 @@ const TournamentPrizePool = () => {
                 variants={marqueeVariants}
                 animate="animate"
                 className={styles.prize_pool_ticker}>
-                ПРИЗОВОЙ ФОНД <p>100 000</p> РУБЛЕЙ
+                ПРИЗОВОЙ ФОНД <p>200 000</p> РУБЛЕЙ
                 <div className={styles.green_logo}><img src={greenLogo} alt="greenLogo"/></div>
             </motion.div>
         </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import styles from "./Header.module.scss";
 import Logo from "../Assets/mainLogo.svg";
 import MFP from '../Assets/MFP.svg'
+import moscow from '../Assets/MoscowKomitet.png'
+import sevenHills from '../Assets/7hills.jpg'
 
 const Header = () => {
 
@@ -19,11 +21,18 @@ const Header = () => {
                 <p className={styles.header_logo_name_description}>Холмов</p>
             </div>
             <div className={styles.organization}>
-                <div>
+                <div className={styles.mfp}>
                     <img src={MFP} alt=""/>
                 </div>
-                <div className={styles.organization_content}/>
-                <a className={styles.organization_link} href='https://mtuf.ru/'>ОРГАНИЗАТОР</a>
+                <div className={styles.moscow}>
+                    <div className={styles.moscow_img}>
+                        <img src={moscow} alt=""/>
+                    </div>
+                    <div className={styles.moscow_text}>
+                        <p className={styles.moscow_commitette}>Комитет <br/> общественных связей</p>
+                        <p>и молодежной политики города москвы</p>
+                    </div>
+                </div>
             </div>
         </header>
     );
