@@ -7,10 +7,25 @@ import ButtonSecondary from "../../UI/ButtonSecondary";
 
 const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
 
+    const [hoverEffect, setHoverEffect] = useState(false)
+
+
     return (
-        <div className={styles.single_discipline}>
+        <div className={styles.single_discipline}
+             // onMouseEnter={()=> setHoverEffect(true)}
+             // onMouseLeave={()=> setHoverEffect(false)}
+            >
             <img className={styles.single_discipline_image} src={img} alt=""/>
-                <Link to={RoutingPath}>{DisciplineName}</Link>
+            {!hoverEffect ?
+                <Link to={RoutingPath}>{DisciplineName}</Link> :
+                <motion.p
+                    animate={{ y: -20 }}
+                    transition={{ ease: "easeOut", duration: 0.5 }}
+                >ПОДРОБНЕЕ
+                </motion.p>}
+            {/*<div className={styles.arrow}>*/}
+            {/*    <img src={Arrow} alt=""/>*/}
+            {/*</div>*/}
         </div>
     );
 };
