@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 import styles from './SingleDiscipline.module.scss'
-import Arrow from '../../Assets/whiteArrow.svg'
 import {motion} from 'framer-motion'
 import {Link} from "react-router-dom";
-import ButtonSecondary from "../../UI/ButtonSecondary";
 
 const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
 
@@ -11,7 +9,8 @@ const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
 
 
     return (
-        <div className={styles.single_discipline}
+        <Link className={styles.single_discipline}
+              to={RoutingPath}
              // onMouseEnter={()=> setHoverEffect(true)}
              // onMouseLeave={()=> setHoverEffect(false)}
             >
@@ -26,7 +25,7 @@ const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
             {/*<div className={styles.arrow}>*/}
             {/*    <img src={Arrow} alt=""/>*/}
             {/*</div>*/}
-        </div>
+        </Link>
     );
 };
 
