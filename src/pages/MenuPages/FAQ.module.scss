@@ -7,6 +7,7 @@
       font-size: 50px;
       color: #FFFFFF;
       text-align: center;
+      font-family: var(--font-family-secondary);
     }
   }
   .faq_section {
@@ -16,6 +17,7 @@
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 30px;
+    font-family: var(--font-family-main);
     @media (max-width: 1400px) {
       width: 65%;
     }
