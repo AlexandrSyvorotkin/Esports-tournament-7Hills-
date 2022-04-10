@@ -7,13 +7,11 @@ import TournamentInformation from "./TournamentInformation";
 const Tournament = () => {
 
     return (
-        <section>
-            <div className={styles.tournament_section}>
+            <section className={styles.tournament_section}>
                 <TournamentName/>
                 <TournamentPrizePool/>
                 <TournamentInformation/>
-            </div>
-        </section>
+            </section>
     )
         ;
 };
