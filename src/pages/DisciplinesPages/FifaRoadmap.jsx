@@ -10,7 +10,7 @@ const FifaRoadmap = ({setModalActive, modalActive}) => {
         qualification: '2 мая',
         groupStage: '3-6 мая',
         playoffs: '7-9 мая',
-        final: ''
+        final: '29 мая'
     }
 
     return (

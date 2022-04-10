@@ -11,7 +11,7 @@ const ValorantRoadmap = ({modalActive, setModalActive}) => {
         qualification: '11 мая',
         groupStage: '12-15 мая',
         playoffs: '16-18 мая',
-        final: ''
+        final: '29 мая'
     }
 
     return (

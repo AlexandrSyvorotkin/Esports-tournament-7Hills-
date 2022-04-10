@@ -12,7 +12,7 @@ const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) =
         qualification: '11 мая',
         groupStage: '12-15 мая',
         playoffs: '16-18 мая',
-        final: ''
+        final: '28 мая'
     }
 
     return (
