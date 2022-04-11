@@ -1,13 +1,16 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import styles from './Modal.module.scss'
-import ModalContext from "../context/modal-context";
 
-const Modal = ({active, setActive, children}) => {
-    const context = useContext(ModalContext)
+const Modal = ({children, visible, setVisible}) => {
+
+    const modalClasses = [styles.modal]
+    if (visible) {
+        modalClasses.push(styles.active)
+    }
 
     return (
-        <div className={styles.modal} onClick={context.CloseModal}>
-            <div className={styles.modal_content} onClick={e => e.stopPropagation()}>
+        <div className={modalClasses.join(' ')} onClick={()=> setVisible(false)}>
+            <div className={styles.modal_content}>
                 {children}
             </div>
         </div>

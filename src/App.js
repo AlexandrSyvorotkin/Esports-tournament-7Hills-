@@ -30,19 +30,19 @@ import AllRegistration from "./pages/MenuPages/AllRegistration";
 
 const App = () => {
 
-    const [modalActive, setModalActive] = useState(false)
-    const CloseModalHandler = () => setModalActive(false)
-    const OpenModalHandler = () => setModalActive(true)
+    // const [modal, setModal] = useState(false)
+    // const CloseModalHandler = () => setModal(false)
+    // const OpenModalHandler = () => setModal(true)
 
 
 
     return (
             <>
-                <ModalContext.Provider value={{
-                    isModalOpened: modalActive,
-                    OpenModal: OpenModalHandler,
-                    CloseModal: CloseModalHandler
-                }}>
+                {/*<ModalContext.Provider value={{*/}
+                {/*    isModalOpened: modal,*/}
+                {/*    OpenModal: OpenModalHandler,*/}
+                {/*    CloseModal: CloseModalHandler*/}
+                {/*}}>*/}
                 <Routes>
                     <Route path='/' element={<MainPage/>}/>
 
@@ -65,7 +65,7 @@ const App = () => {
 
                     <Route path='*' element={<NotFound/>}/>
                 </Routes>
-                </ModalContext.Provider>
+                {/*</ModalContext.Provider>*/}
             </>
     )
 }
