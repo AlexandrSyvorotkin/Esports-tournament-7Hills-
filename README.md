@@ -4,3 +4,4 @@
 
 ### Стек: React, React-router, React-Hook-Form, Framer-Motion, scss. 
 
+![image](https://user-images.githubusercontent.com/54777402/162930557-83886b51-e34a-4394-bfea-362f19ee8870.png)
