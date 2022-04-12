@@ -1,8 +1,6 @@
 # Сайт киберспортвного турнира Московской Федерации Профсоюзов "7 Холмов"
 
-## Все еще в работе !
-
-## Макет: https://www.figma.com/file/xgjjR2cMOK1DQfbZKDWb4P/7-hills-tournament-web-site
-
 ## Ссылка на сайт: http://xn--b1afsdbkcs2b7d.xn--p1ai/ (это punnycode из за того что домен у сайта на русском языке, он формирует такой код заменяющий кирилические символы, на сайт можно зайти так же если в браузере прописать Семьхолмов.рф)
+
+# Стек: React, React-router, React-Hook-Form, Framer-Motion, scss. 
 
