@@ -4,20 +4,26 @@ import styles from "./TournamentStage.module.scss";
 import ButtonModal from "../UI/ButtonModal";
 import Modal from "../UI/Modal";
 
-const TournamentStage = ({stage, dates, modalText}) => {
+const TournamentStage = ({stage, StageDates, modalText, arrow}) => {
+
 
     const [modal, setModal] = useState(false)
+
     return (
         <>
-            <div className={styles.stage} onClick={()=>setModal(true)}>
-                <span>{stage}</span>
-                <p className={styles.dates}>{dates.qualification}</p>
+            <div className={styles.info}>
+                <div className={styles.stage} onClick={() => setModal(true)}>
+                    <span>{stage}</span>
+                </div>
+                <div className={styles.dates}>
+                    <p>{StageDates}</p>
+                </div>
             </div>
-            <div>
+            {arrow ?
                 <div className={styles.arrow_icon}/>
-            </div>
+             : null}
             {ReactDOM.createPortal(<Modal visible={modal} setVisible={setModal}>{modalText}
-                <ButtonModal onClick={()=> setModal(false)}>Закрыть</ButtonModal>
+                <ButtonModal onClick={() => setModal(false)}>Закрыть</ButtonModal>
             </Modal>, document.getElementById('modal'))}
         </>
     );

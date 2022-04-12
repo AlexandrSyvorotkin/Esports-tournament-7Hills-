@@ -1,7 +1,6 @@
 import './App.module.scss';
 import {Route, Routes} from "react-router-dom";
-import {useState} from "react";
-import ModalContext from "./context/modal-context";
+
 
 // Disciplines Routes
 import CsgoRoadmap from "./pages/TournamentRoadmaps/CsgoRoadmap";

@@ -7,8 +7,6 @@ import mainPosition from '../positions/положение.pdf'
 
 const TournamentRoadMap = ({dates, registrationPath, positionPath, positionDoc}) => {
 
-
-
     const modalText = {
         qualificationInfo: 'Все зарегистрировавшиеся команды (до 64 коллектива) сначала играют BO1 квалификации на вылет, 32 лучших проходят в групповой этап',
         groupStageInfo: 'В группе 4 коллектива, всего 8 групп. Игры в группе проходят в формате ВО1, каждая команда играет с каждой. За победу начисляется одно очко, за поражение 0. Две лучшие команды проходят в следующий этап, две вылетают. ',
@@ -19,10 +17,10 @@ const TournamentRoadMap = ({dates, registrationPath, positionPath, positionDoc})
     return (
         <div className={styles.tournament_roadmaps}>
             <div className={styles.tournament_roadmap}>
-                <TournamentStage stage={'Квалификации'} dates={dates} modalText={modalText.qualificationInfo}/>
-                <TournamentStage stage={'Групповая стадия'} dates={dates} modalText={modalText.groupStageInfo}/>
-                <TournamentStage stage={'Плей-офф'} dates={dates} modalText={modalText.playoffsInfo}/>
-                <TournamentStage stage={'Финал'} dates={dates} modalText={modalText.finalInfo}/>
+                <TournamentStage stage={'Квалификации'} StageDates={dates.qualification} modalText={modalText.qualificationInfo} arrow/>
+                <TournamentStage stage={'Группы'} StageDates={dates.groupStage} modalText={modalText.groupStageInfo} arrow/>
+                <TournamentStage stage={'Плей-офф'} StageDates={dates.playoffs} modalText={modalText.playoffsInfo} arrow/>
+                <TournamentStage stage={'Финал'} StageDates={dates.final} modalText={modalText.finalInfo}/>
             </div>
             <div className={styles.buttons_sections}>
                 <Link to='/'><ButtonSecondary>Назад</ButtonSecondary></Link>
