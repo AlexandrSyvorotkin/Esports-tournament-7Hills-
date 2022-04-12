@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ReactDOM from "react-dom";
 import styles from "./TournamentStage.module.scss";
 import ButtonModal from "../UI/ButtonModal";
 import Modal from "../UI/Modal";
@@ -15,9 +16,9 @@ const TournamentStage = ({stage, dates, modalText}) => {
             <div>
                 <div className={styles.arrow_icon}/>
             </div>
-            <Modal visible={modal} setVisible={setModal}>{modalText}
+            {ReactDOM.createPortal(<Modal visible={modal} setVisible={setModal}>{modalText}
                 <ButtonModal onClick={()=> setModal(false)}>Закрыть</ButtonModal>
-            </Modal>
+            </Modal>, document.getElementById('modal'))}
         </>
     );
 };

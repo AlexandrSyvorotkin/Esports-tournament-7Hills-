@@ -1,7 +1,6 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 import styles from './TournamentRoadMap.module.scss'
-import ModalContext from "../context/modal-context";
 import ButtonSecondary from "../UI/ButtonSecondary";
 import TournamentStage from "./TournamentStage";
 import mainPosition from '../positions/положение.pdf'

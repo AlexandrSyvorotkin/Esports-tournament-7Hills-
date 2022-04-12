@@ -4,10 +4,10 @@ import {useState} from "react";
 import ModalContext from "./context/modal-context";
 
 // Disciplines Routes
-import CsgoRoadmap from "./pages/DisciplinesPages/CsgoRoadmap";
-import FifaRoadmap from "./pages/DisciplinesPages/FifaRoadmap";
-import ValorantRoadmap from "./pages/DisciplinesPages/ValorantRoadmap";
-import DotaRoadmap from "./pages/DisciplinesPages/DotaRoadmap";
+import CsgoRoadmap from "./pages/TournamentRoadmaps/CsgoRoadmap";
+import FifaRoadmap from "./pages/TournamentRoadmaps/FifaRoadmap";
+import ValorantRoadmap from "./pages/TournamentRoadmaps/ValorantRoadmap";
+import DotaRoadmap from "./pages/TournamentRoadmaps/DotaRoadmap";
 
 // Routes
 import MainPage from "./pages/MainPage";
