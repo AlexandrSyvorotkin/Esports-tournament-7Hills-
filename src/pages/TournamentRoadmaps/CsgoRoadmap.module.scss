@@ -1,19 +1,9 @@
 .roadmap_header {
-  width: 60%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 0 auto;
   margin-top: 150px;
-  @media (max-width: 1800px){
-    width: 70%;
-  }
-  @media (max-width: 1600px){
-    width: 78%;
-  }
-  @media (max-width: 1200px){
-    width: 90%;
-  }
   @media (max-width: 768px) {
     margin-top: 60px;
   }
