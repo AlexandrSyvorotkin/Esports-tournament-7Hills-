@@ -6,7 +6,6 @@
   justify-content: center;
   margin-top: 50px;
   padding: 5px;
-
   width: 100%;
   .contacts_header {
     font-size: 40px;
@@ -19,6 +18,8 @@
   .contacts_information {
     margin-top: 40px;
     display: flex;
+    justify-content: center;
+    gap: 10px;
     padding: 10px;
     margin-bottom: 40px;
     @media (max-width: 1400px) {
