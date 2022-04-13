@@ -6,6 +6,7 @@
   justify-content: center;
   margin-top: 50px;
   padding: 5px;
+
   width: 100%;
   .contacts_header {
     font-size: 40px;
@@ -23,6 +24,7 @@
     @media (max-width: 1400px) {
       flex-wrap: wrap;
       justify-content: center;
+      gap: 20px;
     }
   }
   .contacts_footer {
