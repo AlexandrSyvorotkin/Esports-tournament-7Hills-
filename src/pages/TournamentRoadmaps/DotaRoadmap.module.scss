@@ -27,9 +27,14 @@
   .roadmap_logo {
     width: 150px;
     height: 150px;
+    margin-right: 200px;
     @media (max-width: 1200px) {
       width: 130px;
       height: 130px;
+      margin-right: 120px;
+    }
+    @media (max-width: 900px) {
+      margin-right: 0;
     }
     & > img {
       width: 100%;
