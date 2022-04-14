@@ -163,7 +163,7 @@ const CsGoFormRegistation = () => {
                         </div>
                     </div>
                     <div className={styles.form_section}>
-                        <label>Steam профили всей команды</label>
+                        <label>Steam профили капитана</label>
                         <input
                             {...register('steamProfile', {
                                 required: 'Поле обязательно к заполнению',
