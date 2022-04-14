@@ -4,7 +4,7 @@ import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import dota from '../../Assets/img-for-roadmap/dota2.png'
 import styles from './DotaRoadmap.module.scss'
 
-import dotaPosition from '../../positions/Dota.doc'
+import dotaPosition from '../../positions/Dota2.doc'
 
 const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) => {
 
@@ -30,7 +30,7 @@ const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) =
                 dates={dates}
                 registrationPath={'/dota-registration'}
                 positionPath={dotaPosition}
-                positionDoc={"dota.doc"}
+                positionDoc={"dota2.doc"}
             />
         </>
     );
