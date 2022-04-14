@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.43944b45.css",
-    "main.js": "/static/js/main.d3527c73.js",
-    "static/media/fifa.png": "/static/media/fifa.095964e285631285f35c.png",
+    "main.css": "/static/css/main.f66e5a00.css",
+    "main.js": "/static/js/main.52198887.js",
+    "static/media/fifa.png": "/static/media/fifa.6a88c1e11bc0a5878089.png",
     "static/media/csgo.png": "/static/media/csgo.43e49dbf6d182d8ad2d4.png",
     "static/media/valorant.png": "/static/media/valorant.08095b101b9ae35e97e8.png",
     "static/media/me.jpg": "/static/media/me.ec8675f809ec3108ac10.jpg",
+    "static/media/положение.pdf": "/static/media/положение.15103bd84de59eeefe8d.pdf",
     "static/media/vk.png": "/static/media/vk.b7f2ddaa7014bf998ec0.png",
     "static/media/Boss.jpg": "/static/media/Boss.58456862ccde183e2169.jpg",
     "static/media/Падалко.jpg": "/static/media/Падалко.d5c06c578938dcc5986b.jpg",
+    "static/media/komitetbelii.png": "/static/media/komitetbelii.062199f592795ad08232.png",
     "static/media/Валера.jpg": "/static/media/Валера.cebb5a46103de96602c7.jpg",
     "static/media/barathrum.png": "/static/media/barathrum.e6c48d0aa76acf018c05.png",
     "static/media/dota2.png": "/static/media/dota2.2899ade76b4978c61183.png",
+    "static/media/csgo.doc": "/static/media/csgo.9405bf3cedb2dcbf7fa4.doc",
     "static/media/NeueMachina-Black.eot": "/static/media/NeueMachina-Black.e80dfe8ab92b9140abf5.eot",
     "static/media/NeueMachina-Black.ttf": "/static/media/NeueMachina-Black.014654455cfb26c46c76.ttf",
     "static/media/NeueMachina-Ultralight.eot": "/static/media/NeueMachina-Ultralight.7db092654583b2c71beb.eot",
@@ -26,9 +29,9 @@
     "static/media/NeueMachina-Ultrabold.ttf": "/static/media/NeueMachina-Ultrabold.e7dc54d6addc0790114b.ttf",
     "static/media/NeueMachina-Bold.eot": "/static/media/NeueMachina-Bold.3276e5ef9d086cd11b4d.eot",
     "static/media/NeueMachina-Bold.ttf": "/static/media/NeueMachina-Bold.e3f0d560c71e5363d34c.ttf",
-    "static/media/Fifa.doc": "/static/media/Fifa.da0d26ac4d853ec7b3eb.doc",
-    "static/media/Dota.doc": "/static/media/Dota.5ec5ba392d515668bc7e.doc",
-    "static/media/Valorant.doc": "/static/media/Valorant.244cc17942a8a6c0dd02.doc",
+    "static/media/Fifa.doc": "/static/media/Fifa.1b453d4ea46399a4170d.doc",
+    "static/media/Dota.doc": "/static/media/Dota.4f248d222da5a5d55b58.doc",
+    "static/media/Valorant.doc": "/static/media/Valorant.f4eb1f720d4f247fa7eb.doc",
     "static/media/telegram.png": "/static/media/telegram.686adcdaf6ff5c3a2036.png",
     "static/media/NeueMachina-Black.woff": "/static/media/NeueMachina-Black.b45c4f42f6534208c825.woff",
     "static/media/NeueMachina-Ultralight.woff": "/static/media/NeueMachina-Ultralight.a5c9b9019f7521de91da.woff",
@@ -43,18 +46,16 @@
     "static/media/NeueMachina-Bold.woff2": "/static/media/NeueMachina-Bold.d49ee994b16c7a8be96e.woff2",
     "static/media/NeueMachina-Medium.woff2": "/static/media/NeueMachina-Medium.a9b17f3a7d0e2486822d.woff2",
     "static/media/NeueMachina-Ultrabold.woff2": "/static/media/NeueMachina-Ultrabold.5310e4a5401b5d25eeba.woff2",
-    "static/media/MoscowKomitet.png": "/static/media/MoscowKomitet.ae57eae19e6afb211bac.png",
     "static/media/NeueMachina-Light.woff2": "/static/media/NeueMachina-Light.418f63ac88af6ed51de9.woff2",
     "static/media/MFP.svg": "/static/media/MFP.d4b8910102dff0102dc55c92a81a8c00.svg",
+    "static/media/Screenshot_8.png": "/static/media/Screenshot_8.fe91cab7c7c5e948f3f0.png",
     "index.html": "/index.html",
-    "static/media/mainLogo.svg": "/static/media/mainLogo.7af3035c41b7687251496f0a4bbf6427.svg",
     "static/media/Green.svg": "/static/media/Green.407e19228a44384070f187c4e910c3df.svg",
-    "static/media/whiteArrow.svg": "/static/media/whiteArrow.369c7dcc65940dec79392da18e26eca4.svg",
-    "main.43944b45.css.map": "/static/css/main.43944b45.css.map",
-    "main.d3527c73.js.map": "/static/js/main.d3527c73.js.map"
+    "main.f66e5a00.css.map": "/static/css/main.f66e5a00.css.map",
+    "main.52198887.js.map": "/static/js/main.52198887.js.map"
   },
   "entrypoints": [
-    "static/css/main.43944b45.css",
-    "static/js/main.d3527c73.js"
+    "static/css/main.f66e5a00.css",
+    "static/js/main.52198887.js"
   ]
 }
