@@ -34,7 +34,6 @@ const AllRegistration = () => {
     ]
 
 
-
     return (
         <div className={styles.registration}>
             <h2 className={styles.registration_header}>Регистрация</h2>

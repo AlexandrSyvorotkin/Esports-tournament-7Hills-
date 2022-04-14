@@ -24,8 +24,8 @@ const TournamentRoadMap = ({dates, registrationPath, positionPath, positionDoc})
             </div>
             <div className={styles.buttons_sections}>
                 <Link to='/'><ButtonSecondary>Назад</ButtonSecondary></Link>
-                <a href={positionPath} download={'положение.pdf'}><ButtonSecondary>Регламент</ButtonSecondary></a>
-                <a href={mainPosition} download={positionDoc}><ButtonSecondary>Положение</ButtonSecondary></a>
+                <a href={positionPath} download={positionDoc}><ButtonSecondary>Регламент</ButtonSecondary></a>
+                <a href={mainPosition} download={'положение.pdf'}><ButtonSecondary>Положение</ButtonSecondary></a>
                 <Link to={registrationPath}><ButtonSecondary>Регистрация</ButtonSecondary></Link>
             </div>
 
