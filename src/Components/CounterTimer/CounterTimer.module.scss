@@ -1,6 +1,13 @@
 .timer_wrapper {
   display: flex;
   justify-content: start;
+  font-size: 30px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+  @media (max-width: 576px) {
+    font-size: 15px;
+  }
   .timer {
     display: flex;
     flex-direction: column;
@@ -8,15 +15,14 @@
     &_header{
       color: white;
       font-family: var(--font-family-main);
-      font-size: 30px;
+
     }
     .remainig_time {
       border: none;
       position: relative;
       text-transform: uppercase;
       color: #0e3742;
-      margin-top: 20px;
-      font-size: 30px;
+      margin-top: 20px;;
       -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
       outline: none;
       animation: animate 3s linear infinite;
