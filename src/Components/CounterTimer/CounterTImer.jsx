@@ -1,28 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 import styles from './CounterTimer.module.scss'
-import {getRemainigTime} from '../../Utils/CountDownTImerUtils'
 
-const CounterTimer = ({countdawnTimestampMs}) => {
+const CounterTimer = () => {
 
-    // const defaultRemainingTime = {
-    //     seconds: '00',
-    //     minutes: '00',
-    //     hours: '00',
-    //     days: '00'
-    // }
-
-    // const [remainigTime, setRemainingTime] = useState(defaultRemainingTime)
-    //
-    // useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //         updateRemainingTime(countdawnTimestampMs)
-    //     },1000)
-    //     return () => clearInterval(intervalId)
-    // }, [countdawnTimestampMs])
-    //
-    // function updateRemainingTime(countdown) {
-    //     setRemainingTime(getRemainigTime(countdown))
-    // }
 
 
     const [timerDays, setTimerDays] = useState('00')

@@ -10,7 +10,7 @@ const TournamentName = () => {
                 <h1>ТУРНИР</h1>
                 <div className={styles.tournament_diamond}/>
             </div>
-            <CounterTimer countdawnTimestampMs={1651321214000}/>
+            <CounterTimer/>
         </>
     )
         ;
