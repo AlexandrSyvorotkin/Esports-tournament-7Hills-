@@ -24,6 +24,7 @@ import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
 import ValorantRegistration from "./pages/RegistrationPages/ValorantRegistration";
 import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
 import AllRegistration from "./pages/MenuPages/AllRegistration";
+import Positions from "./pages/Positions";
 
 
 
@@ -45,24 +46,27 @@ const App = () => {
                 <Routes>
                     <Route path='/' element={<MainPage/>}/>
 
-                    <Route path='/dota' element={<DotaRoadmap/>}/>
-                    <Route path='/csgo' element={<CsgoRoadmap/>}/>
-                    <Route path='/valorant' element={<ValorantRoadmap/>}/>
-                    <Route path='/fifa' element={<FifaRoadmap/>}/>
+                    <Route path='dota' element={<DotaRoadmap/>}/>
+                    <Route path='csgo' element={<CsgoRoadmap/>}/>
+                    <Route path='valorant' element={<ValorantRoadmap/>}/>
+                    <Route path='fifa' element={<FifaRoadmap/>}/>
 
-                    <Route path='/aboutus' element={<AboutProject />}/>
-                    <Route path='/contacts' element={<Contacts />}/>
-                    <Route path='/photosgalary' element={<PhotoGalary />}/>
-                    <Route path='/registration' element={<AllRegistration />}/>
-                    <Route path='/faq' element={<Faq />}/>
-                    <Route path='/aboutus' element={<AboutProject />}/>
+                    <Route path='aboutus' element={<AboutProject />}/>
+                    <Route path='contacts' element={<Contacts />}/>
+                    <Route path='photosgalary' element={<PhotoGalary />}/>
+                    <Route path='registration' element={<AllRegistration />}/>
+                    <Route path='faq' element={<Faq />}/>
+                    <Route path='aboutus' element={<AboutProject />}/>
 
-                    <Route path='/dota-registration' element={<DotaRegistration />}/>
-                    <Route path='/cs-go-registration' element={<CsgoRegistration />}/>
-                    <Route path='/valorant-registration' element={<ValorantRegistration />}/>
-                    <Route path='/fifa-registration' element={<FifaRegistration />}/>
+                    <Route path='dota-registration' element={<DotaRegistration />}/>
+                    <Route path='cs-go-registration' element={<CsgoRegistration />}/>
+                    <Route path='valorant-registration' element={<ValorantRegistration />}/>
+                    <Route path='fifa-registration' element={<FifaRegistration />}/>
+
+                    <Route path='/positions/*' element={<Positions/>}/>
 
                     <Route path='*' element={<NotFound/>}/>
+
                 </Routes>
                 {/*</ModalContext.Provider>*/}
             </>

@@ -1,0 +1,17 @@
+.regulation {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: var(--font-family-secondary);
+  line-height: normal;
+  .number {
+    font-weight: bold;
+    font-size: 23px;
+  }
+  &_header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+}

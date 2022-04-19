@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './TournamentName.module.scss'
+import CounterTimer from "./CounterTimer/CounterTImer";
 
 const TournamentName = () => {
     return (
@@ -9,6 +10,7 @@ const TournamentName = () => {
                 <h1>ТУРНИР</h1>
                 <div className={styles.tournament_diamond}/>
             </div>
+            <CounterTimer countdawnTimestampMs={1651321214000}/>
         </>
     )
         ;
