@@ -12,8 +12,7 @@ const TournamentName = () => {
             </div>
             <CounterTimer/>
         </>
-    )
-        ;
+    );
 };
 
 export default TournamentName;
