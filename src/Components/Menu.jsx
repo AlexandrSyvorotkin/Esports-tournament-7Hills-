@@ -29,9 +29,12 @@ const Menu = ({setMenuActive, menuActive}) => {
                     <li>
                         <Link to='/faq'><MenuButton>FAQ</MenuButton></Link>
                     </li>
-                    {/*<li>*/}
-                    {/*    <Link to='/positions'><MenuButton>Регламенты</MenuButton></Link>*/}
-                    {/*</li>*/}
+                    <li>
+                        <Link to='/positions'><MenuButton>Регламенты</MenuButton></Link>
+                    </li>
+                    <li>
+                        <Link to='/tournament-brackets'><MenuButton>Турнирные сетки</MenuButton></Link>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -1,0 +1,17 @@
+.regulation_part {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  border: 1px solid #00ff7f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .regulation_part_name {
+    display: flex;
+  }
+  regulation_img {
+    width: 100px;
+    height: 100px;
+  }
+}

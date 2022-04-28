@@ -3,7 +3,7 @@ import styles from './CounterTimer.module.scss'
 
 const CounterTimer = () => {
 
-
+    // Поменять формат дней бла бла 
 
     const [timerDays, setTimerDays] = useState('00')
     const [timerHours, setTimerHours] = useState('00')

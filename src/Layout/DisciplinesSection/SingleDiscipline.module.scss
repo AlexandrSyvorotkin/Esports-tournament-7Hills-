@@ -18,7 +18,7 @@
     @media (min-width: 0) and (max-width: 576px)  {
         height: 400px;
     }
-    & > a {
+    & > .link {
         font-size: 30px;
         font-family: var(--font-family-main);
         color: var(--main-color);

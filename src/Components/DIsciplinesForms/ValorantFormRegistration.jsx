@@ -7,13 +7,16 @@ import {useForm} from "react-hook-form";
 
 const ValorantFormRegistration = () => {
 
-    const [successRegistration, setSuccessRegistration] = useState(false)
+    // Доделать кнопку!
 
+    const [successRegistration, setSuccessRegistration] = useState(false)
 
     const {
         register,
         formState: {
-            errors
+            errors,
+            isValid,
+            isDirty
         },
         handleSubmit,
         reset,
@@ -22,7 +25,6 @@ const ValorantFormRegistration = () => {
     })
 
     const submitHandler = (data) => {
-        console.log(data)
         axios.post('https://sheet.best/api/sheets/9db726be-e586-4965-aeb6-55f5a35426ea', data)
             .then((response)=> {
                 reset()
@@ -189,7 +191,7 @@ const ValorantFormRegistration = () => {
 
                     <div className={styles.registation_footer}>
                         <Link to='/'><ButtonModal>Главная</ButtonModal></Link>
-                        <ButtonModal type='submit' >Отравить</ButtonModal>
+                        <ButtonModal type='submit' disabled={!isDirty || !isValid}>Отравить</ButtonModal>
                     </div>
 
                 </form>

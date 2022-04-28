@@ -25,6 +25,7 @@ import ValorantRegistration from "./pages/RegistrationPages/ValorantRegistration
 import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
 import AllRegistration from "./pages/MenuPages/AllRegistration";
 import Positions from "./pages/Positions";
+import TournamentBrackets from "./pages/MenuPages/TournamentBrackets";
 
 
 
@@ -64,6 +65,7 @@ const App = () => {
                     <Route path='fifa-registration' element={<FifaRegistration />}/>
 
                     <Route path='/positions/*' element={<Positions/>}/>
+                    <Route path='tournament-brackets' element={<TournamentBrackets/>}/>
 
                     <Route path='*' element={<NotFound/>}/>
 
