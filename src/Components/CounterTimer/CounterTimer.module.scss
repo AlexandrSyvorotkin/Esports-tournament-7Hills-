@@ -1,12 +1,12 @@
 .timer_wrapper {
   display: flex;
   justify-content: start;
-  font-size: 30px;
+  font-size: 20px;
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 15px;
   }
   @media (max-width: 576px) {
-    font-size: 15px;
+    font-size: 10px;
   }
   .timer {
     display: flex;
@@ -15,7 +15,7 @@
     &_header{
       color: white;
       font-family: var(--font-family-main);
-
+      text-align: center;
     }
     .remainig_time {
       border: none;
