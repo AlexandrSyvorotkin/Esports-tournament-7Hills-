@@ -10,7 +10,7 @@ const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
               to={RoutingPath}
             >
             <img className={styles.single_discipline_image} src={img} alt=""/>
-                <span className={styles.link}>{DisciplineName}</span>
+            <span  className={styles.link}>{DisciplineName}</span>
         </Link>
     );
 };

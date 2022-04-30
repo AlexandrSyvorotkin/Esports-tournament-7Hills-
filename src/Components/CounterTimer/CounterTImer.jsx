@@ -3,7 +3,7 @@ import styles from './CounterTimer.module.scss'
 
 const CounterTimer = () => {
 
-    // Поменять формат дней бла бла 
+    // Поменять формат дней бла бла
 
     const [timerDays, setTimerDays] = useState('00')
     const [timerHours, setTimerHours] = useState('00')
@@ -38,6 +38,11 @@ const CounterTimer = () => {
         }, 1000)
     }
 
+
+   const days = timerDays <= 4 ? 'день' : 'Дней'
+   const hours = timerHours <= 4 ? 'часов' : 'Часа'
+
+
     useEffect(() => {
         startTimer()
         return () => {
@@ -52,9 +57,9 @@ const CounterTimer = () => {
                 <div className={styles.timer_header}>До конца регистрации осталось</div>
                 <div className={styles.remainig_time}>
                     <span>{timerDays}</span>
-                    <span>дней</span>
+                    <span>{days}</span>
                     <span>{timerHours}</span>
-                    <span>часов</span>
+                    <span>{hours}</span>
                     <span>{timerMinutes}</span>
                     <span>минут</span>
                     <span>{timerSeconds}</span>

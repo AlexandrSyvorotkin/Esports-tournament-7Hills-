@@ -15,18 +15,20 @@ const TournamentBracketsCards = {
     csgo: {img: csgo, name: 'cs:go'}
 }
 
+
+
 const TournamentBrackets = () => {
     return (
         <div className={styles.tournament_brackets}>
             <h2>Турнирные сетки</h2>
             <div className={styles.tournament_brackets_content}>
-                <TournamentBracketCard name={TournamentBracketsCards.dota.name} img={TournamentBracketsCards.dota.img}/>
-                <TournamentBracketCard name={TournamentBracketsCards.valorant.name} img={TournamentBracketsCards.valorant.img}/>
+                <TournamentBracketCard name={TournamentBracketsCards.dota.name} img={TournamentBracketsCards.dota.img} routingPath={'dota-tournament-bracket'}/>
+                {/*<TournamentBracketCard name={TournamentBracketsCards.valorant.name} img={TournamentBracketsCards.valorant.img}/>*/}
             </div>
-            <div className={styles.tournament_brackets_content}>
-                <TournamentBracketCard name={TournamentBracketsCards.fifa.name} img={TournamentBracketsCards.fifa.img}/>
-                <TournamentBracketCard name={TournamentBracketsCards.csgo.name} img={TournamentBracketsCards.csgo.img}/>
-            </div>
+            {/*<div className={styles.tournament_brackets_content}>*/}
+            {/*    <TournamentBracketCard name={TournamentBracketsCards.fifa.name} img={TournamentBracketsCards.fifa.img}/>*/}
+            {/*    <TournamentBracketCard name={TournamentBracketsCards.csgo.name} img={TournamentBracketsCards.csgo.img}/>*/}
+            {/*</div>*/}
             <div className={styles.tournament_brackets_footer}>
                 <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>

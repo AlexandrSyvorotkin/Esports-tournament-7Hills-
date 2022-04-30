@@ -197,6 +197,10 @@ const CsGoFormRegistation = () => {
                     <p>Регистрация прошла успешно!</p>
                     <Link to='/'><ButtonModal>Главная</ButtonModal></Link>
                 </div>}
+            {/*<div className={styles.success_registration}>*/}
+            {/*    <p>Регистрация закончилась</p>*/}
+            {/*    <Link to='/'><ButtonModal>Главная</ButtonModal></Link>*/}
+            {/*</div>*/}
         </div>
     );
 };

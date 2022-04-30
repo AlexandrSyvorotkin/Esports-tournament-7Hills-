@@ -1,0 +1,15 @@
+.dota_tournament_braket {
+  margin-top: 40px;
+  &_header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  &_groups {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+}

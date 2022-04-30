@@ -26,6 +26,7 @@ import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
 import AllRegistration from "./pages/MenuPages/AllRegistration";
 import Positions from "./pages/Positions";
 import TournamentBrackets from "./pages/MenuPages/TournamentBrackets";
+import DotaTounamentBracket from "./pages/TournamentBrackets/DotaTounamentBracket";
 
 
 
@@ -65,7 +66,9 @@ const App = () => {
                     <Route path='fifa-registration' element={<FifaRegistration />}/>
 
                     <Route path='/positions/*' element={<Positions/>}/>
-                    <Route path='tournament-brackets' element={<TournamentBrackets/>}/>
+                    <Route path='tournament-brackets/*' element={<TournamentBrackets/>}/>
+
+                    <Route path='tournament-brackets/dota-tournament-bracket' element={<DotaTounamentBracket/>}/>
 
                     <Route path='*' element={<NotFound/>}/>
 

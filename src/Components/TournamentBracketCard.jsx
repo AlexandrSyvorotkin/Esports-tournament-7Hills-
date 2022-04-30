@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './TurnamentBracketCard.module.scss'
-import ButtonModal from "../UI/ButtonModal";
+import {Link} from "react-router-dom";
 
-const TournamentBracketCard = ({name, img}) => {
+const TournamentBracketCard = ({name, img, routingPath}) => {
     return (
-        <div className={styles.tournament_bracket_card}>
+        <Link to={routingPath} className={styles.tournament_bracket_card}>
             <div className={styles.tournament_bracket_card_img}>
                 <img src={img} alt=""/>
             </div>
@@ -12,7 +12,7 @@ const TournamentBracketCard = ({name, img}) => {
                 <h3>{name}</h3>
                 <a className={styles.tournament_bracket_card_route}>Перейти</a>
             </div>
-        </div>
+        </Link>
     );
 };
 
