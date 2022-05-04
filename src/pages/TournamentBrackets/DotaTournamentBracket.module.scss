@@ -7,9 +7,11 @@
     gap: 30px;
   }
   &_groups {
-    margin-top: 40px;
+
+  }
+  &_footer {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    margin-top: 40px;
   }
 }

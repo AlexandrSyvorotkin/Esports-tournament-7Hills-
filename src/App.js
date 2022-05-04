@@ -66,7 +66,7 @@ const App = () => {
                     <Route path='fifa-registration' element={<FifaRegistration />}/>
 
                     <Route path='/positions/*' element={<Positions/>}/>
-                    <Route path='tournament-brackets/*' element={<TournamentBrackets/>}/>
+                    <Route path='/tournament-brackets/*' element={<TournamentBrackets/>}/>
 
                     <Route path='tournament-brackets/dota-tournament-bracket' element={<DotaTounamentBracket/>}/>
 

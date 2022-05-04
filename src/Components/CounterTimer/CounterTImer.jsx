@@ -54,7 +54,7 @@ const CounterTimer = () => {
     return (
         <div className={styles.timer_wrapper}>
             <div className={styles.timer}>
-                <div className={styles.timer_header}>До конца регистрации в дисциплинны Дота 2 и Фифа 22 осталось</div>
+                <div className={styles.timer_header}>До конца регистрации в дисциплины Дота 2 и Valorant осталось</div>
                 <div className={styles.remainig_time}>
                     <span>{timerDays}</span>
                     <span>{days}</span>

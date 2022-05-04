@@ -6,10 +6,12 @@ const GroupCard = () => {
         <div className={styles.group_card}>
             <span className={styles.group_card_number}>Группа</span>
             <div className={styles.team_list}>
-                <li>Команда А</li>
-                <li>Команда Б</li>
-                <li>Команда В</li>
-                <li>Команда С</li>
+                <ul>
+                    <div className={styles.group_card_content}><li>Команда А</li><span>5</span></div>
+                    <div className={styles.group_card_content}><li>Команда Б</li><span>3</span></div>
+                    <div className={styles.group_card_content}><li>Команда В</li><span>2</span></div>
+                    <div className={styles.group_card_content}><li>Команда С</li><span>1</span></div>
+                </ul>
             </div>
         </div>
     );
