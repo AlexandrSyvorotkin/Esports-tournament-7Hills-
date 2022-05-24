@@ -1,0 +1,16 @@
+.agreement {
+  margin-bottom: 10px;
+  & > input {
+    margin-right: 10px;
+    &:checked {
+      color: #7EAF16;
+    }
+  }
+  & > label {
+    cursor: pointer;
+    @media (max-width: 576px) {
+      font-size: 10px;
+    }
+  }
+}
+

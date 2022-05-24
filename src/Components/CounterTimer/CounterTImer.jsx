@@ -13,7 +13,7 @@ const CounterTimer = () => {
     let interval = useRef()
 
     const startTimer = () => {
-        const countdownDate = new Date('May 9 2022 00:00:00').getTime()
+        const countdownDate = new Date('May 10 2022 22:00:00').getTime()
 
         interval = setInterval(() => {
             const now = new Date().getTime()

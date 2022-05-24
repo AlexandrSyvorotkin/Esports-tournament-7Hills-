@@ -1,10 +1,10 @@
 import React from 'react';
-import CsGoFormRegistration from "../../Components/DIsciplinesForms/CsGoFormRegistration";
+import FormRegistration from "../../Components/DIsciplinesForms/FormRegistration";
 
 const CsgoRegistration = () => {
     return (
         <div>
-            <CsGoFormRegistration/>
+            <FormRegistration registrationDisciplineName={'Регистрация CSGO'} cs={true} url={'https://sheet.best/api/sheets/c97ec2b2-4696-4399-85dd-fbb715ebb79d'}/>
         </div>
     );
 };
