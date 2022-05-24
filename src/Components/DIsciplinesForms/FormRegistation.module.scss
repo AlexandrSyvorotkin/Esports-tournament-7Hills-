@@ -1,5 +1,5 @@
 .formRegistration {
-  margin-top: 40px;
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -28,6 +28,7 @@
     padding: 20px;
     background-color: #272727;
     margin-bottom: 40px;
+    opacity: 0.9;
     @media (max-width: 576px) {
       width: 350px;
     }

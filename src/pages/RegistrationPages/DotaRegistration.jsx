@@ -1,9 +1,12 @@
 import React from 'react';
 import FormRegistration from "../../Components/DIsciplinesForms/FormRegistration";
+import styles from './DotaRegistration.module.scss'
+
+
 
 const DotaRegistration = () => {
     return (
-        <div>
+        <div className={styles.dota_registration}>
             <FormRegistration
                 dota={true}
                 registrationDisciplineName={'Регистрация Dota 2'}
