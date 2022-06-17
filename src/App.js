@@ -27,24 +27,22 @@ import AllRegistration from "./pages/MenuPages/AllRegistration";
 import Positions from "./pages/Positions";
 import TournamentBrackets from "./pages/MenuPages/TournamentBrackets";
 import DotaTounamentBracket from "./pages/TournamentBrackets/DotaTounamentBracket";
+import {useState} from "react";
+import SideMenuContext from "./context/modal-context";
 
 
 
 const App = () => {
 
-    // const [modal, setModal] = useState(false)
-    // const CloseModalHandler = () => setModal(false)
-    // const OpenModalHandler = () => setModal(true)
-
-
+    const [menuActive, setMenuActive] = useState(false)
 
     return (
             <>
-                {/*<ModalContext.Provider value={{*/}
-                {/*    isModalOpened: modal,*/}
-                {/*    OpenModal: OpenModalHandler,*/}
-                {/*    CloseModal: CloseModalHandler*/}
-                {/*}}>*/}
+                <SideMenuContext.Provider value={{
+                    isSideMenuOpened: menuActive,
+                    OpenSideMenu: () => {setMenuActive(true)},
+                    CloseSideMenu: () => {setMenuActive(false)}
+                }}>
                 <Routes>
                     <Route path='/' element={<MainPage/>}/>
 
@@ -73,7 +71,7 @@ const App = () => {
                     <Route path='*' element={<NotFound/>}/>
 
                 </Routes>
-                {/*</ModalContext.Provider>*/}
+                </SideMenuContext.Provider>
             </>
     )
 }

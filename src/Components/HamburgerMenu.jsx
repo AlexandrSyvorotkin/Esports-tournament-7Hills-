@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './HamburgerMenu.module.scss'
+import SideMenuContext from "../context/modal-context";
 
-const HamburgerMenu = ({setMenuActive}) => {
+const HamburgerMenu = () => {
+
+    const ctx = useContext(SideMenuContext)
 
     return (
-        <div className={styles.hamburger_menu} onClick={() => setMenuActive(true)}>
+        <div className={styles.hamburger_menu} onClick={ctx.OpenSideMenu}>
             <span/>
         </div>
 

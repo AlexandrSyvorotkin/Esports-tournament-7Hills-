@@ -1,18 +1,19 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import styles from './Menu.module.scss'
 import {Link} from "react-router-dom";
 import MenuButton from '../UI/MenuButton';
+import SideMenuContext from "../context/modal-context";
 
-const Menu = ({setMenuActive, menuActive}) => {
-
+const Menu = () => {
+    const ctx = useContext(SideMenuContext)
 
     return (
-        <div className={`${menuActive ? styles.menu_active : styles.menu}`}>
-            <div className={styles.blur} onClick={() => setMenuActive(false)}/>
+        <div className={`${ctx.isSideMenuOpened ? styles.menu_active : styles.menu}`}>
+            <div className={styles.blur} onClick={ctx.CloseSideMenu}/>
             <div className={styles.menu_content}>
                 <ul>
                     <li>
-                        <MenuButton onClick={() => setMenuActive(false)}>Главная</MenuButton>
+                        <MenuButton onClick={ctx.CloseSideMenu}>Главная</MenuButton>
                     </li>
                     <li>
                         <Link to='/contacts'><MenuButton>Контакты</MenuButton></Link>

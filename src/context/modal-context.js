@@ -1,7 +1,7 @@
 import React from 'react'
 
-const ModalContext = React.createContext({
-    isModalOpened: false
+const SideMenuContext = React.createContext({
+    isSideMenuOpened: false
 })
 
-export default ModalContext
+export default SideMenuContext
