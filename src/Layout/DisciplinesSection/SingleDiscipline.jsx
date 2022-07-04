@@ -3,7 +3,7 @@ import styles from './SingleDiscipline.module.scss'
 import {Link} from "react-router-dom";
 
 const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
-    // Убрать нижнее подчеркивание
+
 
     return (
         <Link className={styles.single_discipline}

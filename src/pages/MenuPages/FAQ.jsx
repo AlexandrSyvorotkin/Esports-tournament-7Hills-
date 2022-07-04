@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import styles from './FAQ.module.scss'
 import {Link} from "react-router-dom";
 import ButtonModal from "../../UI/ButtonModal";
+import HamburgerMenu from "../../Components/HamburgerMenu";
+import Menu from "../../Components/Menu";
 
 const Faq = () => {
 
@@ -60,6 +62,8 @@ const Faq = () => {
             <div className={styles.faq_footer}>
                 <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>
+            <HamburgerMenu/>
+            <Menu/>
         </div>
     );
 };

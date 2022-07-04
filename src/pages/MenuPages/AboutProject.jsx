@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import ButtonSecondary from "../../UI/ButtonSecondary";
 import VK from '../../Assets/vk.png'
 import ButtonModal from "../../UI/ButtonModal";
+import HamburgerMenu from "../../Components/HamburgerMenu";
+import Menu from "../../Components/Menu";
 
 const AboutProject = () => {
     return (
@@ -41,6 +43,8 @@ const AboutProject = () => {
                 </div>
             </div>
             <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
+            <HamburgerMenu/>
+            <Menu/>
         </div>
     );
 };

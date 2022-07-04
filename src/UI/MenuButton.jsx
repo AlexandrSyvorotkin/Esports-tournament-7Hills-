@@ -6,10 +6,10 @@ import styles from './MenuButton.module.scss'
 const MenuButton = ({onClick, children}) => {
     return (
         <div className={styles.menu_button} onClick={onClick}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span/>
+            <span/>
+            <span/>
+            <span/>
             {children}
         </div>
     );

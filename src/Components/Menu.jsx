@@ -13,22 +13,22 @@ const Menu = () => {
             <div className={styles.menu_content}>
                 <ul>
                     <li>
-                        <MenuButton onClick={ctx.CloseSideMenu}>Главная</MenuButton>
+                        <Link to='/'><MenuButton onClick={ctx.CloseSideMenu}>Главная</MenuButton></Link>
                     </li>
                     <li>
-                        <Link to='/contacts'><MenuButton>Контакты</MenuButton></Link>
+                        <Link to='/contacts'><MenuButton onClick={ctx.CloseSideMenu}>Контакты</MenuButton></Link>
                     </li>
                     {/*<li>*/}
                     {/*    <Link to='/photosgalary'><MenuButton>Галерея</MenuButton></Link>*/}
                     {/*</li>*/}
                     <li>
-                        <Link to='/aboutus'><MenuButton>О проекте</MenuButton></Link>
+                        <Link to='/aboutus'><MenuButton onClick={ctx.CloseSideMenu}>О проекте</MenuButton></Link>
                     </li>
                     <li>
-                        <Link to='/registration'><MenuButton>Регистрация</MenuButton></Link>
+                        <Link to='/registration'><MenuButton onClick={ctx.CloseSideMenu}>Регистрация</MenuButton></Link>
                     </li>
                     <li>
-                        <Link to='/faq'><MenuButton>FAQ</MenuButton></Link>
+                        <Link to='/faq' ><MenuButton onClick={ctx.CloseSideMenu}>FAQ</MenuButton></Link>
                     </li>
                     {/*<li>*/}
                     {/*    <Link to='/positions'><MenuButton>Регламенты</MenuButton></Link>*/}

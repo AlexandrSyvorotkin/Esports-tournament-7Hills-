@@ -46,7 +46,7 @@ const App = () => {
                 <Routes>
                     <Route path='/' element={<MainPage/>}/>
 
-                    <Route path='dota' element={<DotaRoadmap/>}/>
+                    <Route path='dota/*' element={<DotaRoadmap/>}/>
                     <Route path='csgo' element={<CsgoRoadmap/>}/>
                     <Route path='valorant' element={<ValorantRoadmap/>}/>
                     <Route path='fifa' element={<FifaRoadmap/>}/>

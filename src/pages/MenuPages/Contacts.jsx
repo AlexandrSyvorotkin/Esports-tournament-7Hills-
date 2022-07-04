@@ -11,6 +11,8 @@ import Valera from '../../Assets/Photoes/Валера.jpg'
 import {Link} from "react-router-dom";
 import ContactCard from "../../Components/ContactCard";
 import ButtonModal from "../../UI/ButtonModal";
+import HamburgerMenu from "../../Components/HamburgerMenu";
+import Menu from "../../Components/Menu";
 
 const Contacts = () => {
 
@@ -44,6 +46,8 @@ const Contacts = () => {
             <div className={styles.concats_footer}>
                 <Link to='/' className={styles.a}><ButtonModal>Назад</ButtonModal></Link>
             </div>
+            <HamburgerMenu/>
+            <Menu/>
         </div>
     );
 };

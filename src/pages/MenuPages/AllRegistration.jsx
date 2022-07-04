@@ -7,6 +7,8 @@ import fifa from '../../Assets/img-for-disciplines/fifa.png'
 import ButtonModal from "../../UI/ButtonModal";
 import {Link} from "react-router-dom";
 import RegistrationCard from "../../Components/RegistrationCard";
+import HamburgerMenu from "../../Components/HamburgerMenu";
+import Menu from "../../Components/Menu";
 
 const AllRegistration = () => {
 
@@ -50,6 +52,8 @@ const AllRegistration = () => {
             <div className={styles.registration_footer}>
                 <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>
+            <HamburgerMenu/>
+            <Menu/>
         </div>
     );
 };
