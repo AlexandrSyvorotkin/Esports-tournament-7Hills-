@@ -6,29 +6,13 @@ import CounterTimer from "./CounterTimer/CounterTImer";
 
 const TournamentPrizePool = () => {
 
-    const marqueeVariants = {
-        animate: {
-            x: [0, 0],
-            transition: {
-                x: {
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    duration: 5,
-                    ease: "linear",
-                },
-            },
-        },
-    };
 
     return (
         <div className={styles.prize_pool}>
-            <motion.div
-                variants={marqueeVariants}
-                animate="animate"
-                className={styles.prize_pool_ticker}>
+            <div className={styles.prize_pool_ticker}>
                 ПРИЗОВОЙ ФОНД <p>200 000</p> РУБЛЕЙ
                 <div className={styles.green_logo}><img src={greenLogo} alt="greenLogo"/></div>
-            </motion.div>
+            </div>
         </div>
     );
 };

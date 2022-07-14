@@ -1,0 +1,12 @@
+.qulifications {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .qualification_stage_wrapper {
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,31 @@
+import React from 'react';
+import styles from './DotaTournamentBracket.module.scss'
+import ButtonBrackets from "../../UI/ButtonBrackets";
+import ButtonModal from "../../UI/ButtonModal";
+import {Link, Route, Routes} from "react-router-dom";
+import GroupStage from "../../Components/TournamentBrackets/GroupStages/GroupStage";
+import PlayoffStage from "../../Components/TournamentBrackets/PlayoffStage";
+import QualificationStage from "../../Components/TournamentBrackets/Qualifications/QualificationStage";
+
+
+const DotaTournamentBracket = () => {
+    return (
+        <div className={styles.dota_tournament_braket}>
+            <div className={styles.dota_tournament_braket_header}>
+                <Link to='qualification-stage'><ButtonBrackets>Квалификации</ButtonBrackets></Link>
+                <Link to='group-stage'><ButtonBrackets>Групповая стадия</ButtonBrackets></Link>
+                <Link to='playoffs-stage'><ButtonBrackets>Плей-офф</ButtonBrackets></Link>
+            </div>
+            <Routes>
+                <Route path='qualification-stage' element={<QualificationStage/>}/>
+                <Route path='group-stage' element={<GroupStage/>}/>
+                <Route path='playoffs-stage' element={<PlayoffStage/>}/>
+            </Routes>
+            <div className={styles.dota_tournament_braket_footer}>
+                <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
+            </div>
+        </div>
+    );
+};
+
+export default DotaTournamentBracket;

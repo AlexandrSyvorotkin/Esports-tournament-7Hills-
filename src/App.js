@@ -26,7 +26,7 @@ import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
 import AllRegistration from "./pages/MenuPages/AllRegistration";
 import Positions from "./pages/Positions";
 import TournamentBrackets from "./pages/MenuPages/TournamentBrackets";
-import DotaTounamentBracket from "./pages/TournamentBrackets/DotaTounamentBracket";
+import DotaTournamentBracket from "./pages/TournamentBrackets/DotaTournamentBracket";
 import {useState} from "react";
 import SideMenuContext from "./context/modal-context";
 
@@ -66,7 +66,7 @@ const App = () => {
                     <Route path='/positions/*' element={<Positions/>}/>
                     <Route path='/tournament-brackets/*' element={<TournamentBrackets/>}/>
 
-                    <Route path='tournament-brackets/dota-tournament-bracket' element={<DotaTounamentBracket/>}/>
+                    <Route path='tournament-brackets/dota-tournament-bracket/*' element={<DotaTournamentBracket/>}/>
 
                     <Route path='*' element={<NotFound/>}/>
 

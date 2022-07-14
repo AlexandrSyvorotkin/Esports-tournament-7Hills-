@@ -33,9 +33,9 @@ const Menu = () => {
                     {/*<li>*/}
                     {/*    <Link to='/positions'><MenuButton>Регламенты</MenuButton></Link>*/}
                     {/*</li>*/}
-                    {/*<li>*/}
-                    {/*    <Link to='/tournament-brackets'><MenuButton>Турнирные сетки</MenuButton></Link>*/}
-                    {/*</li>*/}
+                    <li>
+                        <Link to='/tournament-brackets'><MenuButton>Турнирные сетки</MenuButton></Link>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -22,7 +22,9 @@ const TournamentBrackets = () => {
         <div className={styles.tournament_brackets}>
             <h2>Турнирные сетки</h2>
             <div className={styles.tournament_brackets_content}>
-                <TournamentBracketCard name={TournamentBracketsCards.dota.name} img={TournamentBracketsCards.dota.img} routingPath={'dota-tournament-bracket'}/>
+                <TournamentBracketCard name={TournamentBracketsCards.dota.name}
+                                       img={TournamentBracketsCards.dota.img}
+                                       routingPath={'dota-tournament-bracket'}/>
                 {/*<TournamentBracketCard name={TournamentBracketsCards.valorant.name} img={TournamentBracketsCards.valorant.img}/>*/}
             </div>
             {/*<div className={styles.tournament_brackets_content}>*/}

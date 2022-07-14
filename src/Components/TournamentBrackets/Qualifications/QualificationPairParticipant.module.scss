@@ -1,0 +1,18 @@
+.gamePair {
+  display: flex;
+  color: var(--main-color);
+  gap: 20px;
+  align-items: center;
+  font-family: var(--font-family-secondary);
+  & > span {
+    text-transform: uppercase;
+  }
+  .participant {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--secondary-color);
+    padding: 10px 30px 10px 30px;
+    background-color: #616161;
+    width: 200px;
+  }
+}
