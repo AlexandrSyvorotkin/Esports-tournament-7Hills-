@@ -14,3 +14,5 @@ const QualificationPairParticipants = ({firstParticipant, secondParticipant, cou
 };
 
 export default QualificationPairParticipants;
+
+
