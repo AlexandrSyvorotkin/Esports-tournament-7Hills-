@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import styles from './HamburgerMenu.module.scss'
-import SideMenuContext from "../context/modal-context";
+import SideMenuContext from "../../../context/modal-context";
 
 const HamburgerMenu = () => {
 

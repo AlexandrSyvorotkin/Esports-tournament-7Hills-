@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import styles from './TournamentRoadMap.module.scss'
-import ButtonSecondary from "../UI/ButtonSecondary";
-import TournamentStage from "./TournamentStage";
-import mainPosition from '../positions/положение.pdf'
+import mainPosition from '../../positions/положение.pdf'
+import ButtonSecondary from "../../UI/ButtonSecondary";
+import TournamentStage from "../TournamentStage/TournamentStage";
 
 const TournamentRoadMap = ({dates, registrationPath, positionPath, positionDoc}) => {
 
@@ -17,10 +17,10 @@ const TournamentRoadMap = ({dates, registrationPath, positionPath, positionDoc})
     return (
         <div className={styles.tournament_roadmaps}>
             <div className={styles.tournament_roadmap}>
-                <TournamentStage stage={'Квалификации'} StageDates={dates.qualification} modalText={modalText.qualificationInfo} arrow/>
-                <TournamentStage stage={'Группы'} StageDates={dates.groupStage} modalText={modalText.groupStageInfo} arrow/>
-                <TournamentStage stage={'Плей-офф'} StageDates={dates.playoffs} modalText={modalText.playoffsInfo} arrow/>
-                <TournamentStage stage={'Финал'} StageDates={dates.final} modalText={modalText.finalInfo}/>
+                <TournamentStage stage='Квалификации' StageDates={dates.qualification} modalText={modalText.qualificationInfo} arrow/>
+                <TournamentStage stage='Группы' StageDates={dates.groupStage} modalText={modalText.groupStageInfo} arrow/>
+                <TournamentStage stage='Плей-офф' StageDates={dates.playoffs} modalText={modalText.playoffsInfo} arrow/>
+                <TournamentStage stage='Финал' StageDates={dates.final} modalText={modalText.finalInfo}/>
             </div>
             <div className={styles.buttons_sections}>
                 <Link to='/'><ButtonSecondary>Назад</ButtonSecondary></Link>

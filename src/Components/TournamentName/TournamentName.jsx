@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './TournamentName.module.scss'
-import CounterTimer from "./CounterTimer/CounterTImer";
+import CounterTimer from "../CounterTimer/CounterTImer";
 
 const TournamentName = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './ValorantRoadmap.module.scss'
-import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import valorant from '../../Assets/img-for-roadmap/valorant.png'
 
 import valorantPosition from '../../positions/Valorant.doc'
+import TournamentRoadMap from "../../Components/TournamentRoadmap/TournamentRoadMap";
 
 const ValorantRoadmap = ({modalActive, setModalActive}) => {
 
@@ -25,11 +25,11 @@ const ValorantRoadmap = ({modalActive, setModalActive}) => {
             <TournamentRoadMap
                 modalActive={modalActive}
                 setModalActive={setModalActive}
-                discipline={'VALORANT'}
+                discipline='VALORANT'
                 dates={dates}
-                registrationPath={'/valorant-registration'}
+                registrationPath='/valorant-registration'
                 positionPath={valorantPosition}
-                positionDoc={'Valorant.doc'}
+                positionDoc='Valorant.doc'
                 />
         </>
     );

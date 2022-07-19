@@ -10,22 +10,22 @@ import DotaRoadmap from "./pages/TournamentRoadmaps/DotaRoadmap";
 
 // Routes
 import MainPage from "./pages/MainPage";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/MenuPages/NotFound/NotFound";
 
 // Menu Routes
-import AboutProject from "./pages/MenuPages/AboutProject";
-import Contacts from "./pages/MenuPages/Contacts";
-import PhotoGalary from "./pages/MenuPages/PhotoGalary";
-import Faq from "./pages/MenuPages/FAQ";
+import AboutProject from "./pages/MenuPages/AboutProject/AboutProject";
+import Contacts from "./pages/MenuPages/Contacts/Contacts";
+import PhotoGalary from "./pages/MenuPages/PhotoGalary/PhotoGalary";
+import Faq from "./pages/MenuPages/FAQ/FAQ";
 
 //Registration Routes
 import DotaRegistration from "./pages/RegistrationPages/DotaRegistration";
 import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
 import ValorantRegistration from "./pages/RegistrationPages/ValorantRegistration";
 import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
-import AllRegistration from "./pages/MenuPages/AllRegistration";
-import Positions from "./pages/Positions";
-import TournamentBrackets from "./pages/MenuPages/TournamentBrackets";
+import AllRegistration from "./pages/MenuPages/AllRegistrations/AllRegistration";
+import Positions from "./pages/MenuPages/Positions/Positions";
+import TournamentBrackets from "./pages/MenuPages/TournamentBrakets/TournamentBrackets";
 import DotaTournamentBracket from "./pages/TournamentBrackets/DotaTournamentBracket";
 import {useState} from "react";
 import SideMenuContext from "./context/modal-context";

@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './TournamentPrizePool.module.scss'
-import {motion} from "framer-motion";
-import greenLogo from "../Assets/Green.svg";
-import CounterTimer from "./CounterTimer/CounterTImer";
+import greenLogo from "../../Assets/Green.svg";
 
 const TournamentPrizePool = () => {
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './FifaRoadmap.module.scss'
-import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import fifa from '../../Assets/img-for-roadmap/fifa.png'
 import fifaPosition from '../../positions/Fifa.doc'
+import TournamentRoadMap from "../../Components/TournamentRoadmap/TournamentRoadMap";
 
 const FifaRoadmap = ({setModalActive, modalActive}) => {
 

@@ -1,14 +1,21 @@
 import React from 'react';
 import styles from './AllRegistration.module.scss'
-import dota from '../../Assets/img-for-disciplines/barathrum.png'
-import csgo from '../../Assets/img-for-disciplines/csgo.png'
-import valorant from '../../Assets/img-for-disciplines/valorant.png'
-import fifa from '../../Assets/img-for-disciplines/fifa.png'
-import ButtonModal from "../../UI/ButtonModal";
 import {Link} from "react-router-dom";
-import RegistrationCard from "../../Components/RegistrationCard";
-import HamburgerMenu from "../../Components/HamburgerMenu";
-import Menu from "../../Components/Menu";
+
+//import ui
+import ButtonModal from "../../../UI/ButtonModal";
+
+//import components
+import RegistrationCard from "../../../Components/RegistrationCard/RegistrationCard";
+import HamburgerMenu from "../../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../../Components/Menus/SideMenu/Menu";
+
+//import images
+import dota from '../../../Assets/img-for-disciplines/barathrum.png'
+import csgo from '../../../Assets/img-for-disciplines/csgo.png'
+import valorant from '../../../Assets/img-for-disciplines/valorant.png'
+import fifa from '../../../Assets/img-for-disciplines/fifa.png'
+
 
 const AllRegistration = () => {
 

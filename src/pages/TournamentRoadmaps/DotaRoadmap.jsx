@@ -1,10 +1,10 @@
 import React from 'react';
 
-import TournamentRoadMap from "../../Components/TournamentRoadMap";
 import dota from '../../Assets/img-for-roadmap/dota2.png'
 import styles from './DotaRoadmap.module.scss'
 
 import dotaPosition from '../../positions/Dota2.doc'
+import TournamentRoadMap from "../../Components/TournamentRoadmap/TournamentRoadMap";
 
 const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) => {
 

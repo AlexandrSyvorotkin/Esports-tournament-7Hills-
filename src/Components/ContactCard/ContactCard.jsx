@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './ContactCard.module.scss'
-import vk from '../Assets/contactIcons/vk.png'
-import telegram from '../Assets/contactIcons/telegram.png'
+import vk from '../../Assets/contactIcons/vk.png'
+import telegram from '../../Assets/contactIcons/telegram.png'
 
 const ContactCard = ({photo, position, number, vkLink, telegramLink, name}) => {
         return (

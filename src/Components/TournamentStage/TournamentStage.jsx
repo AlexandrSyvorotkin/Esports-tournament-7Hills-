@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
 import ReactDOM from "react-dom";
 import styles from "./TournamentStage.module.scss";
-import ButtonModal from "../UI/ButtonModal";
-import Modal from "../UI/Modal";
-
+import ButtonModal from "../../UI/ButtonModal";
+import Modal from "../../UI/Modal";
 const TournamentStage = ({stage, StageDates, modalText, arrow}) => {
 
 

@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './Positions.module.scss'
 import {Link, Route, Routes} from "react-router-dom";
-import DotaRegulations from "../Components/Regulations/DotaRegulations";
-import CsGoRegulations from "../Components/Regulations/Cs-go regulations";
-import FifaRegulations from "../Components/Regulations/FifaRegulations";
-import ValorantRegulations from "../Components/Regulations/ValorantRegulations";
-import RegulationCard from "../Components/Regulations/RegulationCard";
+import RegulationCard from "../../../Components/Regulations/RegulationCard";
+import DotaRegulations from "../../../Components/Regulations/DotaRegulations";
+import CsGoRegulations from "../../../Components/Regulations/Cs-go regulations";
+import FifaRegulations from "../../../Components/Regulations/FifaRegulations";
+import ValorantRegulations from "../../../Components/Regulations/ValorantRegulations";
 
 const Positions = () => {
 

@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './AboutProject.module.scss'
 import {Link} from "react-router-dom";
-import ButtonSecondary from "../../UI/ButtonSecondary";
-import VK from '../../Assets/vk.png'
-import ButtonModal from "../../UI/ButtonModal";
-import HamburgerMenu from "../../Components/HamburgerMenu";
-import Menu from "../../Components/Menu";
+import VK from '../../../Assets/vk.png'
+import HamburgerMenu from "../../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../../Components/Menus/SideMenu/Menu";
+import ButtonModal from "../../../UI/ButtonModal";
 
 const AboutProject = () => {
     return (
