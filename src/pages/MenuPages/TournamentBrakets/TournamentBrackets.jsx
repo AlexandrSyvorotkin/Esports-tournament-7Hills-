@@ -11,6 +11,8 @@ import dota from '../../../Assets/BracketsImages/dotabrackets.png'
 import valorant from '../../../Assets/BracketsImages/valorantlogobrackets.png'
 import csgo from '../../../Assets/BracketsImages/csgo.png'
 import fifa from '../../../Assets/BracketsImages/fifaforbrackets.png'
+import HamburgerMenu from "../../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../../Components/Menus/SideMenu/Menu";
 
 const TournamentBracketsCards = {
     dota: {img: dota, name: 'dota'},
@@ -37,6 +39,8 @@ const TournamentBrackets = () => {
             <div className={styles.tournament_brackets_footer}>
                 <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>
+            <HamburgerMenu/>
+            <Menu/>
         </div>
     );
 };

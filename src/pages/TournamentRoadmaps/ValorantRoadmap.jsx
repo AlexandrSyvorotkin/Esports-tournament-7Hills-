@@ -4,6 +4,8 @@ import valorant from '../../Assets/img-for-roadmap/valorant.png'
 
 import valorantPosition from '../../positions/Valorant.doc'
 import TournamentRoadMap from "../../Components/TournamentRoadmap/TournamentRoadMap";
+import HamburgerMenu from "../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../Components/Menus/SideMenu/Menu";
 
 const ValorantRoadmap = ({modalActive, setModalActive}) => {
 
@@ -31,6 +33,8 @@ const ValorantRoadmap = ({modalActive, setModalActive}) => {
                 positionPath={valorantPosition}
                 positionDoc='Valorant.doc'
                 />
+            <HamburgerMenu/>
+            <Menu/>
         </>
     );
 };

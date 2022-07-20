@@ -5,6 +5,8 @@ import styles from './DotaRoadmap.module.scss'
 
 import dotaPosition from '../../positions/Dota2.doc'
 import TournamentRoadMap from "../../Components/TournamentRoadmap/TournamentRoadMap";
+import HamburgerMenu from "../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../Components/Menus/SideMenu/Menu";
 
 const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) => {
 
@@ -32,6 +34,8 @@ const DotaRoadmap = ({modalActive, setModalActive, menuActive, setMenuActive}) =
                 positionPath={dotaPosition}
                 positionDoc={"dota2.doc"}
             />
+            <HamburgerMenu/>
+            <Menu/>
         </>
     );
 };

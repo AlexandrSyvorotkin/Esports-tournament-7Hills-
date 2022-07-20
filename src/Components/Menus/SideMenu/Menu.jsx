@@ -4,6 +4,8 @@ import {Link} from "react-router-dom";
 import MenuButton from "../../../UI/MenuButton";
 import SideMenuContext from "../../../context/modal-context";
 
+//TODO: сделать ападтив под мобилку с продлением подложки
+
 const Menu = () => {
     const ctx = useContext(SideMenuContext)
 
@@ -30,11 +32,11 @@ const Menu = () => {
                     <li>
                         <Link to='/faq' ><MenuButton onClick={ctx.CloseSideMenu}>FAQ</MenuButton></Link>
                     </li>
+                    {/*<li>*/}
+                    {/*    <Link to='/positions'><MenuButton>Регламенты</MenuButton></Link>*/}
+                    {/*</li>*/}
                     <li>
-                        <Link to='/positions'><MenuButton>Регламенты</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/tournament-brackets'><MenuButton>Турнирные сетки</MenuButton></Link>
+                        <Link to='/tournament-brackets'><MenuButton onClick={ctx.CloseSideMenu}>Турнирные сетки</MenuButton></Link>
                     </li>
                 </ul>
             </div>

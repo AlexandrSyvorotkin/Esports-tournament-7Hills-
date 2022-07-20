@@ -6,6 +6,8 @@ import {Link, Route, Routes} from "react-router-dom";
 import GroupStage from "../../Components/TournamentBrackets/GroupStages/GroupStage";
 import PlayoffStage from "../../Components/TournamentBrackets/PlayoffStage";
 import QualificationStage from "../../Components/TournamentBrackets/Qualifications/QualificationStage";
+import HamburgerMenu from "../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../Components/Menus/SideMenu/Menu";
 
 
 const DotaTournamentBracket = () => {
@@ -24,6 +26,8 @@ const DotaTournamentBracket = () => {
             <div className={styles.dota_tournament_braket_footer}>
                 <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>
+            <HamburgerMenu/>
+            <Menu/>
         </div>
     );
 };

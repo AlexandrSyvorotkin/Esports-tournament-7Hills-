@@ -3,6 +3,8 @@ import styles from './CsgoRoadmap.module.scss'
 import csgo from '../../Assets/img-for-roadmap/csgo.png'
 import csgoPosition from '../../positions/csgo.doc'
 import TournamentRoadMap from "../../Components/TournamentRoadmap/TournamentRoadMap";
+import HamburgerMenu from "../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../Components/Menus/SideMenu/Menu";
 
 const CsgoRoadmap = ({modalActive, setModalActive}) => {
 
@@ -29,6 +31,8 @@ const CsgoRoadmap = ({modalActive, setModalActive}) => {
                 positionPath={csgoPosition}
                 positionDoc={'csgo.doc'}
             />
+            <HamburgerMenu/>
+            <Menu/>
         </>
     );
 };

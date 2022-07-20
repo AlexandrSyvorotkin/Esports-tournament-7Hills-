@@ -3,6 +3,8 @@ import styles from './FifaRoadmap.module.scss'
 import fifa from '../../Assets/img-for-roadmap/fifa.png'
 import fifaPosition from '../../positions/Fifa.doc'
 import TournamentRoadMap from "../../Components/TournamentRoadmap/TournamentRoadMap";
+import HamburgerMenu from "../../Components/Menus/HamburgerMenu/HamburgerMenu";
+import Menu from "../../Components/Menus/SideMenu/Menu";
 
 const FifaRoadmap = ({setModalActive, modalActive}) => {
 
@@ -30,6 +32,8 @@ const FifaRoadmap = ({setModalActive, modalActive}) => {
                 positionDoc={'fifa.doc'}
                 positionPath={fifaPosition}
             />
+            <HamburgerMenu/>
+            <Menu/>
         </>
     );
 };
