@@ -1,0 +1,18 @@
+.playOffPairCard {
+  color: white;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+  .team {
+    display: flex;
+    padding: 10px;
+    background-color: #616161;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  .win {
+    background-color: #54b3d6;
+  }
+}

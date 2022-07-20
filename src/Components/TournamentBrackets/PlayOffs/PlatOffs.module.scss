@@ -1,0 +1,19 @@
+.playOffStage {
+  padding: 50px;
+  .playOffRounds {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    .bracket_block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > span {
+        color: var(--main-color);
+        font-family: var(--font-family-secondary);
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+    }
+  }
+}
