@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './GroupCard.module.scss'
+import clsx from "classnames";
 
 const GroupCard = ({groupName,
                    team_1,
@@ -10,16 +11,19 @@ const GroupCard = ({groupName,
                    team_2_points,
                    team_3_points,
                    team_4_points}) => {
+
+    const classes = clsx(styles.group_card_content, styles.win)
+
     return (
         <div className={styles.group_card}>
             <span className={styles.group_card_number}>Группа {groupName}</span>
             <div className={styles.team_list}>
                 <ul>
-                    <div className={`${styles.group_card_content} + ${styles.win}`}>
+                    <div className={classes}>
                         <li>{team_1}</li>
                         <span>{team_1_points}</span>
                     </div>
-                    <div className={`${styles.group_card_content} + ${styles.win}`}>
+                    <div className={classes}>
                         <li>{team_2}</li>
                         <span>{team_2_points}</span>
                     </div>
