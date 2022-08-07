@@ -4,6 +4,8 @@ import clsx from "classnames";
 
 const PlayOffPairCard = ({team_1, team_2, score_1, score_2, team_1_win, team_2_win}) => {
 
+    // TODO: Complete lines for brackets
+
     const classes = clsx(styles.team, {
         [styles.win]: team_1_win,
     })
@@ -13,15 +15,16 @@ const PlayOffPairCard = ({team_1, team_2, score_1, score_2, team_1_win, team_2_w
     })
 
     return (
-        <div className={styles.playOffPairCard}>
-            <div className={classes}>
-                <span>{team_1}</span>
-                <span>{score_1}</span>
-            </div>
-            <div className={classes2}>
-                <span>{team_2}</span>
-                <span>{score_2}</span>
-            </div>
+        <div className={styles.playoff_pair_card}>
+                <div className={classes}>
+                    <span>{team_1}</span>
+                    <span>{score_1}</span>
+                </div>
+                <div className={classes2}>
+                    <span>{team_2}</span>
+                    <span>{score_2}</span>
+                </div>
+            {/*<hr className={styles.line}/>*/}
         </div>
     );
 };
