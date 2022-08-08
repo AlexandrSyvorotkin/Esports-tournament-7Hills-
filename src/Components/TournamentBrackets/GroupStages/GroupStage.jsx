@@ -7,7 +7,6 @@ const GroupStage = () => {
 
     const firstGruopSegment = groups.slice(0, 4)
     const secondGroupSegment = groups.slice(4,8)
-
     return (
         <>
             <div className={styles.group_stage}>
