@@ -1,0 +1,23 @@
+.group_item {
+  width: 200px;
+  border: 2px solid #00ff7f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  & > span {
+    text-align: center;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .participants {
+    display: flex;
+    flex-direction: column;
+  }
+  .points {
+    display: flex;
+    flex-direction: column;
+  }
+}

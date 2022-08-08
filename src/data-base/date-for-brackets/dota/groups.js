@@ -86,3 +86,47 @@ export const groups = [
         team_3_points:'0'
     }
 ]
+
+export const dotaGroups = [
+    {
+        group: 'A',
+        participants: ['МГАФК', 'ТПО ЮЗАО SQUAD', 'Мир.Труд.Май', 'GodEitherYou'],
+        points: ['3', '2', '1', '0']
+    },
+    {
+        group: 'B',
+        participants: ['CHuvSu', 'RGUNG', 'Team Vniia', 'Fundament'],
+        points: ['3', '2', '1', '0']
+
+    },
+    {
+        group: 'C',
+        participants: ['RKH-TU-1', 'Gakuen.lesgaft', 'Mospolytech 2.0', 'Derzhawin'],
+        points: ['3', '1', '1', '1']
+    },
+    {
+        group: 'D',
+        participants: ['MEI', 'Котики. и vetal', 'ПромИнн', 'Matvei i ego komanda'],
+        points: ['3', '2', '1', '0']
+    },
+    {
+        group: 'E',
+        participants: ['NKVD', 'NEWHappy', 'CosMOStars', 'Hope die last'],
+        points: ['3', '2', '1', '0']
+    },
+    {
+        group: 'F',
+        participants: ['XxXНекромантыXxX', 'AG', 'Ayy lmao', 'Owls'],
+        points: ['3', '1', '1', '1']
+    },
+    {
+        group: 'G',
+        participants: ['МТУСИ', 'CyberRejects', 'Atlantic', 'KS#54'],
+        points: ['3', '2', '1', '0']
+    },
+    {
+        group: 'H',
+        participants: ['Bauman Esports', 'Ranepa', 'Pelmennaya'],
+        points: ['3', '2', '1']
+    }
+]
