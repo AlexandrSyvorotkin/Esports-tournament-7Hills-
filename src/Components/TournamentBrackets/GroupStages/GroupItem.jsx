@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './GroupItem.module.scss'
 
 const GroupItem = ({name, participants, points}) => {
-    console.log(participants)
     return (
         <div className={styles.group_item}>
                 <span>Группа: {name}</span>

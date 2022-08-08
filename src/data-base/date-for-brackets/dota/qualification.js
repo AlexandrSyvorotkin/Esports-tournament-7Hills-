@@ -256,3 +256,4 @@ export const pairParticipants = [
         team_2_win: true
     },
 ]
+
