@@ -8,9 +8,6 @@ import QualificationItem from "./QualificationItem";
 
 const QualificationStage = () => {
 
-    console.log(dotaQualification[0].participants[1])
-
-
     const firstSegmentOfQualifications = dotaQualification.slice(0, 8)
     const secondSegmentOfQulifications = dotaQualification.slice(8, 16)
     const thirdSegmentOfQulifications = dotaQualification.slice(16, 24)

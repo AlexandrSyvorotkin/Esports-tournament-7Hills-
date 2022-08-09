@@ -1,140 +1,131 @@
-export const playOffs = {
-    firstRound: [
+export const dotaPlayoffs = {
+    round_one: [
         {
-            team_1: 'МГАФК',
-            team_2: 'Ranepa',
-            score_team_1: '0',
-            score_team_2: '1',
+            pair: '1',
+            id: 1,
+            participants: ['МГАФК', 'Ranepa'],
+            score: ['0', '1'],
             team_1_win: false,
             team_2_win: true
         },
         {
-            team_1: 'МТУСИ',
-            team_2: 'RRUNG',
-            score_team_1: '1',
-            score_team_2: '0',
+            pair: '2',
+            id: 2,
+            participants: ['МТУСИ', 'RRUNG'],
+            score: ['1', '0'],
             team_1_win: true,
             team_2_win: false
         },
         {
-            team_1: 'RKH-TU-1',
-            team_2: 'AG',
-            score_team_1: '1',
-            score_team_2: '0',
+            pair: '3',
+            id: 3,
+            participants: ['RKH-TU-1', 'AG'],
+            score: ['1', '0'],
             team_1_win: true,
             team_2_win: false
         },
         {
-            team_1: 'NKVD',
-            team_2: 'Котики. и vetal',
-            score_team_1: '1',
-            score_team_2: '0',
+            pair: '4',
+            id: 4,
+            participants: ['NKVD', 'Котики. и vetal'],
+            score: ['1', '0'],
             team_1_win: true,
             team_2_win: false
         },
         {
-            team_1: 'CHuvSU',
-            team_2: 'CyberRejects',
-            score_team_1: '0',
-            score_team_2: '1',
+            pair: '5',
+            id: 5,
+            participants: ['CHuvSU', 'CyberRejects'],
+            score: ['0', '1'],
             team_1_win: false,
             team_2_win: true
         },
         {
-            team_1: 'Bauman Esports',
-            team_2: 'ТПО ЮЗАО SQUAD',
-            score_team_1: '0',
-            score_team_2: '1',
+            pair: '6',
+            id: 6,
+            participants: ['Bauman Esports', 'ТПО ЮЗАО SQUAD'],
+            score: ['0', '1'],
             team_1_win: false,
             team_2_win: true
         },
         {
-            team_1: 'MEI',
-            team_2: 'NEWHappy',
-            score_team_1: '0',
-            score_team_2: '1',
+            pair: '7',
+            id: 7,
+            participants: ['MEI', 'NEWHappy'],
+            score: ['0', '1'],
             team_1_win: false,
             team_2_win: true
         },
         {
-            team_1: 'xXxНекромантыxXx',
-            team_2: 'Gakuen.lesgaft',
-            score_team_1: '1',
-            score_team_2: '0',
+            pair: '8',
+            id: 8,
+            participants: ['xXxНекромантыxXx', 'Gakuen.lesgaft'],
+            score: ['1', '0'],
             team_1_win: true,
             team_2_win: false
-        }
+        },
     ],
-    quaterFinal: [
+    quarterfinal: [
         {
-            team_1: 'Ranepa',
-            team_2: 'МТУСИ',
-            score_team_1: '2',
-            score_team_2: '0',
+            pair: '9',
+            id: 9,
+            participants: ['Ranepa', 'МТУСИ'],
+            score: ['2', '0'],
             team_1_win: true,
             team_2_win: false
         },
         {
-            team_1: 'RKH-TU-1',
-            team_2: 'NKVD',
-            score_team_1: '0',
-            score_team_2: '2',
+            pair: '10',
+            id: 10,
+            participants: ['RKH-TU-1', 'NKVD'],
+            score: ['0', '2'],
             team_1_win: false,
             team_2_win: true
         },
         {
-            team_1: 'CyberRejects',
-            team_2: 'ТПО ЮЗАО SQUAD',
-            score_team_1: '1',
-            score_team_2: '2',
+            pair: '11',
+            id: 11,
+            participants: ['CyberRejects', 'ТПО ЮЗАО SQUAD'],
+            score: ['1', '2'],
             team_1_win: false,
             team_2_win: true
         },
         {
-            team_1: 'NEWHappy',
-            team_2: 'xXxНекромантыxXx',
-            score_team_1: '0',
-            score_team_2: '2',
+            pair: '12',
+            id: 12,
+            participants: ['NEWHappy', 'xXxНекромантыxXx'],
+            score: ['0', '2'],
             team_1_win: false,
             team_2_win: true
         },
     ],
     semifinal: [
         {
-            team_1: 'Ranepa',
-            team_2: 'NKVD',
-            score_team_1: '0',
-            score_team_2: '2',
+            pair: '13',
+            id: 13,
+            participants: ['Ranepa', 'NKVD'],
+            score: ['0', '2'],
             team_1_win: false,
             team_2_win: true
         },
         {
-            team_1: 'ТПО ЮЗАО SQUAD',
-            team_2: 'xXxНекромантыxXx',
-            score_team_1: '0',
-            score_team_2: '2',
+            pair: '14',
+            id: 14,
+            participants: ['ТПО ЮЗАО SQUAD', 'xXxНекромантыxXx'],
+            score: ['0', '2'],
             team_1_win: false,
             team_2_win: true
         },
     ],
     final: [
         {
-            team_1: 'NKVD',
-            team_2: 'xXxНекромантыxXx',
-            score_team_1: '3',
-            score_team_2: '1',
+            pair: '15',
+            id: 15,
+            participants: ['NKVD', 'xXxНекромантыxXx'],
+            score: ['3', '1'],
             team_1_win: true,
             team_2_win: false
-        }
+        },
     ],
-    thirdPlace: [
-        {
-            team_1: 'Ranepa',
-            team_2: 'ТПО ЮЗАО SQUAD',
-            score_team_1: '3',
-            score_team_2: '0',
-            team_1_win: true,
-            team_2_win: false
-        }
-    ]
+    third_place_game: []
 }

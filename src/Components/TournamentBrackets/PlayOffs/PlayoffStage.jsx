@@ -1,16 +1,11 @@
 import React from 'react';
 import PlayOffPairCard from "./PlayOffPairCard";
 import styles from './PlatOffs.module.scss'
-import clsx from "classnames";
-import {playOffs} from "../../../data-base/date-for-brackets/dota/playoff";
+import {dotaPlayoffs} from '../../../data-base/date-for-brackets/dota/playoff'
 
 const PlayoffStage = () => {
 
-
-
-    const {firstRound, quaterFinal, semifinal, thirdPlace, final} = playOffs
-
-    const classes = clsx(styles.bracket_block, styles.quater)
+    const {round_one, quarterfinal, semifinal, final} = dotaPlayoffs
 
     return (
         <div className={styles.playoff_stage}>
@@ -22,26 +17,26 @@ const PlayoffStage = () => {
             </div>
             <div className={styles.playOffRounds}>
                 <div className={styles.bracket_block}>
-                    {firstRound.map(pair =>
+                    {round_one.map(pair =>
                         <PlayOffPairCard
-                            key={pair.team_1}
-                            team_1={pair.team_1}
-                            team_2={pair.team_2}
-                            score_1={pair.score_team_1}
-                            score_2={pair.score_team_2}
+                            id={pair.id}
+                            team_1={pair.participants[0]}
+                            team_2={pair.participants[1]}
+                            score_1={pair.score[0]}
+                            score_2={pair.score[1]}
                             team_1_win={pair.team_1_win}
                             team_2_win={pair.team_2_win}
                         />
                     )}
                 </div>
-                <div className={classes}>
-                    {quaterFinal.map(pair =>
+                <div className={styles.bracket_block}>
+                    {quarterfinal.map(pair =>
                         <PlayOffPairCard
-                            key={pair.team_1}
-                            team_1={pair.team_1}
-                            team_2={pair.team_2}
-                            score_1={pair.score_team_1}
-                            score_2={pair.score_team_2}
+                            id={pair.id}
+                            team_1={pair.participants[0]}
+                            team_2={pair.participants[1]}
+                            score_1={pair.score[0]}
+                            score_2={pair.score[1]}
                             team_1_win={pair.team_1_win}
                             team_2_win={pair.team_2_win}
                         />
@@ -50,11 +45,11 @@ const PlayoffStage = () => {
                 <div className={styles.bracket_block}>
                     {semifinal.map(pair =>
                         <PlayOffPairCard
-                            key={pair.team_1}
-                            team_1={pair.team_1}
-                            team_2={pair.team_2}
-                            score_1={pair.score_team_1}
-                            score_2={pair.score_team_2}
+                            id={pair.id}
+                            team_1={pair.participants[0]}
+                            team_2={pair.participants[1]}
+                            score_1={pair.score[0]}
+                            score_2={pair.score[1]}
                             team_1_win={pair.team_1_win}
                             team_2_win={pair.team_2_win}
                         />
@@ -63,11 +58,11 @@ const PlayoffStage = () => {
                 <div className={styles.bracket_block}>
                     {final.map(pair =>
                         <PlayOffPairCard
-                            key={pair.team_1}
-                            team_1={pair.team_1}
-                            team_2={pair.team_2}
-                            score_1={pair.score_team_1}
-                            score_2={pair.score_team_2}
+                            id={pair.id}
+                            team_1={pair.participants[0]}
+                            team_2={pair.participants[1]}
+                            score_1={pair.score[0]}
+                            score_2={pair.score[1]}
                             team_1_win={pair.team_1_win}
                             team_2_win={pair.team_2_win}
                         />
