@@ -1,13 +1,11 @@
-.gamePair {
+.qualificationItem {
   display: flex;
-  color: var(--main-color);
-  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
   align-items: center;
-  font-family: var(--font-family-secondary);
-  & > span {
-    text-transform: uppercase;
-  }
-  .participant {
+  padding: 10px;
+  .pair {
     display: flex;
     justify-content: center;
     border: 2px solid var(--secondary-color);
@@ -16,7 +14,6 @@
     width: 200px;
     border-radius: 5px;
   }
-
   .win {
     background-color: #54b3d6;
     border: 2px solid var(--main-color);

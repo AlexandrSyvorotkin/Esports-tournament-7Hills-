@@ -15,7 +15,7 @@ const DotaTournamentBracket = () => {
     return (
         <div className={styles.dota_tournament_braket}
             style={{
-            backgroundImage: `url('../../Assets/bracketsBackgrounds/jugBackground.jpg')`,
+            backgroundImage: `url('${juggernaut}')`,
             backgroundSize: 'cover'
         }}>
             <div className={styles.dota_tournament_braket_header}>

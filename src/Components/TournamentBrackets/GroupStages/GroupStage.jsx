@@ -5,6 +5,8 @@ import {groups} from "../../../data-base/date-for-brackets/dota/groups";
 import {dotaGroups} from "../../../data-base/date-for-brackets/dota/groups";
 import GroupItem from "./GroupItem";
 
+//TODO:Доделать групповую стадию
+
 const GroupStage = () => {
     console.log(dotaGroups)
 

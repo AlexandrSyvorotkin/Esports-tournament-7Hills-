@@ -1,12 +1,14 @@
-.qulifications {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  .qualification_stage_wrapper {
-    padding: 50px;
+.qualifications {
+  color: var(--main-color);
+  margin-top: 20px;
+  .wrapper {
     display: flex;
-    gap: 20px;
-    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .segments {
+    margin: 20px;
   }
 }
 
