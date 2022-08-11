@@ -22,6 +22,8 @@ const TournamentBracketsCards = {
 }
 
 
+
+
 const TournamentBrackets = () => {
     return (
         <div className={styles.tournament_brackets}>
@@ -29,16 +31,17 @@ const TournamentBrackets = () => {
             <div className={styles.tournament_brackets_content}>
                 <TournamentBracketCard name={TournamentBracketsCards.dota.name}
                                        img={TournamentBracketsCards.dota.img}
-                                       routingPath={'dota-tournament-bracket'}/>
-                {/*<TournamentBracketCard name={TournamentBracketsCards.valorant.name} img={TournamentBracketsCards.valorant.img}/>*/}
+                                       routingPath={'dota-tournament-bracket/qualification-stage'}/>
             </div>
-            {/*<div className={styles.tournament_brackets_content}>*/}
-            {/*    <TournamentBracketCard name={TournamentBracketsCards.fifa.name} img={TournamentBracketsCards.fifa.img}/>*/}
-            {/*    <TournamentBracketCard name={TournamentBracketsCards.csgo.name} img={TournamentBracketsCards.csgo.img}/>*/}
-            {/*</div>*/}
+            <div className={styles.tournament_brackets_content}>
+                <TournamentBracketCard name={TournamentBracketsCards.valorant.name}
+                                       img={TournamentBracketsCards.dota.valorant}
+                                       routingPath={'valorant-tournament-bracket/qualification-stage'}/>
+            </div>
             <div className={styles.tournament_brackets_footer}>
                 <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>
+
             <HamburgerMenu/>
             <Menu/>
         </div>

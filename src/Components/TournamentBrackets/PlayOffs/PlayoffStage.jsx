@@ -1,11 +1,10 @@
 import React from 'react';
 import PlayOffPairCard from "./PlayOffPairCard";
 import styles from './PlatOffs.module.scss'
-import {dotaPlayoffs} from '../../../data-base/date-for-brackets/dota/playoff'
 
-const PlayoffStage = () => {
+const PlayoffStage = ({playoffs, valorant, cs, dota, fifa}) => {
 
-    const {round_one, quarterfinal, semifinal, final} = dotaPlayoffs
+    const {round_one, quarterfinal, semifinal, final} = playoffs
 
     return (
         <div className={styles.playoff_stage}>
@@ -75,3 +74,5 @@ const PlayoffStage = () => {
 };
 
 export default PlayoffStage;
+
+

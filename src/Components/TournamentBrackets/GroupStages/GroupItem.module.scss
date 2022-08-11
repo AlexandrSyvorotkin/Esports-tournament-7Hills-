@@ -4,6 +4,11 @@
   color: white;
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  font-size: 20px;
+  .group_name {
+    margin-bottom: 20px;
+  }
   & > span {
     text-align: center;
   }

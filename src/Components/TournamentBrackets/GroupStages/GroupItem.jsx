@@ -4,7 +4,7 @@ import styles from './GroupItem.module.scss'
 const GroupItem = ({name, participants, points}) => {
     return (
         <div className={styles.group_item}>
-                <span>Группа: {name}</span>
+                <span className={styles.group_name}>Группа {name}</span>
                 <div className={styles.wrapper}>
                     <div className={styles.participants}>
                         {participants.map(it=> <span>{it}</span>)}

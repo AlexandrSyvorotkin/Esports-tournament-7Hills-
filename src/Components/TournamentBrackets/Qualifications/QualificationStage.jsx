@@ -1,17 +1,16 @@
 import React from 'react';
 import styles from './QualificationStage.module.scss'
-import {dotaQualification} from "../../../data-base/date-for-brackets/dota/qualification";
 import QualificationItem from "./QualificationItem";
 
 
 //TODO: добавить активлый элемент при роутинге
 
-const QualificationStage = () => {
+const QualificationStage = ({qualifications}) => {
 
-    const firstSegmentOfQualifications = dotaQualification.slice(0, 8)
-    const secondSegmentOfQulifications = dotaQualification.slice(8, 16)
-    const thirdSegmentOfQulifications = dotaQualification.slice(16, 24)
-    const fouthSegmentOfQulifications = dotaQualification.slice(24, 33)
+    const firstSegmentOfQualifications = qualifications.slice(0, 8)
+    const secondSegmentOfQulifications = qualifications.slice(8, 16)
+    const thirdSegmentOfQulifications = qualifications.slice(16, 24)
+    const fouthSegmentOfQulifications = qualifications.slice(24, 33)
 
     return (
         <div className={styles.qualifications}>

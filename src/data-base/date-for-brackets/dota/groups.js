@@ -1,7 +1,7 @@
 export const dotaGroups = [
     {
         group: 'A',
-        participants: ['МГАФК', 'ТПО ЮЗАО SQUAD', 'Мир.Труд.Май', 'GodEitherYou'],
+        participants: ['МГАФК', 'ТПО ЮЗАО SQUAD', 'Мир.Труд.Май'],
         points: ['3', '2', '1', '0']
     },
     {

@@ -29,6 +29,7 @@ import TournamentBrackets from "./pages/MenuPages/TournamentBrakets/TournamentBr
 import DotaTournamentBracket from "./pages/TournamentBrackets/DotaTournamentBracket";
 import {useState} from "react";
 import SideMenuContext from "./context/modal-context";
+import ValorantTournamentPage from "./pages/TournamentBrackets/ValorantTournamentPage";
 
 
 
@@ -51,22 +52,29 @@ const App = () => {
                     <Route path='valorant' element={<ValorantRoadmap/>}/>
                     <Route path='fifa' element={<FifaRoadmap/>}/>
 
+                    {/*// Menu pages*/}
                     <Route path='aboutus' element={<AboutProject />}/>
                     <Route path='contacts' element={<Contacts />}/>
                     <Route path='photosgalary' element={<PhotoGalary />}/>
                     <Route path='registration' element={<AllRegistration />}/>
                     <Route path='faq' element={<Faq />}/>
                     <Route path='aboutus' element={<AboutProject />}/>
+                    <Route path='/positions/*' element={<Positions/>}/>
+                    <Route path='/tournament-brackets/*' element={<TournamentBrackets/>}/>
+                    {/*//*/}
 
+                    {/*// Registration pages*/}
                     <Route path='dota-registration' element={<DotaRegistration />}/>
                     <Route path='cs-go-registration' element={<CsgoRegistration />}/>
                     <Route path='valorant-registration' element={<ValorantRegistration />}/>
                     <Route path='fifa-registration' element={<FifaRegistration />}/>
+                    {/*//*/}
 
-                    <Route path='/positions/*' element={<Positions/>}/>
-                    <Route path='/tournament-brackets/*' element={<TournamentBrackets/>}/>
+
+
 
                     <Route path='tournament-brackets/dota-tournament-bracket/*' element={<DotaTournamentBracket/>}/>
+                    <Route path='tournament-brackets/valorant-tournament-bracket/*' element={<ValorantTournamentPage/>}/>
 
                     <Route path='*' element={<NotFound/>}/>
 
