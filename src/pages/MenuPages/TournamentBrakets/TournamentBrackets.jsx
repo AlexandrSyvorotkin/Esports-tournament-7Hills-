@@ -22,8 +22,6 @@ const TournamentBracketsCards = {
 }
 
 
-
-
 const TournamentBrackets = () => {
     return (
         <div className={styles.tournament_brackets}>
@@ -32,12 +30,14 @@ const TournamentBrackets = () => {
                 <TournamentBracketCard name={TournamentBracketsCards.dota.name}
                                        img={TournamentBracketsCards.dota.img}
                                        routingPath={'dota-tournament-bracket/qualification-stage'}/>
-            </div>
-            <div className={styles.tournament_brackets_content}>
                 <TournamentBracketCard name={TournamentBracketsCards.valorant.name}
-                                       img={TournamentBracketsCards.dota.valorant}
+                                       img={TournamentBracketsCards.valorant.img}
                                        routingPath={'valorant-tournament-bracket/qualification-stage'}/>
+                <TournamentBracketCard name={TournamentBracketsCards.csgo.name}
+                                       img={TournamentBracketsCards.csgo.img}
+                                       routingPath={'csgo-tournament-bracket/qualification-stage'}/>
             </div>
+
             <div className={styles.tournament_brackets_footer}>
                 <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
             </div>

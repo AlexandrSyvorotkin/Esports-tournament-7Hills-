@@ -30,6 +30,7 @@ import DotaTournamentBracket from "./pages/TournamentBrackets/DotaTournamentBrac
 import {useState} from "react";
 import SideMenuContext from "./context/modal-context";
 import ValorantTournamentPage from "./pages/TournamentBrackets/ValorantTournamentPage";
+import CsgoTournamentBracket from "./pages/TournamentBrackets/CsgoTournamentBracket";
 
 
 
@@ -75,6 +76,7 @@ const App = () => {
 
                     <Route path='tournament-brackets/dota-tournament-bracket/*' element={<DotaTournamentBracket/>}/>
                     <Route path='tournament-brackets/valorant-tournament-bracket/*' element={<ValorantTournamentPage/>}/>
+                    <Route path='tournament-brackets/csgo-tournament-bracket/*' element={<CsgoTournamentBracket/>}/>
 
                     <Route path='*' element={<NotFound/>}/>
 
