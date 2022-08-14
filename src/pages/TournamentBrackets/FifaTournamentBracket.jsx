@@ -18,10 +18,10 @@ import {dotaPlayoffs} from "../../data-base/date-for-brackets/dota/playoff";
 const DotaTournamentBracket = () => {
     return (
         <div className={styles.dota_tournament_braket}
-            style={{
-            backgroundImage: `url('${juggernaut}')`,
-            backgroundSize: 'cover'
-        }}>
+             style={{
+                 backgroundImage: `url('${juggernaut}')`,
+                 backgroundSize: 'cover'
+             }}>
             <div className={styles.dota_tournament_braket_header}>
                 <Link to='qualification-stage'><ButtonBrackets>Квалификации</ButtonBrackets></Link>
                 <Link to='group-stage'><ButtonBrackets>Групповая стадия</ButtonBrackets></Link>
@@ -29,9 +29,9 @@ const DotaTournamentBracket = () => {
             </div>
 
             <Routes>
-                <Route path='qualification-stage' element={<QualificationStage qualifications={dotaQualification}/>}/>
-                <Route path='group-stage' element={<GroupStage groups={dotaGroups}/>}/>
-                <Route path='playoffs-stage' element={<PlayoffStage playoffs={dotaPlayoffs}/>}/>
+                {/*<Route path='qualification-stage' element={<QualificationStage qualifications={dotaQualification}/>}/>*/}
+                {/*<Route path='group-stage' element={<GroupStage groups={dotaGroups}/>}/>*/}
+                {/*<Route path='playoffs-stage' element={<PlayoffStage playoffs={dotaPlayoffs}/>}/>*/}
             </Routes>
 
             <div className={styles.dota_tournament_braket_footer}>
