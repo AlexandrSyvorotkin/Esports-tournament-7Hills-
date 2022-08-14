@@ -23,9 +23,12 @@ const DotaTournamentBracket = () => {
                  backgroundSize: 'cover'
              }}>
             <div className={styles.dota_tournament_braket_header}>
-                <Link to='qualification-stage'><ButtonBrackets>Квалификации</ButtonBrackets></Link>
-                <Link to='group-stage'><ButtonBrackets>Групповая стадия</ButtonBrackets></Link>
-                <Link to='playoffs-stage'><ButtonBrackets>Плей-офф</ButtonBrackets></Link>
+                {/*<Link to='qualification-stage'><ButtonBrackets>Квалификации</ButtonBrackets></Link>*/}
+                {/*<Link to='group-stage'><ButtonBrackets>Групповая стадия</ButtonBrackets></Link>*/}
+                {/*<Link to='playoffs-stage'><ButtonBrackets>Плей-офф</ButtonBrackets></Link>*/}
+                <Link to='fifapc'>Сетка PC</Link>
+                <Link to='fifaps4'>Сетка PS4</Link>
+                <Link to='fifaps5'>Сетка PS5</Link>
             </div>
 
             <Routes>
@@ -33,7 +36,6 @@ const DotaTournamentBracket = () => {
                 {/*<Route path='group-stage' element={<GroupStage groups={dotaGroups}/>}/>*/}
                 {/*<Route path='playoffs-stage' element={<PlayoffStage playoffs={dotaPlayoffs}/>}/>*/}
             </Routes>
-
             <div className={styles.dota_tournament_braket_footer}>
                 <Link to='/tournament-brackets'><ButtonModal>Назад</ButtonModal></Link>
             </div>
