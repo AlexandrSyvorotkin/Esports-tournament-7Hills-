@@ -15,6 +15,11 @@ import {dotaQualification} from "../../data-base/date-for-brackets/dota/qualific
 import {dotaPlayoffs} from "../../data-base/date-for-brackets/dota/playoff";
 import {fifaPCGruops} from "../../data-base/date-for-brackets/fifa/PES5/groups/groups";
 import {fifaPCPlayOffs} from "../../data-base/date-for-brackets/fifa/PC/playoffs/playoffs";
+import Fifabracket from "../../Components/TournamentBrackets/FifaTournamentBracket/Fifabracket";
+import {fifaPsFourGruops} from "../../data-base/date-for-brackets/fifa/PES4/groups/fifaPsFourGroups";
+import {fifaPSFourPlayOffs} from "../../data-base/date-for-brackets/fifa/PES4/playoffs/playoffs";
+import {fifaPsFiveGruops} from "../../data-base/date-for-brackets/fifa/PC/groups/groups";
+import {fifaPSFivePlayOffs} from "../../data-base/date-for-brackets/fifa/PES5/playoffs/playoffs";
 
 
 const DotaTournamentBracket = () => {
@@ -34,7 +39,9 @@ const DotaTournamentBracket = () => {
             </div>
 
             <Routes>
-
+                <Route path='fifapc/*' element={<Fifabracket groups={fifaPCGruops} playoffs={fifaPCPlayOffs}/>}/>
+                <Route path='fifaps4/*' element={<Fifabracket groups={fifaPsFourGruops} playoffs={fifaPSFourPlayOffs}/>}/>
+                <Route path='fifaps5/*' element={<Fifabracket groups={fifaPsFiveGruops} playoffs={fifaPSFivePlayOffs}/>}/>
             </Routes>
             <div className={styles.dota_tournament_braket_footer}>
                 <Link to='/tournament-brackets'><ButtonModal>Назад</ButtonModal></Link>

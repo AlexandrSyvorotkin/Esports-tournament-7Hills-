@@ -1,4 +1,4 @@
-export const fifaPCGruops = [
+export const fifaPsFourGruops = [
     {
         group: 'A',
         participants: ['volkarena', 'Gerb_RuS', 'efremovbest', 'Adelkaram23', 'NF_GREGO', 'Crekk1'],
