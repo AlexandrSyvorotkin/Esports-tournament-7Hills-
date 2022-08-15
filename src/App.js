@@ -24,7 +24,7 @@ import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
 import ValorantRegistration from "./pages/RegistrationPages/ValorantRegistration";
 import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
 import AllRegistration from "./pages/MenuPages/AllRegistrations/AllRegistration";
-import Positions from "./pages/MenuPages/Positions/Positions";
+import Docs from "./pages/MenuPages/Positions/Docs";
 import TournamentBrackets from "./pages/MenuPages/TournamentBrakets/TournamentBrackets";
 import DotaTournamentBracket from "./pages/TournamentBrackets/DotaTournamentBracket";
 import {useState} from "react";
@@ -61,7 +61,7 @@ const App = () => {
                     <Route path='registration' element={<AllRegistration />}/>
                     <Route path='faq' element={<Faq />}/>
                     <Route path='aboutus' element={<AboutProject />}/>
-                    <Route path='/positions/*' element={<Positions/>}/>
+                    <Route path='/positions/*' element={<Docs/>}/>
                     <Route path='/tournament-brackets/*' element={<TournamentBrackets/>}/>
                     {/*//*/}
 

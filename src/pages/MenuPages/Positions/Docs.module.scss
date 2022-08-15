@@ -1,0 +1,29 @@
+.positions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  & > h2 {
+    color: white;
+  }
+  &_menu {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    & > li {
+      list-style: none;
+      & > a {
+        text-decoration: none;
+        color: var(--main-color);
+        background-color: #7EAF16;
+        padding: 15px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .active_link {
+    color: burlywood !important;
+    background-color: rebeccapurple !important;
+  }
+}
