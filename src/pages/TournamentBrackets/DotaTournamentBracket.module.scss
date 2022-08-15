@@ -14,4 +14,23 @@
     justify-content: center;
     margin-top: 40px;
   }
+  .fifa_menu {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    & > li {
+      list-style: none;
+    }
+    & > li > a {
+      text-decoration: none;
+      color: var(--main-color);
+      background-color: #7EAF16;
+      padding: 15px;
+      border-radius: 20px;
+    }
+  }
+  .active_link {
+    color: burlywood !important;
+    background-color: rebeccapurple !important;
+  }
 }

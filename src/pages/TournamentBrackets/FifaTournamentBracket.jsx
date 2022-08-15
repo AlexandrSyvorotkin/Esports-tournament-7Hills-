@@ -23,6 +23,10 @@ import {fifaPSFivePlayOffs} from "../../data-base/date-for-brackets/fifa/PES5/pl
 
 
 const DotaTournamentBracket = () => {
+
+    const setActiveLink = ({isActive}) => isActive ? `${styles.active_link}` : ''
+
+
     return (
         <div className={styles.dota_tournament_braket}
              style={{
@@ -32,10 +36,12 @@ const DotaTournamentBracket = () => {
             <div className={styles.dota_tournament_braket_header}>
                 {/*<Link to='qualification-stage'><ButtonBrackets>Квалификации</ButtonBrackets></Link>*/}
                 {/*<Link to='group-stage'><ButtonBrackets>Групповая стадия</ButtonBrackets></Link>*/}
-                {/*<Link to='playoffs-stage'><ButtonBrackets>Плей-офф</ButtonBrackets></Link>*/}
-                <NavLink to='fifapc'>Сетка PC</NavLink>
-                <NavLink to='fifaps4'>Сетка PS4</NavLink>
-                <NavLink to='fifaps5'>Сетка PS5</NavLink>
+                {/*<Link to='playoffs-stage'><ButtonBrackets>Плей-офф</ButtonBrackets></Link>*/}\
+                <div className={styles.fifa_menu}>
+                    <li><NavLink to='fifapc' className={setActiveLink}>Сетка PC</NavLink></li>
+                    <li><NavLink to='fifaps4' className={setActiveLink}>Сетка PS4</NavLink></li>
+                    <li><NavLink to='fifaps5' className={setActiveLink}>Сетка PS5</NavLink></li>
+                </div>
             </div>
 
             <Routes>
