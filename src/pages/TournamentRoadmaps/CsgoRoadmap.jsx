@@ -15,7 +15,7 @@ const CsgoRoadmap = ({modalActive, setModalActive}) => {
         final: '27 мая'
     }
     return (
-        <>
+        <div className={styles.wrapper}>
             <div className={styles.roadmap_header}>
                 <div className={styles.roadmap_logo}>
                     <img src={csgo} alt=""/>
@@ -33,7 +33,7 @@ const CsgoRoadmap = ({modalActive, setModalActive}) => {
             />
             <HamburgerMenu/>
             <Menu/>
-        </>
+        </div>
     );
 };
 

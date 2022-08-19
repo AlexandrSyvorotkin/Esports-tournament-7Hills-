@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Docs.module.scss'
 import {Link, NavLink, Route, Routes} from "react-router-dom";
-import Positions from "../../../Components/Regulations/Positions";
+import MainPosition from "../../../Components/Docs/Position/MainPosition";
 
 const Docs = () => {
 
@@ -20,7 +20,7 @@ const Docs = () => {
             </div>
 
             <Routes>
-                <Route path='position' element={<Positions/>}/>}/>
+                <Route path='position' element={<MainPosition/>}/>}/>
                 {/*<Route path='fifaps4/*' element={}/>}/>*/}
                 {/*<Route path='fifaps5/*' element={}/>}/>*/}
                 {/*<Route path='fifaps5/*' element={}/>}/>*/}

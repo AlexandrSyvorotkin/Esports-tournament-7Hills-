@@ -1,0 +1,22 @@
+.positions {
+ margin-top: 100px;
+ color: white;
+ padding: 0 300px 0 300px;
+ font-family: var(--font-family-main);
+ &_header {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+ }
+ .numbers {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  list-style: none;
+  margin: 15px 0 15px 0;
+  font-family: var(--font-family-secondary);
+ }
+}
