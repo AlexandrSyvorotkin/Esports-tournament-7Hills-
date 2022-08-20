@@ -33,7 +33,7 @@ const Menu = () => {
                         <Link to='/faq' ><MenuButton onClick={ctx.CloseSideMenu}>FAQ</MenuButton></Link>
                     </li>
                     <li>
-                        <Link to='/positions'><MenuButton>Регламенты</MenuButton></Link>
+                        <Link to='/docs'><MenuButton>Регламенты</MenuButton></Link>
                     </li>
                     <li>
                         <Link to='/tournament-brackets'><MenuButton onClick={ctx.CloseSideMenu}>Турнирные сетки</MenuButton></Link>

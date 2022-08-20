@@ -1,0 +1,14 @@
+.regulation_header {
+  margin-top: 100px;
+  font-size: 25px;
+  font-family: var(--font-family-main);
+  color: var(--main-color);
+  .header {
+    text-align: right;
+    margin-top: 40px;
+    &_name {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}

@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from './Common.module.scss'
 
 const Common = ({platform, game, format, members, text, lotDate, qualificationDate, groupsDate, playoffsDate, finalDate}) => {
     return (
-        <div>
+        <div className={styles.common}>
             <span>1. Общие положение</span>
             <ul>
                 <li>1.1 Игровой платформой турнира является {platform}</li>
@@ -10,10 +11,10 @@ const Common = ({platform, game, format, members, text, lotDate, qualificationDa
                 <li>1.3 Формат турнира: {format}</li>
                 <li>1.4 Турнир проводится в 4 этапа:</li>
                 <ul>1.4.1 Формат соревнований:
-                    <li>Квалификация</li>
-                    <li>Групповой этап</li>
-                    <li>Игры на вылет</li>
-                    <li>Финал</li>
+                    <li>- Квалификация</li>
+                    <li>- Групповой этап</li>
+                    <li>- Игры на вылет</li>
+                    <li>- Финал</li>
                 </ul>
                 <li>1.4.2 Все зарегистрировавшиеся {members} (до 64 коллектива) сначала играют BO1
                     квалификации на вылет, 32 лучших проходят в групповой этап (группы
@@ -38,6 +39,7 @@ const Common = ({platform, game, format, members, text, lotDate, qualificationDa
                     - 23:30 – 00:50 <br/>
                 </li>
                 <li>1.8. Возможно создание дополнительного дня.</li>
+                <li>1.9 Общее возможное количество зарегистрировавшихся команд – 64</li>
             </ul>
         </div>
     );

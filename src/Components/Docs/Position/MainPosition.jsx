@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './MainPosition.module.scss'
-import Common from "../Regulations/Common";
 
 const MainPosition = () => {
     return (
@@ -63,7 +62,6 @@ const MainPosition = () => {
                         Контактное лицо - Генеральный директор ЦФС Кукин А.В.</li>
                 </ul>
             </ul>
-            <Common/>
         </div>
     );
 };

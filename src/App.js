@@ -61,7 +61,7 @@ const App = () => {
                     <Route path='registration' element={<AllRegistration />}/>
                     <Route path='faq' element={<Faq />}/>
                     <Route path='aboutus' element={<AboutProject />}/>
-                    <Route path='/positions/*' element={<Docs/>}/>
+                    <Route path='/docs/*' element={<Docs/>}/>
                     <Route path='/tournament-brackets/*' element={<TournamentBrackets/>}/>
                     {/*//*/}
 
