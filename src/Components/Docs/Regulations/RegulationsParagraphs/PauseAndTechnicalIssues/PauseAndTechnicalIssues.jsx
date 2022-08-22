@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './PauseAndTechnicalIssues.module.scss'
 
+// TODO: Доделать из 9 пунка регламента доты
+
 const PauseAndTechnicalIssues = ({pauseCount, pauseTime}) => {
     return (
         <div className={styles.game}>

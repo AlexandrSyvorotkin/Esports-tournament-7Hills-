@@ -1,3 +1,12 @@
 .regulation {
   padding: 0 170px 0 170px;
+  .rules, .forbidden, .disciplinary_action {
+    font-family: var(--font-family-main);
+    color: var(--main-color);
+    margin-top: 40px;
+    line-height: 40px;
+    li {
+      list-style: none;
+    }
+  }
 }
