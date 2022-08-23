@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './PauseAndTechnicalIssues.module.scss'
 
 // TODO: Доделать из 9 пунка регламента доты
+// TODO: Доделать время для каждой дисциплины
 
 const PauseAndTechnicalIssues = ({pauseCount, pauseTime}) => {
     return (

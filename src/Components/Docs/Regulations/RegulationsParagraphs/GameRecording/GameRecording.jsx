@@ -4,7 +4,7 @@ import styles from './GameRecording.module.scss'
 const GameRecording = () => {
     return (
         <div className={styles.game_recording}>
-            <span>5.1 Запись игры</span>
+            <span>5. Запись игры</span>
             <ul>
                 <li>5.1 Игроки имеют право вести запись игры с целью сбора материалов,
                     доказывающих спорность момента и нарушение правил со стороны соперника.</li>
