@@ -6,10 +6,14 @@ import DotaRegulation from "../../../Components/Docs/Regulations/DotaRegulation/
 import ValorantRegulation from "../../../Components/Docs/Regulations/ValorantRegulation/ValorantRegulation";
 import CsGoRegulation from "../../../Components/Docs/Regulations/CsGoRegulation/CsGoRegulation";
 import FifaRegulation from "../../../Components/Docs/Regulations/FifaRegulation/FifaRegulation";
+import ScrollToTop from "../../../Components/ScrollToTop";
+import Menu from "../../../Components/Menus/SideMenu/Menu";
+import HamburgerMenu from "../../../Components/Menus/HamburgerMenu/HamburgerMenu";
 
 // TODO: Фиксированную шапку
 //TODO: Адаптив
 //TODO: Оптимизировать всю папку Regulations дабы избежать дубликатов стилей
+//TODO: Разобраться с React-Scroll
 
 const Docs = () => {
 
@@ -17,8 +21,9 @@ const Docs = () => {
 
     return (
         <div className={styles.positions}>
-            <h2>Регламенты</h2>
+            {/*<h2>Регламенты</h2>*/}
             <div className={styles.positions_menu}>
+                <ScrollToTop/>
                 <li><NavLink to='position' className={setActiveLink}>Общее положение</NavLink></li>
                 <li><NavLink to='valorantregulation' className={setActiveLink}>Регламент Valorant</NavLink></li>
                 <li><NavLink to='dotaregulation' className={setActiveLink}>Регламент Дота 2</NavLink></li>
@@ -26,7 +31,6 @@ const Docs = () => {
                 <li><NavLink to='fifaregulation' className={setActiveLink}>Регламент FIFA 2022</NavLink></li>
                 <li><Link to='/'>Назад</Link></li>
             </div>
-
             <Routes>
                 <Route path='position' element={<MainPosition/>}/>}/>
                 <Route path='dotaregulation' element={<DotaRegulation/>}/>}/>
@@ -34,6 +38,8 @@ const Docs = () => {
                 <Route path='csgoregulation' element={<CsGoRegulation/>}/>}/>
                 <Route path='fifaregulation' element={<FifaRegulation/>}/>}/>
             </Routes>
+            <Menu/>
+            <HamburgerMenu/>
         </div>
     );
 };
