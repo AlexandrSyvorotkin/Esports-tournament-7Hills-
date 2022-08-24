@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 
 const SingleDiscipline = ({DisciplineName, img, RoutingPath}) => {
 
+    //TODO: Сделать логотип на черном фоне
 
     return (
         <Link className={styles.single_discipline}

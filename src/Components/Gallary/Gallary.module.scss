@@ -1,0 +1,15 @@
+.photos {
+  color: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 30px 100px 30px;
+  gap: 20px;
+  &_item {
+    width: 600px;
+    height: 400px;
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

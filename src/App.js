@@ -32,6 +32,9 @@ import SideMenuContext from "./context/modal-context";
 import ValorantTournamentPage from "./pages/TournamentBrackets/ValorantTournamentPage";
 import CsgoTournamentBracket from "./pages/TournamentBrackets/CsgoTournamentBracket";
 import FifaTournamentBracket from "./pages/TournamentBrackets/FifaTournamentBracket";
+import photoes_2020 from "./data-base/photoes-data/photoes_2020";
+import photoes_2021 from "./data-base/photoes-data/photoes_2021";
+import Gallary from "./Components/Gallary/Gallary";
 
 
 
@@ -72,7 +75,8 @@ const App = () => {
                     <Route path='fifa-registration' element={<FifaRegistration />}/>
                     {/*//*/}
 
-
+                    <Route path='photosgalary/photos2020' element={<Gallary photoes={photoes_2020}/>}/>*/}
+                    <Route path='photosgalary/photos2021' element={<Gallary photoes={photoes_2021}/>}/>
 
 
                     <Route path='tournament-brackets/dota-tournament-bracket/*' element={<DotaTournamentBracket/>}/>

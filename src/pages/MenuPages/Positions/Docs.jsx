@@ -14,6 +14,7 @@ import HamburgerMenu from "../../../Components/Menus/HamburgerMenu/HamburgerMenu
 //TODO: Адаптив
 //TODO: Оптимизировать всю папку Regulations дабы избежать дубликатов стилей
 //TODO: Разобраться с React-Scroll
+//TODO: Сделать логотипы на роутинг вместо "кнопок"
 
 const Docs = () => {
 
@@ -29,7 +30,6 @@ const Docs = () => {
                 <li><NavLink to='dotaregulation' className={setActiveLink}>Регламент Дота 2</NavLink></li>
                 <li><NavLink to='csgoregulation' className={setActiveLink}>Регламент CS:GO</NavLink></li>
                 <li><NavLink to='fifaregulation' className={setActiveLink}>Регламент FIFA 2022</NavLink></li>
-                <li><Link to='/'>Назад</Link></li>
             </div>
             <Routes>
                 <Route path='position' element={<MainPosition/>}/>}/>
