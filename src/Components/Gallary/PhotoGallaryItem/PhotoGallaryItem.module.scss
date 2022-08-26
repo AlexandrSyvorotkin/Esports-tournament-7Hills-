@@ -1,0 +1,22 @@
+.single_gallary {
+  width: 600px;
+  height: 400px;
+  background-color: springgreen;
+  border-radius: 12px;
+  transition: 1s ease;
+  padding: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+}

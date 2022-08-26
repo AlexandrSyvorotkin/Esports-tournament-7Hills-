@@ -136,7 +136,6 @@ let photoes_2020 = [
         id: 27,
         img: img27
     },
-
 ]
 
 export default photoes_2020

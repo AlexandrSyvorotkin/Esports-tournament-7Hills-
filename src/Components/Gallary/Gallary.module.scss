@@ -1,15 +1,27 @@
-.photos {
-  color: var(--main-color);
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 30px 100px 30px;
-  gap: 20px;
-  &_item {
-    width: 600px;
-    height: 400px;
-    & > img {
-      width: 100%;
-      height: 100%;
+.gallary {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(34,156,107,1) 70%, rgba(0,255,127,1) 88%, rgba(21,153,87,1) 96%);
+  &_header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .photos {
+    color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 30px 100px 30px;
+    gap: 20px;
+    &_item {
+      width: 600px;
+      height: 400px;
+      cursor: pointer;
+      & > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
     }
   }
 }

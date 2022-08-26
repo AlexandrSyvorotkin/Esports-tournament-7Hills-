@@ -21,7 +21,7 @@ const Menu = () => {
                         <Link to='/contacts'><MenuButton onClick={ctx.CloseSideMenu}>Контакты</MenuButton></Link>
                     </li>
                     <li>
-                        <Link to='/photosgalary'><MenuButton>Галерея</MenuButton></Link>
+                        <Link to='/photosgalary' onClick={ctx.CloseSideMenu}><MenuButton>Галерея</MenuButton></Link>
                     </li>
                     <li>
                         <Link to='/aboutus'><MenuButton onClick={ctx.CloseSideMenu}>О проекте</MenuButton></Link>

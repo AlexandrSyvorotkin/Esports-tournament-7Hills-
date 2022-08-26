@@ -1,0 +1,40 @@
+.photo_slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .slide {
+    opacity: 1;
+    transition-duration: 1s ease;
+    &_active {
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.08);
+    }
+  }
+
+  .back {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+  }
+  .forward {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+  }
+  .img {
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+  }
+}
