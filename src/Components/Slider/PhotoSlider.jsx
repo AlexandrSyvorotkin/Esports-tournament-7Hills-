@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
 import styles from './PhotoSlider.module.scss'
-import SliderData from '../../data-base/photoes-data/photoes_2020'
 
 //TODO: Добавить анимацию на слайдер
 
-const PhotoSlider = () => {
+const PhotoSlider = ({SliderData, setSliderActive}) => {
 
     const [current, setCurrent] = useState(0)
     const length = SliderData.length
@@ -22,15 +21,22 @@ const PhotoSlider = () => {
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
     return (
-            <section className={styles.photo_slider}>
-                <div className={styles.back} onClick={nextSlide}>Вперед</div>
-                <div className={styles.forward} onClick={prevSlide}>Назад</div>
-                {SliderData.map((item,index) => {
-                    return (<div className={index === current ? `{styles.slide_active}` : `{styles.slide}`}>
-                        {index === current && (<img src={item.img} alt="" className={styles.img}/>)}
-                    </div>)
-                })}
-            </section>
+            <div className={styles.slider} onClick={()=> setSliderActive(false)}>
+                <div className={styles.slider_content} onClick={(e) => e.stopPropagation()}>
+                    <section className={styles.photo_slider}>
+                        <div className={styles.back} onClick={nextSlide}>
+                            <p><i className={styles.arrow_right}></i></p>
+                        </div>
+                        <div className={styles.forward} onClick={prevSlide}>Назад</div>
+                        {SliderData.map((item,index) => {
+                            return (<div className={index === current ? `{styles.slide_active}` : `{styles.slide}`}>
+                                {index === current && (<img src={item.img} alt="" className={styles.img}/>)}
+                            </div>)
+                        })}
+                    </section>
+                </div>
+            </div>
+
     );
 };
 
