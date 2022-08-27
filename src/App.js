@@ -75,6 +75,8 @@ const App = () => {
                     <Route path='fifa-registration' element={<FifaRegistration />}/>
                     {/*//*/}
 
+
+                    //TODO: Подумать над архитектурой фото галерей!
                     <Route path='photosgalary/photos2020' element={<Gallary photoes={photoes_2020}/>}/>*/}
                     <Route path='photosgalary/photos2021' element={<Gallary photoes={photoes_2021}/>}/>
 

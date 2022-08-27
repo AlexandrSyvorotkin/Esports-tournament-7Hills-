@@ -5,9 +5,9 @@ import PhotoSlider from "../Slider/PhotoSlider";
 import ButtonModal from "../../UI/ButtonModal";
 import Menu from "../Menus/SideMenu/Menu";
 import HamburgerMenu from "../Menus/HamburgerMenu/HamburgerMenu";
-import SliderData from '../../data-base/photoes-data/photoes_2020'
 
 //TODO: Разобраться с меню и position fixed
+//TODO: Перенести в pages
 
 const Gallary = ({photoes}) => {
 
@@ -25,7 +25,7 @@ const Gallary = ({photoes}) => {
                     </div>
                 )}
             </div>
-            {sliderActive && <PhotoSlider SliderData={SliderData} setSliderActive={setSliderActive}/>}
+            {sliderActive && <PhotoSlider SliderData={photoes} setSliderActive={setSliderActive} />}
             <Menu/>
             <HamburgerMenu/>
         </div>

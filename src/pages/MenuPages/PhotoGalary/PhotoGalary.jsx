@@ -18,9 +18,8 @@ const PhotoGalary = () => {
             <div className={styles.gallary}>
                     <span>Фотоотчеты наших мероприятий</span>
                 <div className={styles.gallary_content}>
-                    <PhotoGallaryItem path='photos2020' img={Gallary20} gallay_year='Tурнир 2020'/>
-                    <PhotoGallaryItem path='photos2021' img={Gallary21} gallay_year='Tурнир 2021'/>
-                    {/*<PhotoSlider/>*/}
+                    <PhotoGallaryItem path='photos2020' img={Gallary20} gallay_year='Tурнир 2020' />
+                    <PhotoGallaryItem path='photos2021' img={Gallary21} gallay_year='Tурнир 2021' />
                 </div>
                 <div>
                     <Link to='/'><ButtonModal>Назад</ButtonModal></Link>
