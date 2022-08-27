@@ -1,13 +1,16 @@
 .group_item {
-  width: 200px;
+  width: 250px;
+  height: 180px;
   border: 2px solid #00ff7f;
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   font-size: 20px;
+  border-radius: 12px;
   .group_name {
     margin-bottom: 20px;
+    border-bottom: 1px solid #00ff7f;
+    background-color: #00ff7f;
   }
   & > span {
     text-align: center;
@@ -16,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    padding: 0 10px 0 10px ;
   }
   .participants {
     display: flex;

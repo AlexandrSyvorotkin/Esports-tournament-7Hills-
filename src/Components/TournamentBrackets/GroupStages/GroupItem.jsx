@@ -7,7 +7,7 @@ const GroupItem = ({name, participants, points}) => {
                 <span className={styles.group_name}>Группа {name}</span>
                 <div className={styles.wrapper}>
                     <div className={styles.participants}>
-                        {participants.map(it=> <span>{it}</span>)}
+                        {participants.map(it=><span>{it}</span>)}
                     </div>
                     <div className={styles.points}>
                         {points.map(it=> <span>{it}</span>)}
