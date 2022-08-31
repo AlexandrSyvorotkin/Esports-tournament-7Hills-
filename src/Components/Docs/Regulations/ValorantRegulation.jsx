@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from './ValorantRegulation.module.scss'
+import styles from './Regulation.module.scss'
 
 // Импорт компонентов
-import RegulationHeader from "../RegulationsParagraphs/RegulationHeader/RegulationHeader";
-import Common from "../RegulationsParagraphs/Common/Common";
-import Timming from "../RegulationsParagraphs/Timming/Timming";
-import GameTimmings from "../RegulationsParagraphs/GameTimmings/GameTimmings";
-import GameRecording from "../RegulationsParagraphs/GameRecording/GameRecording";
-import PauseAndTechnicalIssues from "../RegulationsParagraphs/PauseAndTechnicalIssues/PauseAndTechnicalIssues";
-import DisciplinaryActions from "../RegulationsParagraphs/DisciplinaryActions/DisciplinaryActions";
-import SpecialConditions from "../RegulationsParagraphs/SpecialConditions/SpecialConditions";
+import RegulationHeader from "./RegulationsParagraphs/RegulationHeader/RegulationHeader";
+import Common from "./RegulationsParagraphs/Common";
+import Timming from "./RegulationsParagraphs/Timming";
+import GameTimmings from "./RegulationsParagraphs/GameTimmings";
+import GameRecording from "./RegulationsParagraphs/GameRecording";
+import PauseAndTechnicalIssues from "./RegulationsParagraphs/PauseAndTechnicalIssues";
+import DisciplinaryActions from "./RegulationsParagraphs/DisciplinaryActions";
+import SpecialConditions from "./RegulationsParagraphs/SpecialConditions";
 //
 
 const ValorantRegulation = () => {
@@ -29,6 +29,7 @@ const ValorantRegulation = () => {
                 finalDate='28 мая'
             />
             <div className={styles.rules}>
+                <span>2. Правилы игр и настройки</span>
                 <ul>
                     <li>2.1 Все матчи проводятся на серверах Стокгольм 1 или Франкфурт 1 (по взаимной
                         договоренности капитанов) в режиме «Своя игра».

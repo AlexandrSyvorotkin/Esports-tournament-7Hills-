@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './AppealOrder.module.scss'
+import styles from './Paragraph.module.scss'
 
 const AppealOrder = ({number}) => {
     return (
-        <div className={styles.apealOrder}>
+        <div className={styles.paragraph}>
             <span>{number} Порядок рассмотрения аппеляции.</span>
             <ul>
                 <li>10.1 Все претензии по нарушению правил игры предъявляются в течение 20 минут

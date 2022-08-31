@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './SpecialConditions.module.scss'
+import styles from './Paragraph.module.scss'
 
 const SpecialConditions = ({number, number_li}) => {
     return (
-        <div className={styles.special}>
+        <div className={styles.paragraph}>
             <span>{number} Особые условия.</span>
             <ul>
                 <li>{number_li} Подтверждая свое участие в турнире, каждыйигрок тем самым соглашается с

@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './PauseAndTechnicalIssues.module.scss'
+import styles from './Paragraph.module.scss'
 
 // TODO: Доделать из 9 пунка регламента доты
 // TODO: Доделать время для каждой дисциплины
 
 const PauseAndTechnicalIssues = ({pauseCount, pauseTime}) => {
     return (
-        <div className={styles.game}>
+        <div className={styles.paragraph}>
             <span>6. Паузы и технические пробелмы.</span>
             <ul>
                 <li>6.1 Каждая команда имеет право использовать максимум по {pauseCount} тактические паузы

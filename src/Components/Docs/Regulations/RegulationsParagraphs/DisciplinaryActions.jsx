@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from "./DisciplinaryActions.module.scss";
+import styles from "./Paragraph.module.scss";
 
 //TODO: Доделать под фифу
 
 const DisciplinaryActions = ({discipline, dota}) => {
     return (
-        <div className={styles.disciplinary_action}>
+        <div className={styles.paragraph}>
             <span>8. Дисциплинарные взыскания</span>
             <ul>
                 <li>8.1 Виды санкций:

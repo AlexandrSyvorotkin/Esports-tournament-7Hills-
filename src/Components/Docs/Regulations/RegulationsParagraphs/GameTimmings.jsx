@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './GameTimmings.module.scss'
+import styles from './Paragraph.module.scss'
 
 const GameTimmings = () => {
     return (
-        <div className={styles.game_timmings}>
+        <div className={styles.paragraph}>
             <span>4. Время матча и явка на матч</span>
             <ul>
                 <li>4.1 Игроки должны явиться на матч за 10 минут до указанного времени старта

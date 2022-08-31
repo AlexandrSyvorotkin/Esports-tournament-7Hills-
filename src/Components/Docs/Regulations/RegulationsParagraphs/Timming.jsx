@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Timming.module.scss'
+import styles from './Paragraph.module.scss'
 
 const Timming = ({time, banCartTime, cs}) => {
     return (
-        <div className={styles.timming}>
+        <div className={styles.paragraph}>
             <span>3. Тайминг</span>
             <ul>
                 <li>3.1 Перерыв между матчами - {time} минут (может быть увеличен на усмотрение

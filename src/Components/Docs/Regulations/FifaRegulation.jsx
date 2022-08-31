@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './FifaRegulation.module.scss'
-import Common from "../RegulationsParagraphs/Common/Common";
-import RegulationHeader from "../RegulationsParagraphs/RegulationHeader/RegulationHeader";
-import Timming from "../RegulationsParagraphs/Timming/Timming";
-import GameTimmings from "../RegulationsParagraphs/GameTimmings/GameTimmings";
-import GameRecording from "../RegulationsParagraphs/GameRecording/GameRecording";
-import PauseAndTechnicalIssues from "../RegulationsParagraphs/PauseAndTechnicalIssues/PauseAndTechnicalIssues";
-import DisciplinaryActions from "../RegulationsParagraphs/DisciplinaryActions/DisciplinaryActions";
-import SpecialConditions from "../RegulationsParagraphs/SpecialConditions/SpecialConditions";
+import styles from './Regulation.module.scss'
+import Common from "./RegulationsParagraphs/Common";
+import RegulationHeader from "./RegulationsParagraphs/RegulationHeader/RegulationHeader";
+import Timming from "./RegulationsParagraphs/Timming";
+import GameTimmings from "./RegulationsParagraphs/GameTimmings";
+import GameRecording from "./RegulationsParagraphs/GameRecording";
+import PauseAndTechnicalIssues from "./RegulationsParagraphs/PauseAndTechnicalIssues";
+import DisciplinaryActions from "./RegulationsParagraphs/DisciplinaryActions";
+import SpecialConditions from "./RegulationsParagraphs/SpecialConditions";
 
 const FifaRegulation = () => {
     return (

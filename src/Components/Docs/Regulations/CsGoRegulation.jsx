@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './CsGoRegulation.module.scss'
-import RegulationHeader from "../RegulationsParagraphs/RegulationHeader/RegulationHeader";
-import Common from "../RegulationsParagraphs/Common/Common";
-import Timming from "../RegulationsParagraphs/Timming/Timming";
-import GameTimmings from "../RegulationsParagraphs/GameTimmings/GameTimmings";
-import GameRecording from "../RegulationsParagraphs/GameRecording/GameRecording";
-import PauseAndTechnicalIssues from "../RegulationsParagraphs/PauseAndTechnicalIssues/PauseAndTechnicalIssues";
-import AppealOrder from "../RegulationsParagraphs/AppealOrder/AppealOrder";
-import SpecialConditions from "../RegulationsParagraphs/SpecialConditions/SpecialConditions";
+import styles from './Regulation.module.scss'
+import RegulationHeader from "./RegulationsParagraphs/RegulationHeader/RegulationHeader";
+import Common from "./RegulationsParagraphs/Common";
+import Timming from "./RegulationsParagraphs/Timming";
+import GameTimmings from "./RegulationsParagraphs/GameTimmings";
+import GameRecording from "./RegulationsParagraphs/GameRecording";
+import PauseAndTechnicalIssues from "./RegulationsParagraphs/PauseAndTechnicalIssues";
+import AppealOrder from "./RegulationsParagraphs/AppealOrder";
+import SpecialConditions from "./RegulationsParagraphs/SpecialConditions";
 
 const CsGoRegulation = () => {
     return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './Common.module.scss'
+import styles from './Paragraph.module.scss'
 
 const Common = ({platform, game, format, members, text, lotDate, qualificationDate, groupsDate, playoffsDate, finalDate, fifa}) => {
     return (
-        <div className={styles.common}>
+        <div className={styles.paragraph}>
             <span>1. Общие положение</span>
             <ul>
                 <li>1.1 Игровой платформой турнира является {platform}</li>

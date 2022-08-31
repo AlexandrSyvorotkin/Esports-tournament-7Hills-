@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './GameRecording.module.scss'
+import styles from './Paragraph.module.scss'
 
 const GameRecording = () => {
     return (
-        <div className={styles.game_recording}>
+        <div className={styles.paragraph}>
             <span>5. Запись игры</span>
             <ul>
                 <li>5.1 Игроки имеют право вести запись игры с целью сбора материалов,

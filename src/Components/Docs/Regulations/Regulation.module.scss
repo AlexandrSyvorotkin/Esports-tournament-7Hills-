@@ -1,12 +1,11 @@
 .regulation {
-  padding: 0 170px 0 170px;
-  margin-top: 60px;
+  padding: 150px 300px 0 300px;
   span {
     display: block;
     text-align: center;
     font-size: 25px;
   }
-  .rules, .forbidden, .disciplinary_action {
+  .rules, .forbidden, {
     font-family: var(--font-family-main);
     color: var(--main-color);
     margin-top: 40px;
