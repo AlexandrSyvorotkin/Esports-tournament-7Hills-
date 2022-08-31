@@ -30,7 +30,7 @@ const Menu = () => {
                         <Link to='/registration'><MenuButton onClick={ctx.CloseSideMenu}>Регистрация</MenuButton></Link>
                     </li>
                     <li>
-                        <Link to='/faq' ><MenuButton onClick={ctx.CloseSideMenu}>FAQ</MenuButton></Link>
+                        <Link to='/faq'><MenuButton onClick={ctx.CloseSideMenu}>FAQ</MenuButton></Link>
                     </li>
                     <li>
                         <Link to='/docs/position' onClick={ctx.CloseSideMenu}><MenuButton>Регламенты</MenuButton></Link>

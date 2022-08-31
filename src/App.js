@@ -24,7 +24,7 @@ import CsgoRegistration from "./pages/RegistrationPages/CsgoRegistration";
 import ValorantRegistration from "./pages/RegistrationPages/ValorantRegistration";
 import FifaRegistration from "./pages/RegistrationPages/FifaRegistration";
 import AllRegistration from "./pages/MenuPages/AllRegistrations/AllRegistration";
-import Docs from "./pages/MenuPages/Positions/Docs";
+import Docs from "./pages/MenuPages/Docs/Docs";
 import TournamentBrackets from "./pages/MenuPages/TournamentBrakets/TournamentBrackets";
 import DotaTournamentBracket from "./pages/TournamentBrackets/DotaTournamentBracket";
 import {useState} from "react";
@@ -37,6 +37,15 @@ import photoes_2021 from "./data-base/photoes-data/photoes_2021";
 import Gallary from "./Components/Gallary/Gallary";
 
 
+//TODO: Главные работы:
+// 1) сделать меню с дропдауном
+// 2) доделать сетки
+// 3) доделать фотогаллерею
+// 4) доделать документы
+// 5) адаптив везде сделать
+// 6) оптимизировать
+// 7) стили переписать
+// 8) подумать над архитектурой
 
 const App = () => {
 

@@ -3,6 +3,8 @@
  color: white;
  padding: 0 300px 0 300px;
  font-family: var(--font-family-main);
+ font-size: 20px;
+ line-height: 40px;
  &_header {
   display: flex;
   justify-content: center;
@@ -11,12 +13,23 @@
   margin-bottom: 50px;
   text-align: center;
  }
+ .list_points {
+   & > li {
+    list-style: none;
+    color: #2894ff;
+    & > span {
+     color: white;
+    }
+   }
+ }
  .numbers {
   text-align: center;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   list-style: none;
-  margin: 15px 0 15px 0;
+  margin: 30px 0 30px 0;
   font-family: var(--font-family-secondary);
+
+  color: #2894ff;
  }
 }
