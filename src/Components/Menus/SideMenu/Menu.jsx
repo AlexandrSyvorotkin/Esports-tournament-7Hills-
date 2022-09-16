@@ -6,6 +6,18 @@ import SideMenuContext from "../../../context/modal-context";
 
 //TODO: сделать ападтив под мобилку с продлением подложки
 
+const menu = [
+    {id: 1, title: 'Главная', path: '/'},
+    {id: 2, title: 'Контакты', path: '/contacts'},
+    {id: 3, title: 'Галерея', path: '/photosgalary'},
+    {id: 4, title: 'О проекте', path: '/aboutus'},
+    {id: 5, title: 'Регистрация', path: '/registration'},
+    {id: 6, title: 'FAQ', path: '/faq'},
+    {id: 7, title: 'Регламенты', path: '/docs/position'},
+    {id: 8, title: 'Турнирные сетки', path: '/tournament-brackets'},
+]
+
+
 const Menu = () => {
     const ctx = useContext(SideMenuContext)
 
@@ -14,30 +26,11 @@ const Menu = () => {
             <div className={styles.blur} onClick={ctx.CloseSideMenu}/>
             <div className={styles.menu_content}>
                 <ul>
-                    <li>
-                        <Link to='/'><MenuButton onClick={ctx.CloseSideMenu}>Главная</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/contacts'><MenuButton onClick={ctx.CloseSideMenu}>Контакты</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/photosgalary' onClick={ctx.CloseSideMenu}><MenuButton>Галерея</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/aboutus'><MenuButton onClick={ctx.CloseSideMenu}>О проекте</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/registration'><MenuButton onClick={ctx.CloseSideMenu}>Регистрация</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/faq'><MenuButton onClick={ctx.CloseSideMenu}>FAQ</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/docs/position' onClick={ctx.CloseSideMenu}><MenuButton>Регламенты</MenuButton></Link>
-                    </li>
-                    <li>
-                        <Link to='/tournament-brackets'><MenuButton onClick={ctx.CloseSideMenu}>Турнирные сетки</MenuButton></Link>
-                    </li>
+                    {menu.map(({id, title, path}) => (
+                        <li key={id}>
+                            <Link to={path}><MenuButton onClick={ctx.CloseSideMenu}>{title}</MenuButton></Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
